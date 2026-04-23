@@ -6,10 +6,12 @@
     {"name":"TileSet","order":4,"path":"folders/TileSet.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"CameraObject","order":5,"path":"objects/CameraObject/CameraObject.yy",},
     {"name":"SaveObject","order":4,"path":"objects/SaveObject/SaveObject.yy",},
     {"name":"TransitionObject","order":3,"path":"objects/TransitionObject/TransitionObject.yy",},
     {"name":"WallObject","order":1,"path":"objects/WallObject/WallObject.yy",},
     {"name":"WarpObject","order":2,"path":"objects/WarpObject/WarpObject.yy",},
+    {"name":"InitialRoom","order":5,"path":"rooms/InitialRoom/InitialRoom.yy",},
     {"name":"RuinsButtons","order":4,"path":"rooms/RuinsButtons/RuinsButtons.yy",},
     {"name":"RuinsEntrance","order":1,"path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"ShadowoftheRuins","order":2,"path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},

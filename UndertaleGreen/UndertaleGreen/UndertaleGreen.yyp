@@ -25,12 +25,14 @@
   },
   "name":"UndertaleGreen",
   "resources":[
+    {"id":{"name":"CameraObject","path":"objects/CameraObject/CameraObject.yy",},},
     {"id":{"name":"PlayerObject","path":"objects/PlayerObject/PlayerObject.yy",},},
     {"id":{"name":"SaveObject","path":"objects/SaveObject/SaveObject.yy",},},
     {"id":{"name":"TransitionObject","path":"objects/TransitionObject/TransitionObject.yy",},},
     {"id":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},},
     {"id":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},},
     {"id":{"name":"FlowerBed","path":"rooms/FlowerBed/FlowerBed.yy",},},
+    {"id":{"name":"InitialRoom","path":"rooms/InitialRoom/InitialRoom.yy",},},
     {"id":{"name":"RuinsButtons","path":"rooms/RuinsButtons/RuinsButtons.yy",},},
     {"id":{"name":"RuinsEntrance","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},},
     {"id":{"name":"ShadowoftheRuins","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},},
@@ -59,6 +61,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"InitialRoom","path":"rooms/InitialRoom/InitialRoom.yy",},},
     {"roomId":{"name":"FlowerBed","path":"rooms/FlowerBed/FlowerBed.yy",},},
     {"roomId":{"name":"RuinsEntrance","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},},
     {"roomId":{"name":"ShadowoftheRuins","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},},
