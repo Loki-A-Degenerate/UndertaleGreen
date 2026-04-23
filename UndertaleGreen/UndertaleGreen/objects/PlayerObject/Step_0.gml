@@ -1,0 +1,48 @@
+rightKey = keyboard_check(vk_right);
+leftKey = keyboard_check(vk_left);
+downKey = keyboard_check(vk_down);
+upKey = keyboard_check(vk_up);
+
+xSpeed = (rightKey - leftKey) * moveSpeed;
+ySpeed = (downKey - upKey) * moveSpeed;
+
+//Set sprite
+image_speed = 0.13;
+mask_index = sprite[FORWARD];
+if xSpeed > 0 {face = RIGHT};
+if xSpeed < 0 {face = LEFT};
+
+if ySpeed > 0 {face = FORWARD};
+if ySpeed < 0 {face = BACK};
+sprite_index = sprite[face];
+
+//Collisions
+if place_meeting(x + xSpeed, y, WallObject) == true 
+	{
+		xSpeed = 0;
+	}
+if place_meeting(x, y + ySpeed, WallObject) == true 
+	{
+		ySpeed = 0;
+	}
+if place_meeting(x + xSpeed, y, SaveObject) == true 
+	{
+		xSpeed = 0;
+	}
+if place_meeting(x, y + ySpeed, SaveObject) == true 
+	{
+		ySpeed = 0;
+	}
+	
+//Move player
+x += xSpeed;
+y += ySpeed;
+
+//Animate
+if xSpeed == 0 && ySpeed == 0 
+	{
+		image_index = 0;
+	}
+	
+//Depth
+depth = -bbox_bottom;
