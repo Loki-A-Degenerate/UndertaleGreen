@@ -61,8 +61,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"InitialRoom","path":"rooms/InitialRoom/InitialRoom.yy",},},
     {"roomId":{"name":"FlowerBed","path":"rooms/FlowerBed/FlowerBed.yy",},},
+    {"roomId":{"name":"InitialRoom","path":"rooms/InitialRoom/InitialRoom.yy",},},
     {"roomId":{"name":"RuinsEntrance","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},},
     {"roomId":{"name":"ShadowoftheRuins","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},},
     {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
