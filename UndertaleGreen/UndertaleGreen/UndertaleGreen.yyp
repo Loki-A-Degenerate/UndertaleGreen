@@ -46,6 +46,7 @@
     {"id":{"name":"RuinTileSet2","path":"sprites/RuinTileSet2/RuinTileSet2.yy",},},
     {"id":{"name":"SaveSprite","path":"sprites/SaveSprite/SaveSprite.yy",},},
     {"id":{"name":"sfe","path":"sprites/sfe/sfe.yy",},},
+    {"id":{"name":"Sprite14","path":"sprites/Sprite14/Sprite14.yy",},},
     {"id":{"name":"TransitionSprite","path":"sprites/TransitionSprite/TransitionSprite.yy",},},
     {"id":{"name":"WallSprite","path":"sprites/WallSprite/WallSprite.yy",},},
     {"id":{"name":"WarpBlock","path":"sprites/WarpBlock/WarpBlock.yy",},},

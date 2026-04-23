@@ -23,6 +23,7 @@
     {"name":"RuinTileSet2","order":7,"path":"sprites/RuinTileSet2/RuinTileSet2.yy",},
     {"name":"SaveSprite","order":8,"path":"sprites/SaveSprite/SaveSprite.yy",},
     {"name":"sfe","order":12,"path":"sprites/sfe/sfe.yy",},
+    {"name":"Sprite14","order":13,"path":"sprites/Sprite14/Sprite14.yy",},
     {"name":"TransitionSprite","order":11,"path":"sprites/TransitionSprite/TransitionSprite.yy",},
     {"name":"WallSprite","order":1,"path":"sprites/WallSprite/WallSprite.yy",},
     {"name":"WarpBlock","order":5,"path":"sprites/WarpBlock/WarpBlock.yy",},
