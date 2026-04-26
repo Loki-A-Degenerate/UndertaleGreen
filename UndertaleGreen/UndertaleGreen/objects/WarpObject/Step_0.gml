@@ -6,5 +6,6 @@ if place_meeting(x, y, PlayerObject) && !instance_exists(TransitionObject)
 		inst.targetRoom = targetRoom;
 		inst.targetX = targetX;
 		inst.targetY = targetY;
+		inst.targetFace = targetFace;
 		//show_debug_message("We still here?");
 	}
