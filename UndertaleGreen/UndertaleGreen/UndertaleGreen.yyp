@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"MenuSystem","folderPath":"folders/MenuSystem.yy","name":"MenuSystem","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -38,6 +39,7 @@
     {"id":{"name":"ShadowoftheRuins","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},},
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
+    {"id":{"name":"KindSoul","path":"sprites/KindSoul/KindSoul.yy",},},
     {"id":{"name":"PlayerSpriteBack","path":"sprites/PlayerSpriteBack/PlayerSpriteBack.yy",},},
     {"id":{"name":"PlayerSpriteForward","path":"sprites/PlayerSpriteForward/PlayerSpriteForward.yy",},},
     {"id":{"name":"PlayerSpriteLeft","path":"sprites/PlayerSpriteLeft/PlayerSpriteLeft.yy",},},

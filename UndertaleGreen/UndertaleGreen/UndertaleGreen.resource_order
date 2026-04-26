@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"MenuSystem","order":5,"path":"folders/MenuSystem.yy",},
     {"name":"Objects","order":1,"path":"folders/Objects.yy",},
     {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
@@ -16,6 +17,7 @@
     {"name":"RuinsEntrance","order":1,"path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"ShadowoftheRuins","order":2,"path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},
     {"name":"Test","order":3,"path":"rooms/Test/Test.yy",},
+    {"name":"KindSoul","order":14,"path":"sprites/KindSoul/KindSoul.yy",},
     {"name":"PlayerSpriteBack","order":4,"path":"sprites/PlayerSpriteBack/PlayerSpriteBack.yy",},
     {"name":"PlayerSpriteLeft","order":2,"path":"sprites/PlayerSpriteLeft/PlayerSpriteLeft.yy",},
     {"name":"PlayerSpriteRight","order":3,"path":"sprites/PlayerSpriteRight/PlayerSpriteRight.yy",},

@@ -34,6 +34,7 @@
     {"name":"inst_B8E0A1A","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"inst_88E5204","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"inst_1D877B42","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
+    {"name":"inst_8454F0A","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -68,6 +69,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1E4526F6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E4526F6","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.8125,"scaleY":1.0,"x":45.5,"y":418.0,},
         {"$GMRInstance":"v4","%Name":"inst_68A6797F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68A6797F","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.28125,"scaleY":0.59375,"x":102.0,"y":146.0,},
+        {"$GMRInstance":"v4","%Name":"inst_8454F0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8454F0A","objectId":{"name":"CameraObject","path":"objects/CameraObject/CameraObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"RuinsSet","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"RuinsSet","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":29,"SerialiseWidth":22,"TileCompressedData":[
           -51,-2147483648,9,615,616,540,541,542,540,541,542,543,-13,-2147483648,9,657,658,582,583,584,582,583,
@@ -113,7 +115,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":125,"hport":768,"hspeed":-1,"hview":240,"inherit":false,"objectId":{"name":"PlayerObject","path":"objects/PlayerObject/PlayerObject.yy",},"vborder":94,"visible":true,"vspeed":-1,"wport":1024,"wview":320,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":125,"hport":720,"hspeed":-1,"hview":240,"inherit":false,"objectId":null,"vborder":94,"visible":false,"vspeed":-1,"wport":960,"wview":320,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
@@ -125,7 +127,7 @@
   "viewSettings":{
     "clearDisplayBuffer":true,
     "clearViewBackground":false,
-    "enableViews":true,
+    "enableViews":false,
     "inheritViewSettings":false,
   },
   "volume":1.0,
