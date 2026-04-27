@@ -1,0 +1,3 @@
+switchFlipped = false;
+
+puzzleSolution = true;

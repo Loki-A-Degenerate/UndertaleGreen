@@ -19,6 +19,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"CameraObject","order":5,"path":"objects/CameraObject/CameraObject.yy",},
+    {"name":"DebugObject","order":12,"path":"objects/DebugObject/DebugObject.yy",},
     {"name":"FloweyHide","order":6,"path":"objects/FloweyHide/FloweyHide.yy",},
     {"name":"SaveObject","order":4,"path":"objects/SaveObject/SaveObject.yy",},
     {"name":"TriggerObject","order":1,"path":"objects/TriggerObject/TriggerObject.yy",},

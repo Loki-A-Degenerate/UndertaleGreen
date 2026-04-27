@@ -39,6 +39,7 @@
   "resources":[
     {"id":{"name":"ButtonObject","path":"objects/ButtonObject/ButtonObject.yy",},},
     {"id":{"name":"CameraObject","path":"objects/CameraObject/CameraObject.yy",},},
+    {"id":{"name":"DebugObject","path":"objects/DebugObject/DebugObject.yy",},},
     {"id":{"name":"FloweyHide","path":"objects/FloweyHide/FloweyHide.yy",},},
     {"id":{"name":"PlayerObject","path":"objects/PlayerObject/PlayerObject.yy",},},
     {"id":{"name":"SaveObject","path":"objects/SaveObject/SaveObject.yy",},},
