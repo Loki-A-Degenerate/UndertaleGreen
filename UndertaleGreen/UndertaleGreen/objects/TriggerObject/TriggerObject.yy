@@ -34,5 +34,5 @@
     "path":"sprites/TriggerSprite/TriggerSprite.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

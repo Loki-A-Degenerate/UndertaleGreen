@@ -9,7 +9,10 @@
     "name":"FunctionObjects",
     "path":"folders/Objects/FunctionObjects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"SolidObject",
+    "path":"objects/SolidObject/SolidObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

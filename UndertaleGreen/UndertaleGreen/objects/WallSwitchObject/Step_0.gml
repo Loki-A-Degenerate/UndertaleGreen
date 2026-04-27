@@ -1,11 +1,31 @@
 var solutionCount = 0;
+var correctPressed = 0;
+
+if (switchFlipped) 
+	{
+		image_index = 1;
+	}
+else 
+	{
+		image_index = 0;
+	}
 
 with (ButtonObject) 
 	{
-		if(puzzleSolution) 
+		if (puzzleSolution) 
 			{
 				solutionCount++;
-			}
+				if (buttonPressed) 
+					{
+						correctPressed++;
+					}
+			}	
 	}
 
-show_debug_message(solutionCount);
+if (correctPressed == solutionCount && switchTouched) 
+	{
+		if (keyboard_check(vk_enter) || keyboard_check(ord("Z")))
+			{
+				switchFlipped = true;
+			}
+	}

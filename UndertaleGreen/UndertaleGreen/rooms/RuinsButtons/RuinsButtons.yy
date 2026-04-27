@@ -28,6 +28,8 @@
     {"name":"inst_4D22863F","path":"rooms/RuinsButtons/RuinsButtons.yy",},
     {"name":"inst_37BD45E4","path":"rooms/RuinsButtons/RuinsButtons.yy",},
     {"name":"inst_3B82495B","path":"rooms/RuinsButtons/RuinsButtons.yy",},
+    {"name":"inst_49E65E1B","path":"rooms/RuinsButtons/RuinsButtons.yy",},
+    {"name":"inst_6C536019","path":"rooms/RuinsButtons/RuinsButtons.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -56,6 +58,8 @@
         {"$GMRInstance":"v4","%Name":"inst_4D22863F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D22863F","objectId":{"name":"ButtonObject","path":"objects/ButtonObject/ButtonObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":231.0,"y":145.0,},
         {"$GMRInstance":"v4","%Name":"inst_37BD45E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37BD45E4","objectId":{"name":"ButtonObject","path":"objects/ButtonObject/ButtonObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":211.0,"y":165.0,},
         {"$GMRInstance":"v4","%Name":"inst_3B82495B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B82495B","objectId":{"name":"WallSwitchObject","path":"objects/WallSwitchObject/WallSwitchObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":201.0,"y":45.0,},
+        {"$GMRInstance":"v4","%Name":"inst_49E65E1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49E65E1B","objectId":{"name":"TriggerObject","path":"objects/TriggerObject/TriggerObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.625,"scaleY":0.875,"x":201.0,"y":51.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6C536019","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C536019","objectId":{"name":"PuzzleDoorObject","path":"objects/PuzzleDoorObject/PuzzleDoorObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":141.0,"y":47.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Ruins","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Ruins","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileSerialiseData":[
           32,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,2147483648,63,94,95,96,97,98,99,100,101,102,

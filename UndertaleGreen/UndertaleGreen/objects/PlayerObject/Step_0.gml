@@ -17,19 +17,11 @@ if ySpeed < 0 {face = BACK};
 sprite_index = sprite[face];
 
 //Collisions
-if place_meeting(x + xSpeed, y, WallObject) == true 
+if place_meeting(x + xSpeed, y, SolidObject) == true 
 	{
 		xSpeed = 0;
 	}
-if place_meeting(x, y + ySpeed, WallObject) == true 
-	{
-		ySpeed = 0;
-	}
-if place_meeting(x + xSpeed, y, SaveObject) == true 
-	{
-		xSpeed = 0;
-	}
-if place_meeting(x, y + ySpeed, SaveObject) == true 
+if place_meeting(x, y + ySpeed, SolidObject) == true 
 	{
 		ySpeed = 0;
 	}
