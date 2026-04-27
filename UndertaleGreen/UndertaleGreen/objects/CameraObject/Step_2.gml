@@ -1,8 +1,15 @@
 if (!instance_exists(PlayerObject)) exit;
 
-var targetX = PlayerObject.x - viewWidth / 2;
-var targetY = PlayerObject.y - viewHeight / 2;
+var target_X = PlayerObject.x - baseWidth/2;
+var target_Y = PlayerObject.y - baseHeight/2;
 
-camera_set_view_pos(view_camera[0], targetX, targetY);
+x += (target_X - x)/2;
+y += (target_Y - y)/2;
 
-show_debug_message(targetX);
+var camTargetX = clamp(x, 0, room_width - baseWidth);
+var camTargetY = clamp(y, 0, room_height - baseHeight);
+
+camera_set_view_pos(view_camera[0], camTargetX, camTargetY);
+//show_debug_message(camTargetX);
+
+

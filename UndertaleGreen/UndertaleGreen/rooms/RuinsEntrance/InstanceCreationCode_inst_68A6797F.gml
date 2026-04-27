@@ -1,3 +1,3 @@
-targetX = 250;
-targetY = 520;
+targetX = 158;
+targetY = 460;
 targetRoom = ShadowoftheRuins;

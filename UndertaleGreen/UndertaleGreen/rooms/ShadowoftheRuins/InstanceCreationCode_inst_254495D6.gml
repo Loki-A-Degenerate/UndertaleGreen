@@ -1,4 +1,4 @@
-targetX = 125;
-targetY = 178;
+targetX = 160;
+targetY = 98;
 
 targetRoom = RuinsEntrance;

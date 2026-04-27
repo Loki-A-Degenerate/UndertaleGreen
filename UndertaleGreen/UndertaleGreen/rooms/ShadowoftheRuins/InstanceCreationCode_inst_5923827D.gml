@@ -1,4 +1,4 @@
-targetX = 144;
+targetX = 160;
 targetY = 230;
 
 targetRoom = RuinsButtons;
