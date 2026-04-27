@@ -1,0 +1,3 @@
+buttonPressed = false;
+
+puzzleSolution = false;

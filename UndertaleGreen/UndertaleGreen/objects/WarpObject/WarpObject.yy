@@ -9,8 +9,8 @@
   "name":"WarpObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"FunctionObjects",
+    "path":"folders/Objects/FunctionObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
