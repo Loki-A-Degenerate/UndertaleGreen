@@ -1,13 +1,14 @@
 {
   "FolderOrderSettings":[
-    {"name":"Music","order":7,"path":"folders/Music.yy",},
     {"name":"MenuSystem","order":5,"path":"folders/MenuSystem.yy",},
+    {"name":"Music","order":7,"path":"folders/Music.yy",},
     {"name":"Objects","order":1,"path":"folders/Objects.yy",},
     {"name":"Rooms","order":2,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":3,"path":"folders/Scripts.yy",},
     {"name":"Sounds","order":6,"path":"folders/Sounds.yy",},
     {"name":"Benny","order":16,"path":"folders/Sprites/Benny.yy",},
     {"name":"Flowey","order":19,"path":"folders/Sprites/Flowey.yy",},
+    {"name":"IntroScreen","order":21,"path":"folders/Sprites/IntroScreen.yy",},
     {"name":"Misc","order":18,"path":"folders/Sprites/Misc.yy",},
     {"name":"RoomDetail","order":20,"path":"folders/Sprites/RoomDetail.yy",},
     {"name":"RuinsTiles","order":17,"path":"folders/Sprites/RuinsTiles.yy",},

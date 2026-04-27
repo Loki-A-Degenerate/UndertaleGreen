@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"SoulDamage",
+  "%Name":"AttackDamage",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":0.45714286,
   "exportDir":"",
-  "name":"SoulDamage",
+  "name":"AttackDamage",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SoulDamage.wav",
+  "soundFile":"AttackDamage.wav",
   "volume":1.0,
 }
