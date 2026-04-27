@@ -82,6 +82,7 @@
     {"id":{"name":"RuinTileSet2","path":"sprites/RuinTileSet2/RuinTileSet2.yy",},},
     {"id":{"name":"SaveSprite","path":"sprites/SaveSprite/SaveSprite.yy",},},
     {"id":{"name":"sfe","path":"sprites/sfe/sfe.yy",},},
+    {"id":{"name":"TitleScreen","path":"sprites/TitleScreen/TitleScreen.yy",},},
     {"id":{"name":"TransitionSprite","path":"sprites/TransitionSprite/TransitionSprite.yy",},},
     {"id":{"name":"TriggerSprite","path":"sprites/TriggerSprite/TriggerSprite.yy",},},
     {"id":{"name":"WallSprite","path":"sprites/WallSprite/WallSprite.yy",},},

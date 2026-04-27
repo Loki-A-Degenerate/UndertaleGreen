@@ -52,6 +52,7 @@
     {"name":"RuinTileSet2","order":3,"path":"sprites/RuinTileSet2/RuinTileSet2.yy",},
     {"name":"SaveSprite","order":8,"path":"sprites/SaveSprite/SaveSprite.yy",},
     {"name":"sfe","order":4,"path":"sprites/sfe/sfe.yy",},
+    {"name":"TitleScreen","order":1,"path":"sprites/TitleScreen/TitleScreen.yy",},
     {"name":"TriggerSprite","order":3,"path":"sprites/TriggerSprite/TriggerSprite.yy",},
     {"name":"WallSprite","order":1,"path":"sprites/WallSprite/WallSprite.yy",},
     {"name":"WallSwitch","order":1,"path":"sprites/WallSwitch/WallSwitch.yy",},
