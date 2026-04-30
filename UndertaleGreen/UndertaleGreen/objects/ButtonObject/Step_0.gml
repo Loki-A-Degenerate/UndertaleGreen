@@ -11,3 +11,11 @@ if place_meeting(x, y, PlayerObject)
 	{
 		buttonPressed = true;
 	}
+
+	
+if buttonPressed && !prevPressed
+	{
+		audio_play_sound(ButtonPress, 0, false);
+	}
+	
+prevPressed = buttonPressed;

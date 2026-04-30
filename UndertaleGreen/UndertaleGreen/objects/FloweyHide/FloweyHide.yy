@@ -11,8 +11,8 @@
   "name":"FloweyHide",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"FloweyObjects",
+    "path":"folders/Objects/FloweyObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

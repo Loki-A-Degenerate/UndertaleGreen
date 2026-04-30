@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_470ABF75","path":"rooms/FlowerBed/FlowerBed.yy",},
     {"name":"inst_32831B9D","path":"rooms/FlowerBed/FlowerBed.yy",},
     {"name":"inst_12AB855C","path":"rooms/FlowerBed/FlowerBed.yy",},
     {"name":"inst_1B6FFF91","path":"rooms/FlowerBed/FlowerBed.yy",},
@@ -68,7 +67,6 @@
         {"$GMRInstance":"v4","%Name":"inst_28720CAE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28720CAE","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":51.114952,"scaleX":1.0,"scaleY":1.03125,"x":288.38916,"y":113.81521,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_470ABF75","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_470ABF75","objectId":{"name":"PlayerObject","path":"objects/PlayerObject/PlayerObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":136.0,"y":123.5,},
         {"$GMRInstance":"v4","%Name":"inst_DB757A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DB757A","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.3125,"scaleY":-0.53125,"x":583.0,"y":136.0,},
         {"$GMRInstance":"v4","%Name":"inst_3F173940","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F173940","objectId":{"name":"CameraObject","path":"objects/CameraObject/CameraObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":379.0,"y":20.0,},
         {"$GMRInstance":"v4","%Name":"inst_5766626B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5766626B","objectId":{"name":"FloweyHide","path":"objects/FloweyHide/FloweyHide.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":135.0,"y":113.0,},
@@ -196,8 +194,8 @@
   ],
   "name":"FlowerBed",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Ruins",
+    "path":"folders/Rooms/Ruins.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

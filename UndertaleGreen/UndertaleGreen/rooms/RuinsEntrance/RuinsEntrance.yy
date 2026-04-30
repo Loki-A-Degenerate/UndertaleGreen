@@ -29,6 +29,7 @@
     {"name":"inst_B8E0A1A","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"inst_88E5204","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
     {"name":"inst_1D877B42","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
+    {"name":"inst_639F8CFF","path":"rooms/RuinsEntrance/RuinsEntrance.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -54,6 +55,7 @@
         {"$GMRInstance":"v4","%Name":"inst_B8E0A1A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B8E0A1A","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.21875,"scaleY":1.0,"x":200.0,"y":78.0,},
         {"$GMRInstance":"v4","%Name":"inst_88E5204","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_88E5204","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.75,"scaleY":1.0,"x":154.5,"y":69.0,},
         {"$GMRInstance":"v4","%Name":"inst_1D877B42","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D877B42","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":1.0,"x":99.5,"y":78.0,},
+        {"$GMRInstance":"v4","%Name":"inst_639F8CFF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_639F8CFF","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.65625,"scaleY":1.0,"x":170.5,"y":366.0,},
       ],"layers":[],"name":"Walls","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1E4526F6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E4526F6","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.8125,"scaleY":1.0,"x":83.0,"y":345.0,},
@@ -128,8 +130,8 @@
   ],
   "name":"RuinsEntrance",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Ruins",
+    "path":"folders/Rooms/Ruins.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

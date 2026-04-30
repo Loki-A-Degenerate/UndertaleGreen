@@ -30,6 +30,8 @@
     {"name":"inst_3B82495B","path":"rooms/RuinsButtons/RuinsButtons.yy",},
     {"name":"inst_49E65E1B","path":"rooms/RuinsButtons/RuinsButtons.yy",},
     {"name":"inst_6C536019","path":"rooms/RuinsButtons/RuinsButtons.yy",},
+    {"name":"inst_6807A513","path":"rooms/RuinsButtons/RuinsButtons.yy",},
+    {"name":"inst_1FB83A27","path":"rooms/RuinsButtons/RuinsButtons.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -48,6 +50,7 @@
         {"$GMRInstance":"v4","%Name":"inst_2B92ED18","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B92ED18","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":45.277008,"scaleX":1.0,"scaleY":1.0,"x":42.25,"y":200.12715,},
         {"$GMRInstance":"v4","%Name":"inst_3D739509","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D739509","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":66.25,"y":213.0,},
         {"$GMRInstance":"v4","%Name":"inst_45F9F869","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45F9F869","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.65625,"scaleY":1.0,"x":165.5,"y":264.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1FB83A27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FB83A27","objectId":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.625,"scaleY":1.0,"x":142.0,"y":50.0,},
       ],"layers":[],"name":"WallInstance","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_693D8025","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_693D8025","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.25,"scaleY":1.0,"x":141.0,"y":240.0,},
@@ -60,6 +63,7 @@
         {"$GMRInstance":"v4","%Name":"inst_3B82495B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B82495B","objectId":{"name":"WallSwitchObject","path":"objects/WallSwitchObject/WallSwitchObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":201.0,"y":45.0,},
         {"$GMRInstance":"v4","%Name":"inst_49E65E1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49E65E1B","objectId":{"name":"TriggerObject","path":"objects/TriggerObject/TriggerObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.625,"scaleY":0.875,"x":201.0,"y":51.0,},
         {"$GMRInstance":"v4","%Name":"inst_6C536019","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C536019","objectId":{"name":"PuzzleDoorObject","path":"objects/PuzzleDoorObject/PuzzleDoorObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":141.0,"y":47.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6807A513","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6807A513","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.28125,"scaleY":1.0,"x":120.0,"y":37.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Ruins","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Ruins","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":15,"SerialiseWidth":20,"TileSerialiseData":[
           32,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,2147483648,63,94,95,96,97,98,99,100,101,102,
@@ -80,8 +84,8 @@
   ],
   "name":"RuinsButtons",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Ruins",
+    "path":"folders/Rooms/Ruins.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
