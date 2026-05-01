@@ -3,6 +3,10 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
+var cam = view_camera[0];
+var camX = camera_get_view_x(cam);
+var camY = camera_get_view_y(cam);
+
 if room == IntroRoom || room == StoryRoom || room == ConfigMenu 
 	{
 		self.visible = false;
@@ -53,9 +57,16 @@ depth = -bbox_bottom;
 //Exit the game
 if keyboard_check(vk_escape) 
 	{
-		instance_create_depth(CameraObject.x + 10, CameraObject.y + 1, -9999, QuittingObject);
+		if (!instance_exists(QuittingObject))
+		    {
+				instance_create_layer(10, 10, "Instances", QuittingObject);
+		    }
 	}
 else 
 	{
-		instance_destroy(QuittingObject);
+		with (QuittingObject) 
+			{
+				instance_destroy();
+			}
 	}
+show_debug_message(instance_number(QuittingObject));
