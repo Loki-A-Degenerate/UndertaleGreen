@@ -1,9 +1,15 @@
-if (alarm[0] > -1) {
-  view_angle[0] = -3 + random(5);
-   }
-else
-   {
-   view_angle[0] = 0;
-   }
-
-alarm[1]=3
+// decay
+if shakeTime < shakeDuration
+	{
+		shakeTime += 1/game_get_speed(gamespeed_fps);
+		
+		// random offset
+		shakeX = random_range(-shakeIntensity, shakeIntensity);
+		shakeY = random_range(-shakeIntensity, shakeIntensity);
+		show_debug_message(shakeDuration);
+	}
+else 
+	{
+		shakeX = 0;
+		shakeY = 0;
+	}

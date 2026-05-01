@@ -1,1 +1,5 @@
-alarm[0] = 15;
+shakeIntensity = 3;
+shakeTime = 0;
+shakeDuration = 0;
+shakeX = 0;
+shakeY = 0;
