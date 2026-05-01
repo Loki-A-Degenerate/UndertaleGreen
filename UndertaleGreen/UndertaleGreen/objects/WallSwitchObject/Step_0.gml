@@ -29,3 +29,10 @@ if (correctPressed == solutionCount && switchTouched)
 				switchFlipped = true;
 			}
 	}
+	
+if switchFlipped && !prevSwitched
+	{
+		audio_play_sound(customSound, 0, false);
+	}
+
+prevSwitched = switchFlipped;
