@@ -3,6 +3,17 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
+if room == IntroRoom || room == StoryRoom || room == ConfigMenu 
+	{
+		self.visible = false;
+		moveSpeed = 0;
+	}
+else 
+	{
+		self.visible = true;
+		moveSpeed = 2;
+	}
+
 xSpeed = (rightKey - leftKey) * moveSpeed;
 ySpeed = (downKey - upKey) * moveSpeed;
 
@@ -39,3 +50,12 @@ if xSpeed == 0 && ySpeed == 0
 //Depth
 depth = -bbox_bottom;
 
+//Exit the game
+if keyboard_check(vk_escape) 
+	{
+		instance_create_depth(CameraObject.x + 10, CameraObject.y + 1, -9999, QuittingObject);
+	}
+else 
+	{
+		instance_destroy(QuittingObject);
+	}
