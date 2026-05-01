@@ -3,10 +3,6 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
-var cam = view_camera[0];
-var camX = camera_get_view_x(cam);
-var camY = camera_get_view_y(cam);
-
 if room == IntroRoom || room == StoryRoom || room == ConfigMenu 
 	{
 		self.visible = false;
@@ -59,7 +55,7 @@ if keyboard_check(vk_escape)
 	{
 		if (!instance_exists(QuittingObject))
 		    {
-				instance_create_layer(10, 10, "Instances", QuittingObject);
+				instance_create_layer(0, 0, "Instances", QuittingObject);
 		    }
 	}
 else 
@@ -69,4 +65,3 @@ else
 				instance_destroy();
 			}
 	}
-show_debug_message(instance_number(QuittingObject));
