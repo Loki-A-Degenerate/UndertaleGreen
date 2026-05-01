@@ -36,6 +36,7 @@
     {"name":"WallObject","order":2,"path":"objects/WallObject/WallObject.yy",},
     {"name":"WallSwitchObject","order":1,"path":"objects/WallSwitchObject/WallSwitchObject.yy",},
     {"name":"WarpObject","order":3,"path":"objects/WarpObject/WarpObject.yy",},
+    {"name":"WhiteTransitionObject","order":5,"path":"objects/WhiteTransitionObject/WhiteTransitionObject.yy",},
     {"name":"ConfigMenu","order":2,"path":"rooms/ConfigMenu/ConfigMenu.yy",},
     {"name":"InitialRoom","order":5,"path":"rooms/InitialRoom/InitialRoom.yy",},
     {"name":"IntroRoom","order":6,"path":"rooms/IntroRoom/IntroRoom.yy",},

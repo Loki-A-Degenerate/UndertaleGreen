@@ -6,7 +6,6 @@ if shakeTime < shakeDuration
 		// random offset
 		shakeX = random_range(-shakeIntensity, shakeIntensity);
 		shakeY = random_range(-shakeIntensity, shakeIntensity);
-		show_debug_message(shakeDuration);
 	}
 else 
 	{

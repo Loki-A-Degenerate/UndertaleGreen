@@ -59,6 +59,7 @@
     {"id":{"name":"WallObject","path":"objects/WallObject/WallObject.yy",},},
     {"id":{"name":"WallSwitchObject","path":"objects/WallSwitchObject/WallSwitchObject.yy",},},
     {"id":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},},
+    {"id":{"name":"WhiteTransitionObject","path":"objects/WhiteTransitionObject/WhiteTransitionObject.yy",},},
     {"id":{"name":"ConfigMenu","path":"rooms/ConfigMenu/ConfigMenu.yy",},},
     {"id":{"name":"FlowerBed","path":"rooms/FlowerBed/FlowerBed.yy",},},
     {"id":{"name":"InitialRoom","path":"rooms/InitialRoom/InitialRoom.yy",},},
