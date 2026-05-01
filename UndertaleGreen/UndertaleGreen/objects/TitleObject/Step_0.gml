@@ -19,7 +19,7 @@ else if image_index = 3
 				if !audio_is_playing(PreIntroCymbal) 
 					{
 						audio_play_sound(PreIntroCymbal, 0, false);
-					}		
+					}
 			}
 		else if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down)
 			{
