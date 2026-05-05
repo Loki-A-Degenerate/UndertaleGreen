@@ -1,0 +1,1 @@
+//show_debug_message(global.inventory[0].name);

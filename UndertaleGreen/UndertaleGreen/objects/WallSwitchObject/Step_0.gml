@@ -1,7 +1,6 @@
-var solutionCount = 0;
-var correctPressed = 0;
+var correctFlipped = 0;
 
-if (switchFlipped) 
+if switchFlipped 
 	{
 		image_index = 1;
 	}
@@ -9,26 +8,25 @@ else
 	{
 		image_index = 0;
 	}
-
-with (ButtonObject) 
+	
+if puzzleSolution 
 	{
-		if (puzzleSolution) 
+		if switchTouched
 			{
-				solutionCount++;
-				if (buttonPressed) 
+				if keyboard_check(vk_enter) || keyboard_check(ord("Z"))
 					{
-						correctPressed++;
+						self.switchFlipped = true;
+						correctFlipped++;
 					}
-			}	
-	}
-
-if (correctPressed == solutionCount && switchTouched) 
-	{
-		if (keyboard_check(vk_enter) || keyboard_check(ord("Z")))
-			{
-				switchFlipped = true;
 			}
 	}
+
+if correctFlipped == 2
+	{
+		show_debug_message("we are here");
+		global.puzzleSolved[puzzleID] = true;
+	}
+
 	
 if switchFlipped && !prevSwitched
 	{

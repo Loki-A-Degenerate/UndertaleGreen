@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"AttackDamage",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"CombatSounds",
+    "path":"folders/Sounds/CombatSounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -3,15 +3,19 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
-if room == IntroRoom || room == StoryRoom || room == ConfigMenu 
+var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu);
+var menuOpen = instance_exists(MenuObject);
+
+moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
+visible  = !inBlockedRoom; // Visible only when not in a specific room
+
+if moveable	
 	{
-		self.visible = false;
-		moveSpeed = 0;
-	}
-else 
-	{
-		self.visible = true;
 		moveSpeed = 2;
+	}
+else
+	{
+		moveSpeed = 0;
 	}
 
 xSpeed = (rightKey - leftKey) * moveSpeed;
@@ -49,6 +53,33 @@ if xSpeed == 0 && ySpeed == 0
 	
 //Depth
 depth = -bbox_bottom;
+
+//Opening the menu
+if keyboard_check_pressed(ord("C")) || keyboard_check_pressed(vk_control)
+{
+    if (instance_exists(MenuObject))
+    {
+        with (MenuObject)
+        {
+            instance_destroy();
+        }
+    }
+    else if (moveable)
+    {
+        instance_create_layer(0, 0, "Instances", MenuObject);
+		audio_play_sound(MenuMove, 0, false);
+    }
+}
+if instance_exists(MenuObject)
+	{
+		if MenuObject.submenu == "select"
+			{
+				if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
+					{
+						instance_destroy(MenuObject);
+					}
+			}
+	}
 
 //Exit the game
 if keyboard_check(vk_escape) 

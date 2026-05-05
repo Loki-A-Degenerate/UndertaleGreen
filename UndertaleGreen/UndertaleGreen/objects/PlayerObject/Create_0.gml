@@ -2,6 +2,7 @@ xSpeed = 0;
 ySpeed = 0;
 
 moveSpeed = 2;
+moveable = false;
 
 sprite[RIGHT] = PlayerSpriteRight;
 sprite[BACK] = PlayerSpriteBack;

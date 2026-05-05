@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"FloweyTalk",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.05802721,
+  "exportDir":"",
+  "name":"FloweyTalk",
+  "parent":{
+    "name":"TalkSounds",
+    "path":"folders/Sounds/TalkSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"FloweyTalk.wav",
+  "volume":1.0,
+}

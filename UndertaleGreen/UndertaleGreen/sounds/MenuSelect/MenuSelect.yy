@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"MenuSelect",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.18716553,
+  "exportDir":"",
+  "name":"MenuSelect",
+  "parent":{
+    "name":"MenuSounds",
+    "path":"folders/Sounds/MenuSounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"MenuSelect.wav",
+  "volume":1.0,
+}

@@ -5,5 +5,4 @@ if place_meeting(x, y, PlayerObject) && !instance_exists(TransitionObject)
 		inst.targetX = targetX;
 		inst.targetY = targetY;
 		inst.targetFace = targetFace;
-		show_debug_message(inst);
 	}

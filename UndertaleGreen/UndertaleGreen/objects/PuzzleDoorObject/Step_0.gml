@@ -1,4 +1,4 @@
-if place_meeting(x, y, PlayerObject) 
+if global.puzzleSolved[puzzleID] 
 	{
-		scheduler_resolution_get()
+		instance_destroy();
 	}

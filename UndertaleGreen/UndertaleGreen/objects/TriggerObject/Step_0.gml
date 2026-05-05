@@ -1,7 +1,11 @@
 if place_meeting(x, y, PlayerObject)
 	{
 		instance_activate_object(FloweyHide);
-		with (WallSwitchObject)
+		with WallSwitchSolutionObject
+			{
+				switchTouched = true;
+			}
+		with WallSwitchObject
 			{
 				switchTouched = true;
 			}
