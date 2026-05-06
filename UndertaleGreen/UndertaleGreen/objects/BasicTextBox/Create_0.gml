@@ -7,7 +7,11 @@ boxTopY = 160;
 boxWidth = 289;
 boxHeight = 76;
 
-text = "";
+text = "*";
 textIndex = 0;
 textSpeed = 0.2;
 
+function on_text_advance()
+	{
+		instance_destroy();
+	}

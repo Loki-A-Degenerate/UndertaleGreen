@@ -96,3 +96,23 @@ else
 				instance_destroy();
 			}
 	}
+	
+//if keyboard_check_pressed(vk_enter)
+//{
+//    switch (state)
+//    {
+//        case 0:
+//            show_debug_message("First press");
+//            state = 1;
+//            break;
+
+//        case 1:
+//            show_debug_message("Second press");
+//            state = 2;
+//            break;
+
+//        case 2:
+//            show_debug_message("Third press");
+//            break;
+//    }
+//}

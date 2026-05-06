@@ -1,6 +1,5 @@
 event_inherited();
 
-switch boxType
-	{
-		case "USE":
-	}
+itemSelected = 0;
+
+boxType = 0;

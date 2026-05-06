@@ -52,3 +52,5 @@ soulYRight = boxTopY + 22 + (selectedItem * 16);
 
 soulX = soulXLeft
 soulY = soulYLeft;
+
+state = 0;

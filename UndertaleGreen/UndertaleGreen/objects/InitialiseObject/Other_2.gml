@@ -1,4 +1,4 @@
-global.selectKey =
+//global.selectKey =
 
 global.item = 
 	{

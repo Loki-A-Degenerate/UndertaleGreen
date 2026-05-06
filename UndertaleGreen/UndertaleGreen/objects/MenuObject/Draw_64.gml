@@ -70,7 +70,7 @@ if submenu != "select"
 	{
 		draw_sprite_stretched(box, frame, boxRightX, boxTopY, boxRightW, boxRightH);
 	}
-
+ 
 // Item menu
 if submenu == "item" || submenu == "item_options"
 	{
@@ -83,7 +83,7 @@ if submenu == "item" || submenu == "item_options"
 		draw_text(boxRightX + 132, boxTopY + 154, "DROP");
 	}
 
-if selectedItem != 0 
+if selectedItem != 0
 	{
 		// I feel like I'm over engineering this.
 		if keyboard_check_pressed(vk_right) && selected < 2
@@ -104,27 +104,28 @@ if selectedItem != 0
 		soulX = soulXRight;
 		soulY = soulYRight;
 		
-		if keyboard_check_pressed(vk_enter)	
+		switch selected
 			{
-				switch selected
-					{
-						case 0:
-							var instUse = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
-							instUse.boxType = "USE";
-							instance_destroy();
-							break;
-						case 1:
-							var instInfo = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
-							instInfo.boxType = "INFO";
-							instance_destroy();
-							break;
-						case 2:
-							var instDrop = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
-							instDrop.boxType = "DROP";
-							instance_destroy();
-							break;
-					}
+				case 0:
+					var instUse = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
+					instUse.boxType = "USE";
+					instUse.itemSelected = selectedItem;
+					instance_destroy();
+					break;
+				case 1:
+					var instInfo = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
+					instInfo.boxType = "INFO";
+					instInfo.itemSelected = selectedItem;
+					instance_destroy();
+					break;
+				case 2:
+					var instDrop = instance_create_depth(0, 0, -9999, MenuSelectBoxObject);
+					instDrop.boxType = "DROP";
+					instDrop.itemSelected = selectedItem;
+					instance_destroy();
+					break;
 			}
+			
 	}
 
 // Change what you selected if you're in the main menu.
