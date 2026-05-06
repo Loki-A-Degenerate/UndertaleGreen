@@ -11,27 +11,34 @@ boxStatMiniY = boxStatTop;
 boxLeftX = 16
 boxRightX = 94;
 
+// Main menu box height
 boxLeftW = 71
-boxRightW = 173;
 
+// Menu box heights
 boxStatMiniH = 55;
 boxSelectH = 74;
 
+// Sub menu heights
 boxItemH = 181;
 boxStatH = 209;
 boxCellH = 135;
+
+boxRightW = 179;
 
 boxRightH = boxItemH;
 
 moneyOff = 1;
 
+// Player stat things
 name = "Sunny";
 lv = 1;
 hp = 20;
 hp_max = 20;
 money = 0;
 
+// Soul Menu Move
 selected = 0;
+// The physical item that is being selected in the submenu
 selectedItem = 0;
 submenu = "select";
 
@@ -41,7 +48,7 @@ soulXLeft = boxLeftX + 16;
 soulYLeft = boxBotY + 18 + (selected * 18);
 
 soulXRight = boxRightX + 12;
-soulYRight = boxBotY + 18 + (selected * 18);
+soulYRight = boxTopY + 22 + (selectedItem * 16);
 
 soulX = soulXLeft
 soulY = soulYLeft;

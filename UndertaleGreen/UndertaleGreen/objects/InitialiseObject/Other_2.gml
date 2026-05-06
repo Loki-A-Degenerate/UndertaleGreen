@@ -1,3 +1,5 @@
+global.selectKey =
+
 global.item = 
 	{
 		food : 
