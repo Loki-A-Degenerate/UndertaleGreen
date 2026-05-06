@@ -45,7 +45,7 @@ if selectedItem != 0
 		
 		soulX = soulXRight;
 		soulY = soulYRight;
-		show_debug_message(soulY);
+		
 	}
 
 if selectedItem == 0 
