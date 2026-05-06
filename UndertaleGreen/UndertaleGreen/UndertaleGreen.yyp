@@ -50,6 +50,7 @@
   "name":"UndertaleGreen",
   "resources":[
     {"id":{"name":"UndertaleFontMenu","path":"fonts/UndertaleFontMenu/UndertaleFontMenu.yy",},},
+    {"id":{"name":"UndertaleFontMenuMono","path":"fonts/UndertaleFontMenuMono/UndertaleFontMenuMono.yy",},},
     {"id":{"name":"UndertaleSmallFont","path":"fonts/UndertaleSmallFont/UndertaleSmallFont.yy",},},
     {"id":{"name":"BasicTextBox","path":"objects/BasicTextBox/BasicTextBox.yy",},},
     {"id":{"name":"ButtonObject","path":"objects/ButtonObject/ButtonObject.yy",},},
@@ -57,6 +58,8 @@
     {"id":{"name":"DebugObject","path":"objects/DebugObject/DebugObject.yy",},},
     {"id":{"name":"FloweyHide","path":"objects/FloweyHide/FloweyHide.yy",},},
     {"id":{"name":"InitialiseObject","path":"objects/InitialiseObject/InitialiseObject.yy",},},
+    {"id":{"name":"ItemSubMenuObject","path":"objects/ItemSubMenuObject/ItemSubMenuObject.yy",},},
+    {"id":{"name":"MenuNameObject","path":"objects/MenuNameObject/MenuNameObject.yy",},},
     {"id":{"name":"MenuObject","path":"objects/MenuObject/MenuObject.yy",},},
     {"id":{"name":"MenuSelectBoxObject","path":"objects/MenuSelectBoxObject/MenuSelectBoxObject.yy",},},
     {"id":{"name":"MenuShake","path":"objects/MenuShake/MenuShake.yy",},},

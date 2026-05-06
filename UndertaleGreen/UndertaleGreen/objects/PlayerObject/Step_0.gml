@@ -55,31 +55,39 @@ if xSpeed == 0 && ySpeed == 0
 depth = -bbox_bottom;
 
 //Opening the menu
-if keyboard_check_pressed(ord("C")) || keyboard_check_pressed(vk_control)
+if !instance_exists(BasicTextBox) 
 {
-    if (instance_exists(MenuObject))
-    {
-        with (MenuObject)
-        {
-            instance_destroy();
-        }
-    }
-    else if (moveable)
-    {
-        instance_create_layer(0, 0, "Instances", MenuObject);
-		audio_play_sound(MenuMove, 0, false);
-    }
-}
-if instance_exists(MenuObject)
+	if keyboard_check_pressed(ord("C")) || keyboard_check_pressed(vk_control)
 	{
-		if MenuObject.submenu == "select"
-			{
-				if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
-					{
-						instance_destroy(MenuObject);
-					}
-			}
+	    if (instance_exists(MenuObject))
+	    {
+	        with (MenuObject)
+	        {
+	            instance_destroy();
+	        }
+			instance_destroy(MenuNameObject);
+	    }
+	    else if (moveable)
+	    {
+	        instance_create_layer(0, 0, "Instances", MenuObject);
+			instance_create_layer(0, 0, "Instances", MenuNameObject);
+			audio_play_sound(MenuMove, 0, false);
+	    }
 	}
+	
+	if instance_exists(MenuObject)
+		{
+			if MenuObject.submenu == "select"
+				{
+					if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
+						{
+							instance_destroy(MenuObject);
+							instance_destroy(MenuNameObject);
+						}
+				}
+		}
+}
+	
 
 //Exit the game
 if keyboard_check(vk_escape) 
