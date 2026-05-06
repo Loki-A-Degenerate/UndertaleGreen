@@ -128,6 +128,13 @@ if selectedItem != 0
 			
 	}
 
+// Stat menu
+if submenu == "stat"
+	{
+		draw_text(boxRightX + 14, boxTopY + 16, "\"" + name + "\"");
+		draw_text(boxRightX + 98, boxTopY + 16, comment);
+	}
+
 // Change what you selected if you're in the main menu.
 if submenu == "select" && keyboard_check_pressed(vk_down) && selected < 2
 	{
