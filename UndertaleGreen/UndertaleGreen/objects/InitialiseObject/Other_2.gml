@@ -73,7 +73,7 @@ global.mail =
 		introMail :
 			{
 				name : "Introduction Letter",
-				read : "This is your first letter!"
+				readLetter : "This is your first letter!"
 			}
 	}
 	

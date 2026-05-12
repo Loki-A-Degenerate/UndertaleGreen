@@ -105,6 +105,8 @@
     {"id":{"name":"FloweyTalk","path":"sounds/FloweyTalk/FloweyTalk.yy",},},
     {"id":{"name":"FloweyTalkEvil","path":"sounds/FloweyTalkEvil/FloweyTalkEvil.yy",},},
     {"id":{"name":"FryingPanHit","path":"sounds/FryingPanHit/FryingPanHit.yy",},},
+    {"id":{"name":"GenTextSound","path":"sounds/GenTextSound/GenTextSound.yy",},},
+    {"id":{"name":"GenTextSound2","path":"sounds/GenTextSound2/GenTextSound2.yy",},},
     {"id":{"name":"Heal","path":"sounds/Heal/Heal.yy",},},
     {"id":{"name":"Hurt","path":"sounds/Hurt/Hurt.yy",},},
     {"id":{"name":"IntroBoom","path":"sounds/IntroBoom/IntroBoom.yy",},},

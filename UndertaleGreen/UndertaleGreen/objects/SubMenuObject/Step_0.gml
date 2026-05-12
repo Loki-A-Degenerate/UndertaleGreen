@@ -1,3 +1,4 @@
+// What type of submenu to draw and the heights of the menus
 switch menuType
 {
 	case "item":
@@ -44,7 +45,7 @@ else if menuType == "mail"
 	}
 	if keyboard_check_pressed(vk_enter)	&& selectedItem == 0
 	{
-		selectedItem = global.inventory[selected];
+		selectedItem = global.mailList[selected];
 		selected = 0;
 		optionState = true;
 	}
@@ -53,7 +54,6 @@ else if menuType == "mail"
 // Press enter to select an item
 if optionState
 {
-	var state = 0;
 	// I feel like I'm over engineering this.
 	if keyboard_check_pressed(vk_right) && selected < 2
 	{
@@ -64,11 +64,14 @@ if optionState
 		selected--;
 	}
 	soulXRight = boxRightX + 12 + (selected * 50);
+	
+	// Offset the soul when moving to "DROP"
 	if selected == 2
 	{
 		soulXRight += 10;
 	}
 	
+	// Offset the soul when moving to "PIN"
 	if menuType == "mail" && selected == 1
 	{
 		soulXRight += 7;
@@ -78,17 +81,49 @@ if optionState
 	soulX = soulXRight;
 	soulY = soulYRight;
 		
-	if keyboard_check_pressed(vk_enter)
+	if keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z"))
 	{
-		switch state 
+		state = 1;
+	}
+	if state == 1
+	{
+		if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))
 		{
-			case 0:
-				state = 1;
-				break;
-			case 1:
-				var inst = instance_create_layer(0, 0, "Instances", MenuSelectBoxObject);
-				break;
-							
+			var inst = instance_create_layer(0, 0, "Instances", MenuSelectBoxObject);
+			inst.itemSelected = selectedItem;
+			if menuType == "item"
+			{
+				switch selected
+				{
+					case 0:
+						inst.boxType = "USE";
+						break;
+					case 1:
+						inst.boxType = "INFO";
+						break;
+					case 2:
+						inst.boxType = "DROP";
+						break;
+				}
+			}
+			else
+			{
+				switch selected
+				{
+					case 0:
+						inst.boxType = "READ";
+						break;
+					case 1:
+						inst.boxType = "PIN";
+						break;
+					case 2:
+						inst.boxType = "DROP";
+						break;
+				}
+			}
+			instance_destroy(MenuObject);
+			instance_destroy(MenuNameObject);
+			instance_destroy();
 		}
 	}
 	

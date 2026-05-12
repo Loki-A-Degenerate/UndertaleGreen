@@ -2,13 +2,7 @@ box = MenuSprite;
 frame = -1;
 
 boxTopY = 26;
-boxBotY = 84;
 
-boxStatTop = boxTopY;
-boxStatBot = 161;
-boxStatMiniY = boxStatTop;
-
-boxLeftX = 16
 boxRightX = 94;
 
 boxItemH = 181;
@@ -18,6 +12,7 @@ boxMailH = boxItemH;
 boxRightW = 179;
 boxRightH = 0;
 
+state = 0;
 selected = 0;
 selectedItem = 0;
 

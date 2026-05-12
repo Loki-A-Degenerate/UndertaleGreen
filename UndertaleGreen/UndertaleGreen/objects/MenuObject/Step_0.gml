@@ -49,6 +49,7 @@ if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
 		if SubMenuObject.optionState == false
 		{
 			submenu = "select";
+			show_debug_message("we're here?");
 			instance_destroy(SubMenuObject);
 			audio_play_sound(MenuMove, 0, false);
 		}
@@ -59,4 +60,3 @@ if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
 		instance_destroy();
 	}
 }
-show_debug_message(submenu);

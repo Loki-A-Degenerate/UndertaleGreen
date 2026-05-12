@@ -75,6 +75,8 @@
     {"name":"BuyItem","order":2,"path":"sounds/BuyItem/BuyItem.yy",},
     {"name":"FloweyTalkEvil","order":1,"path":"sounds/FloweyTalkEvil/FloweyTalkEvil.yy",},
     {"name":"FryingPanHit","order":5,"path":"sounds/FryingPanHit/FryingPanHit.yy",},
+    {"name":"GenTextSound","order":6,"path":"sounds/GenTextSound/GenTextSound.yy",},
+    {"name":"GenTextSound2","order":7,"path":"sounds/GenTextSound2/GenTextSound2.yy",},
     {"name":"Heal","order":2,"path":"sounds/Heal/Heal.yy",},
     {"name":"Hurt","order":1,"path":"sounds/Hurt/Hurt.yy",},
     {"name":"LVUp","order":6,"path":"sounds/LVUp/LVUp.yy",},
