@@ -11,23 +11,24 @@ switch selected
 		case 1:
 			if keyboard_check_pressed(vk_enter)
 				{
-					submenu = "stat";
+					submenu = "stats";
 					audio_play_sound(MenuSelect, 0, false);
 				}
 			break;
 		case 2:
 			if keyboard_check_pressed(vk_enter)
 				{
-					submenu = "cell";
+					submenu = "mail";
 					audio_play_sound(MenuSelect, 0, false);
 				}
 			break;
 	}
 
-if submenu != "select" 
-	{
-			
-	}
+if !instance_exists(SubMenuObject) && submenu != "select"
+{
+    instance_create_layer(0, 0, "Instances", SubMenuObject);
+	
+}
 
 // Change what you selected if you're in the main menu.
 if submenu == "select" && keyboard_check_pressed(vk_down) && selected < 2
@@ -40,3 +41,22 @@ else if submenu == "select" && keyboard_check_pressed(vk_up) && selected > 0
 		selected--;
 		audio_play_sound(MenuMove, 0, false);
 	}
+
+if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
+{
+	if submenu != "select"
+	{
+		if SubMenuObject.optionState == false
+		{
+			submenu = "select";
+			instance_destroy(SubMenuObject);
+			audio_play_sound(MenuMove, 0, false);
+		}
+	}
+	else
+	{
+		instance_destroy(MenuNameObject);
+		instance_destroy();
+	}
+}
+show_debug_message(submenu);

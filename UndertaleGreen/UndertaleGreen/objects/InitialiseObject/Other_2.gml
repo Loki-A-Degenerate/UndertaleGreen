@@ -63,9 +63,19 @@ global.item =
 						name : "A Broken Toy",
 						check : "It belongs to someone important.",
 						
-						can_use : true
+						can_use : true,
 					}
 			},
 	}
+
+global.mail = 
+	{
+		introMail :
+			{
+				name : "Introduction Letter",
+				read : "This is your first letter!"
+			}
+	}
 	
 global.inventory = [global.item.key.brokenToy, global.item.weapon.fryingPan, global.item.armor.simpleApron];
+global.mailList = [global.mail.introMail];

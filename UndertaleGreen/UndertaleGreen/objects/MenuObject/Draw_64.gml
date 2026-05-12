@@ -3,8 +3,8 @@ draw_sprite_stretched(box, frame, boxLeftX, boxBotY, boxLeftW, boxSelectH);
 
 draw_set_font(UndertaleFontMenuMono);
 draw_text(boxLeftX + 26, boxBotY + 10, "ITEM");
-draw_text(boxLeftX + 26, boxBotY + 28, "STAT");
-draw_text(boxLeftX + 26, boxBotY + 46, "CELL"); 
+draw_text(boxLeftX + 26, boxBotY + 28, "STATS");
+draw_text(boxLeftX + 26, boxBotY + 46, "MAIL"); 
 
 
 // Move the menu soul

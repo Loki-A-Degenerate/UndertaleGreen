@@ -64,6 +64,7 @@ if !instance_exists(BasicTextBox)
 	        with (MenuObject)
 	        {
 	            instance_destroy();
+				show_debug_message("did we go here?");
 	        }
 			instance_destroy(MenuNameObject);
 	    }
@@ -74,18 +75,6 @@ if !instance_exists(BasicTextBox)
 			audio_play_sound(MenuMove, 0, false);
 	    }
 	}
-	
-	if instance_exists(MenuObject)
-		{
-			if MenuObject.submenu == "select"
-				{
-					if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
-						{
-							instance_destroy(MenuObject);
-							instance_destroy(MenuNameObject);
-						}
-				}
-		}
 }
 	
 
