@@ -4,7 +4,7 @@ downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
 var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu);
-var menuOpen = instance_exists(MenuObject);
+var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox);
 
 moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
 visible  = !inBlockedRoom; // Visible only when not in a specific room

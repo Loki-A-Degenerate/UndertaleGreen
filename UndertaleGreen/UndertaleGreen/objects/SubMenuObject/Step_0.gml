@@ -12,7 +12,7 @@ switch menuType
 		break;
 }
 
-if menuType == "item"
+if menuType == "item" && !optionState
 {
 	if keyboard_check_pressed(vk_down) && selected < array_length(global.inventory) - 1
 	{
@@ -29,9 +29,10 @@ if menuType == "item"
 		selectedItem = global.inventory[selected];
 		selected = 0;
 		optionState = true;
+		audio_play_sound(MenuSelect, 0, false);
 	}
 }
-else if menuType == "mail"
+else if menuType == "mail" && !optionState
 {
 	if keyboard_check_pressed(vk_down) && selected < array_length(global.mailList) - 1
 	{
@@ -48,20 +49,23 @@ else if menuType == "mail"
 		selectedItem = global.mailList[selected];
 		selected = 0;
 		optionState = true;
+		audio_play_sound(MenuSelect, 0, false);
 	}
 }
 
-// Press enter to select an item
+// When an item has been selected
 if optionState
 {
 	// I feel like I'm over engineering this.
 	if keyboard_check_pressed(vk_right) && selected < 2
 	{
 		selected++;
+		audio_play_sound(MenuMove, 0, false);
 	}
 	else if keyboard_check_pressed(vk_left) && selected > 0
 	{
 		selected--;
+		audio_play_sound(MenuMove, 0, false);
 	}
 	soulXRight = boxRightX + 12 + (selected * 50);
 	
@@ -80,15 +84,19 @@ if optionState
 		
 	soulX = soulXRight;
 	soulY = soulYRight;
-		
+	
+	// Enter key has been released
 	if keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z"))
 	{
 		state = 1;
 	}
+	// Once it has been released press enter again so that it doesn't activate immediately
 	if state == 1
 	{
+		show_debug_message(state);
 		if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))
 		{
+			show_debug_message("are we in here?");
 			var inst = instance_create_layer(0, 0, "Instances", MenuSelectBoxObject);
 			inst.itemSelected = selectedItem;
 			if menuType == "item"
@@ -121,6 +129,9 @@ if optionState
 						break;
 				}
 			}
+			audio_play_sound(MenuSelect, 0, false);
+			
+			// Get rid of the sub menu.
 			instance_destroy(MenuObject);
 			instance_destroy(MenuNameObject);
 			instance_destroy();
@@ -130,7 +141,13 @@ if optionState
 	// Exit out of the options.
 	if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
 	{
+		state = 0;
 		selectedItem = 0;
 		optionState = false;
+		audio_play_sound(MenuMove, 0, false);
 	}
+}
+else
+{
+	show_debug_message(optionState);
 }

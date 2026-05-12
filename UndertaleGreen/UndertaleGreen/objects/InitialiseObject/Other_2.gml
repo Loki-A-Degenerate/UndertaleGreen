@@ -48,7 +48,7 @@ global.item =
 			{
 				simpleApron :
 					{
-						name : "Your Apron",
+						name : "Old Apron",
 						nameShort : "Perfect Butt Pie",
 						nameSerious : "Perfect Pie",
 						check : "It's got a heart sewn by yours truly.",
@@ -60,7 +60,7 @@ global.item =
 			{
 				brokenToy :
 					{
-						name : "A Broken Toy",
+						name : "Broken Toy",
 						check : "It belongs to someone important.",
 						
 						can_use : true,

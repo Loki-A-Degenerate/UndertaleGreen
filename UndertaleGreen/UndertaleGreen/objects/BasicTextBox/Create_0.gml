@@ -9,7 +9,8 @@ boxHeight = 76;
 
 text = "If you're seeing this, I did something very wrong.";
 textIndex = 0;
-textSpeed = 0.2;
+textSpeed = 0.5;
+textWidth = 235;
 
 textSound = GenTextSound;
 

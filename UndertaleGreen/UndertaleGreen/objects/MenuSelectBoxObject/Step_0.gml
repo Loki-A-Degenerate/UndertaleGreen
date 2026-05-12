@@ -10,6 +10,7 @@ switch boxType
 			break;
 		case "DROP":
 			text = "Are you sure you want to drop the " + itemSelected.name + "?";
+			textWidth = 200;
 			break;
 		case "READ":
 			text = itemSelected.readLetter;
