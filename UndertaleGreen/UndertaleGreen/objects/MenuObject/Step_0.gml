@@ -2,21 +2,21 @@
 switch selected	
 	{
 		case 0:
-			if keyboard_check_pressed(vk_enter)
+			if global.selectButtonPressed
 				{
 					submenu = "item";
 					audio_play_sound(MenuSelect, 0, false);
 				}
 			break;
 		case 1:
-			if keyboard_check_pressed(vk_enter)
+			if global.selectButtonPressed
 				{
 					submenu = "stats";
 					audio_play_sound(MenuSelect, 0, false);
 				}
 			break;
 		case 2:
-			if keyboard_check_pressed(vk_enter)
+			if global.selectButtonPressed
 				{
 					submenu = "mail";
 					audio_play_sound(MenuSelect, 0, false);
@@ -42,14 +42,13 @@ else if submenu == "select" && keyboard_check_pressed(vk_up) && selected > 0
 		audio_play_sound(MenuMove, 0, false);
 	}
 
-if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
+if global.deselectButtonPressed
 {
 	if submenu != "select"
 	{
 		if SubMenuObject.optionState == false
 		{
 			submenu = "select";
-			show_debug_message("we're here?");
 			instance_destroy(SubMenuObject);
 			audio_play_sound(MenuMove, 0, false);
 		}

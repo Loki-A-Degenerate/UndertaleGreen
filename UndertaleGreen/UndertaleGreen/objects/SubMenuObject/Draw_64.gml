@@ -1,13 +1,3 @@
-// Getting an item's index, why doesn't gamemaker have a remove(item) function for arrays?
-var index = -1;
-for (var i = 0; i < array_length(global.inventory); i++) 
-{
-	if global.inventory[i] == selectedItem
-	{
-		index = i;	
-	}
-}
-
 draw_sprite_stretched(box, frame, boxRightX, boxTopY, boxRightW, boxRightH);
 
 switch menuType

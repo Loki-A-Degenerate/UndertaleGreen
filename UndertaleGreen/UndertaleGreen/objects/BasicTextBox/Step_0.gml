@@ -1,29 +1,48 @@
-textIndex += textSpeed;
+prevTextIndex = textIndex;
 
-var currentChar = floor(textIndex);
-var prevChar = floor(prevTextIndex);
-var char = string_char_at(text, currentChar);
+pageNumber = array_length(text);
+for (var p = 0; p < pageNumber; p++)
+{
+	textLength[p] = string_length(text[p]);
+}
+
+if global.deselectButtonPressed
+{
+	if textIndex < textLength[page]
+	{
+		textIndex = textLength[page]; // Skip text
+	}
+}
+
+if textIndex < textLength[page]
+{
+	textIndex += textSpeed;
+	textIndex = clamp(textIndex, 0, textLength[page]);
+}
+
+if textIndex >= textLength[page]
+{
+	audio_stop_sound(textSound);
+	if global.selectButtonPressed
+	{
+		if page < pageNumber - 1
+		{
+			page++;
+			textIndex = 0;
+		}
+		else
+		{
+			instance_destroy();
+		}
+	}
+}
+
+var currentChar = max(1, floor(textIndex));
+var prevChar = max(1, floor(prevTextIndex));
+var char = string_char_at(text[page], currentChar);
 
 if currentChar > prevChar && char != " "
 {
 	audio_stop_sound(textSound);
 	audio_play_sound(textSound, 0, false);
 }
-
-if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
-{
-	if textIndex < string_length(text)
-	{
-		textIndex = string_length(text); // Skip text
-	}
-}
-if textIndex >= string_length(text)
-{
-	audio_stop_sound(textSound);
-	if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) 
-	{
-		on_text_advance();
-	}
-}
-
-prevTextIndex = textIndex;

@@ -3,9 +3,9 @@ event_inherited();
 
 draw_text(31, 170, "*");
 
-if boxType == "DROP"
+if boxType == "DROP" && itemSelected.canDrop
 {
-	if textIndex >= string_length(text)
+	if textIndex >= textLength[page]
 	{
 		draw_text(73, 210, "Yes");
 		draw_text(229, 210, "No");	

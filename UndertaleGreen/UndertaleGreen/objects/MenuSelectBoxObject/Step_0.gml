@@ -1,28 +1,54 @@
 event_inherited();
 
+// Getting an item's index, why doesn't gamemaker have a remove(item) function for arrays?
+var index = -1;
+for (var i = 0; i < array_length(global.inventory); i++) 
+{
+	if global.inventory[i] == itemSelected
+	{
+		index = i;	
+	}
+}
+
 switch boxType
 	{
 		case "USE":
-			text = "something something.";
+			text[0] = "You used the " + itemSelected.name;
 			break;
 		case "INFO":
-			text = itemSelected.check;
+			text[0] = itemSelected.check;
 			break;
 		case "DROP":
-			text = "Are you sure you want to drop the " + itemSelected.name + "?";
-			textWidth = 200;
+			if itemSelected.canDrop
+			{
+				text[0] = "Are you sure you want to drop the " + itemSelected.name + "?";
+				text[1] = "You dropped the " + itemSelected.name;
+			}
+			else
+			{
+				text[0] = "This item is too important to you";
+			}
+			//textWidth = 200;
 			break;
 		case "READ":
-			text = itemSelected.readLetter;
+			text[0] = itemSelected.readLetter;
 			break;
 		case "PIN":
-			text = "nothing much";
+			text[0] = "nothing much";
 			break;
 	}
-//show_debug_message(textIndex);
-//show_debug_message(text);
 
-if keyboard_check_pressed(vk_enter)
+//show_debug_message(textIndex);
+//show_debug_message(selected);
+
+if global.selectButtonPressed
+{
+	if selected == 0 && itemSelected.canDrop
 	{
-		show_debug_message("Ok we're in business");
+		array_delete(global.inventory, index, 1);
 	}
+	else
+	{
+		instance_destroy();
+	}
+}

@@ -4,7 +4,7 @@ downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
 var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu);
-var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox);
+var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject);
 
 moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
 visible  = !inBlockedRoom; // Visible only when not in a specific room
@@ -52,19 +52,18 @@ if xSpeed == 0 && ySpeed == 0
 	}
 	
 //Depth
-depth = -bbox_bottom;
+depth = 1 - bbox_bottom;
 
 //Opening the menu
 if !instance_exists(BasicTextBox) 
 {
-	if keyboard_check_pressed(ord("C")) || keyboard_check_pressed(vk_control)
+	if global.menuButtonPressed
 	{
-	    if (instance_exists(MenuObject))
+	    if instance_exists(MenuObject)
 	    {
 	        with (MenuObject)
 	        {
 	            instance_destroy();
-				show_debug_message("did we go here?");
 	        }
 			instance_destroy(MenuNameObject);
 	    }
@@ -76,40 +75,29 @@ if !instance_exists(BasicTextBox)
 	    }
 	}
 }
-	
 
 //Exit the game
 if keyboard_check(vk_escape) 
+{
+	if !instance_exists(QuittingObject)
 	{
-		if (!instance_exists(QuittingObject))
-		    {
-				instance_create_layer(0, 0, "Instances", QuittingObject);
-		    }
+		instance_create_layer(0, 0, "Instances", QuittingObject);
 	}
+}
 else 
-	{
-		with (QuittingObject) 
-			{
-				instance_destroy();
-			}
-	}
-	
-//if keyboard_check_pressed(vk_enter)
+{
+	with (QuittingObject) 
+		{
+			instance_destroy();
+		}
+}
+
+//if global.deselectButtonPressed
 //{
-//    switch (state)
-//    {
-//        case 0:
-//            show_debug_message("First press");
-//            state = 1;
-//            break;
+//	show_debug_message("Another very specific message.");
+//}
 
-//        case 1:
-//            show_debug_message("Second press");
-//            state = 2;
-//            break;
-
-//        case 2:
-//            show_debug_message("Third press");
-//            break;
-//    }
+//if global.menuButtonPressed
+//{
+//	show_debug_message("wait why?");
 //}

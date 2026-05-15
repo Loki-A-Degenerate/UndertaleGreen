@@ -24,7 +24,7 @@ if menuType == "item" && !optionState
 		selected--;
 		audio_play_sound(MenuMove, 0, false);
 	}
-	if keyboard_check_pressed(vk_enter)	&& selectedItem == 0
+	if global.selectButtonPressed && selectedItem == 0
 	{
 		selectedItem = global.inventory[selected];
 		selected = 0;
@@ -44,7 +44,7 @@ else if menuType == "mail" && !optionState
 		selected--;
 		audio_play_sound(MenuMove, 0, false);
 	}
-	if keyboard_check_pressed(vk_enter)	&& selectedItem == 0
+	if global.selectButtonPressed	&& selectedItem == 0
 	{
 		selectedItem = global.mailList[selected];
 		selected = 0;
@@ -86,17 +86,16 @@ if optionState
 	soulY = soulYRight;
 	
 	// Enter key has been released
-	if keyboard_check_released(vk_enter) || keyboard_check_released(ord("Z"))
+	if global.selectButtonReleased
 	{
 		state = 1;
 	}
 	// Once it has been released press enter again so that it doesn't activate immediately
 	if state == 1
 	{
-		show_debug_message(state);
-		if keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z"))
+		//show_debug_message(state);
+		if global.selectButtonPressed
 		{
-			show_debug_message("are we in here?");
 			var inst = instance_create_layer(0, 0, "Instances", MenuSelectBoxObject);
 			inst.itemSelected = selectedItem;
 			if menuType == "item"
@@ -139,7 +138,7 @@ if optionState
 	}
 	
 	// Exit out of the options.
-	if keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))
+	if global.deselectButtonPressed
 	{
 		state = 0;
 		selectedItem = 0;
@@ -147,7 +146,7 @@ if optionState
 		audio_play_sound(MenuMove, 0, false);
 	}
 }
-else
-{
-	show_debug_message(optionState);
-}
+
+
+sometheigjreoij++;
+//show_debug_message("I exist still " + string(sometheigjreoij));

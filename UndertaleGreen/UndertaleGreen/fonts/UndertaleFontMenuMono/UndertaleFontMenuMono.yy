@@ -119,8 +119,8 @@
   "maintainGms1Font":false,
   "name":"UndertaleFontMenuMono",
   "parent":{
-    "name":"MenuSystem",
-    "path":"folders/MenuSystem.yy",
+    "name":"MenuFonts",
+    "path":"folders/MenuSystem/MenuFonts.yy",
   },
   "pointRounding":0,
   "ranges":[

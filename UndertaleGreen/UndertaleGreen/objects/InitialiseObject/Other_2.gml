@@ -1,4 +1,7 @@
-//global.selectKey =
+global.selectKey = ord("Z");
+global.selectKey2 = ord("Y");
+global.deselectKey = ord("X");
+global.menuKey = ord("C");
 
 global.item = 
 	{
@@ -12,6 +15,9 @@ global.item =
 						check : "Baked using perfect ingredients and at a perfect temperature!",
 						
 						heals : 100,
+						
+						canUse : true,
+						canDrop : true,
 					},
 				OKButterscotchPie : 
 					{
@@ -21,6 +27,9 @@ global.item =
 						check : "Baked using ok ingredients and at a ok temperature.",
 						
 						heals : 60,
+						
+						canUse : true,
+						canDrop : true,
 					}
 			},
 		weapon : 
@@ -33,6 +42,9 @@ global.item =
 						check : "Good old reliable",
 						
 						at : 5,
+						
+						canUse : true,
+						canDrop : true,
 					},
 				charedFryingPan :
 					{
@@ -42,9 +54,12 @@ global.item =
 						check : "Even more hotter and reliabler",
 						
 						at : 10,
+						
+						canUse : true,
+						canDrop : true,
 					}
 			},
-		armor : 
+		armour : 
 			{
 				simpleApron :
 					{
@@ -54,6 +69,9 @@ global.item =
 						check : "It's got a heart sewn by yours truly.",
 						
 						df : -1,
+						
+						canUse : true,
+						canDrop : true,
 					},
 			},
 		key : 
@@ -63,7 +81,8 @@ global.item =
 						name : "Broken Toy",
 						check : "It belongs to someone important.",
 						
-						can_use : true,
+						canUse : true,
+						canDrop : false,
 					}
 			},
 	}
@@ -73,9 +92,13 @@ global.mail =
 		introMail :
 			{
 				name : "Introduction Letter",
-				readLetter : "This is your first letter!"
+				readLetter : "This is your first letter!",
+				
+				canUse : true,
+				canDrop : false,
 			}
+		
 	}
 	
-global.inventory = [global.item.key.brokenToy, global.item.weapon.fryingPan, global.item.armor.simpleApron];
+global.inventory = [global.item.key.brokenToy, global.item.weapon.fryingPan, global.item.armour.simpleApron];
 global.mailList = [global.mail.introMail];

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"FloweySink",
-    "path":"sprites/FloweySink/FloweySink.yy",
+    "name":"FloweySinkSprite",
+    "path":"sprites/FloweySinkSprite/FloweySinkSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
