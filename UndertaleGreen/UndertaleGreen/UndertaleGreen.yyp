@@ -105,6 +105,7 @@
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
     {"id":{"name":"SavingScript","path":"scripts/SavingScript/SavingScript.yy",},},
+    {"id":{"name":"TextScript","path":"scripts/TextScript/TextScript.yy",},},
     {"id":{"name":"AsgoreTalk","path":"sounds/AsgoreTalk/AsgoreTalk.yy",},},
     {"id":{"name":"AttackDamage","path":"sounds/AttackDamage/AttackDamage.yy",},},
     {"id":{"name":"BattleEncounter","path":"sounds/BattleEncounter/BattleEncounter.yy",},},

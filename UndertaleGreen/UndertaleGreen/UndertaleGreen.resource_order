@@ -75,6 +75,7 @@
     {"name":"SwitchRoomRuins","order":4,"path":"rooms/SwitchRoomRuins/SwitchRoomRuins.yy",},
     {"name":"Test","order":3,"path":"rooms/Test/Test.yy",},
     {"name":"SavingScript","order":1,"path":"scripts/SavingScript/SavingScript.yy",},
+    {"name":"TextScript","order":2,"path":"scripts/TextScript/TextScript.yy",},
     {"name":"AsgoreTalk","order":2,"path":"sounds/AsgoreTalk/AsgoreTalk.yy",},
     {"name":"BattleEncounter","order":9,"path":"sounds/BattleEncounter/BattleEncounter.yy",},
     {"name":"BattleStart","order":10,"path":"sounds/BattleStart/BattleStart.yy",},

@@ -5,7 +5,7 @@ draw_text(31, 170, "*");
 
 if boxType == "DROP" && itemSelected.canDrop
 {
-	if textIndex >= textLength[page]
+	if textIndex >= textLength[page] && page == 0
 	{
 		draw_text(73, 210, "Yes");
 		draw_text(229, 210, "No");	

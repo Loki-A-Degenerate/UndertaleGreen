@@ -41,11 +41,13 @@ switch boxType
 //show_debug_message(textIndex);
 //show_debug_message(selected);
 
+// Dropping the item. I'm hoping none of these other sub menus have options.
 if global.selectButtonPressed
 {
 	if selected == 0 && itemSelected.canDrop
 	{
 		array_delete(global.inventory, index, 1);
+		selected = 1;
 	}
 	else
 	{
