@@ -93,3 +93,17 @@ else
 }
 
 //show_debug_message(fps);
+
+if xSpeed != 0 || ySpeed != 0 
+{
+	stepCounter += 1/game_get_speed(gamespeed_fps);
+}
+if stepCounter >= 10 && GameControllerObject.RoomData.monsterEncounters
+{
+	show_debug_message("A monster has been encountered");
+}
+if instance_exists(TransitionObject)
+{
+	stepCounter = 0;
+}
+show_debug_message(stepCounter);

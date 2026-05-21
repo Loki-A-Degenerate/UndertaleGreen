@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"RuinsDoor",
+  "%Name":"RuinsDoorSprite",
   "bboxMode":0,
   "bbox_bottom":59,
   "bbox_left":0,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"301e6ee8-5067-4a57-b894-f1908636e200","blendMode":0,"displayName":"default","isLocked":false,"name":"301e6ee8-5067-4a57-b894-f1908636e200","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"RuinsDoor",
+  "name":"RuinsDoorSprite",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"RoomDetail",
-    "path":"folders/Sprites/RoomDetail.yy",
+    "name":"PuzzleSprites",
+    "path":"folders/Sprites/PuzzleSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"RuinsDoor",
+    "%Name":"RuinsDoorSprite",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"RuinsDoor",
+    "name":"RuinsDoorSprite",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfbfa47b-0585-430d-9359-0c3c8754685b","path":"sprites/RuinsDoor/RuinsDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfbfa47b-0585-430d-9359-0c3c8754685b","path":"sprites/RuinsDoorSprite/RuinsDoorSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7fb666de-2635-4ba4-b57e-608ac6b9c687","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

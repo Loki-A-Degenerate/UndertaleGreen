@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"RoomDetail",
-    "path":"folders/Sprites/RoomDetail.yy",
+    "name":"PuzzleSprites",
+    "path":"folders/Sprites/PuzzleSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

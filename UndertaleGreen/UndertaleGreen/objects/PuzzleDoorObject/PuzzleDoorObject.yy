@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"RuinsDoor",
-    "path":"sprites/RuinsDoor/RuinsDoor.yy",
+    "name":"RuinsDoorSprite",
+    "path":"sprites/RuinsDoorSprite/RuinsDoorSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,
