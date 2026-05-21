@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"BattleEncounter",
+  "%Name":"BattleEncounterSound",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":1.2565533,
   "exportDir":"",
-  "name":"BattleEncounter",
+  "name":"BattleEncounterSound",
   "parent":{
     "name":"CombatSounds",
     "path":"folders/Sounds/CombatSounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"BattleEncounter.wav",
+  "soundFile":"BattleEncounterSound.wav",
   "volume":1.0,
 }

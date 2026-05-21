@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"BattleStart",
+  "%Name":"BattleStartSound",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":0.33378685,
   "exportDir":"",
-  "name":"BattleStart",
+  "name":"BattleStartSound",
   "parent":{
     "name":"CombatSounds",
     "path":"folders/Sounds/CombatSounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"BattleStart.wav",
+  "soundFile":"BattleStartSound.wav",
   "volume":1.0,
 }

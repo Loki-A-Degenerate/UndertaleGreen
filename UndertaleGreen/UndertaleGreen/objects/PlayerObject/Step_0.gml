@@ -93,6 +93,7 @@ else
 }
 
 //show_debug_message(fps);
+// Step counter to monster encounter control
 neededSteps = GameControllerObject.RoomData.stepCountRequirement;
 if xSpeed != 0 || ySpeed != 0 
 {
@@ -111,5 +112,3 @@ if instance_exists(TransitionObject)
 {
 	stepCounter = 0;
 }
-show_debug_message(GameControllerObject.RoomData.stepCountRequirement);
-show_debug_message(neededSteps);

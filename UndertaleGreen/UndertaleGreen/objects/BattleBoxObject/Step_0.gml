@@ -1,0 +1,19 @@
+// Inherit the parent event
+event_inherited();
+
+if battleStart
+{
+	boxWidth -= boxSizeChange;
+	if boxWidth <= boxSmallWidth
+	{
+		boxWidth = boxSmallWidth;
+	}
+}
+else
+{
+	boxWidth += boxSizeChange;
+	if boxWidth >= boxLargeWidth
+	{
+		boxWidth = boxLargeWidth;
+	}
+}
