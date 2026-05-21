@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"ActButtonSprite",
   "bboxMode":0,
-  "bbox_bottom":41,
+  "bbox_bottom":20,
   "bbox_left":0,
-  "bbox_right":109,
+  "bbox_right":54,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":42,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"4a20d0fa-f7a1-43d7-bcc1-a13cdcb3ac2a","blendMode":0,"displayName":"default","isLocked":false,"name":"4a20d0fa-f7a1-43d7-bcc1-a13cdcb3ac2a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":110,
+  "width":55,
 }

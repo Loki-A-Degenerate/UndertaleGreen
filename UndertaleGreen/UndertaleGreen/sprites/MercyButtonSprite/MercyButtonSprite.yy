@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"MercyButtonSprite",
   "bboxMode":0,
-  "bbox_bottom":41,
+  "bbox_bottom":20,
   "bbox_left":0,
-  "bbox_right":109,
+  "bbox_right":54,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":42,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"336f1dea-531f-4cbe-ac0f-0bf3728ce0bb","blendMode":0,"displayName":"default","isLocked":false,"name":"336f1dea-531f-4cbe-ac0f-0bf3728ce0bb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":110,
+  "width":55,
 }

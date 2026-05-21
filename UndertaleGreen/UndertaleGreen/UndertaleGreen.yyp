@@ -154,6 +154,7 @@
     {"id":{"name":"TorielTalk2","path":"sounds/TorielTalk2/TorielTalk2.yy",},},
     {"id":{"name":"TorielTalk3","path":"sounds/TorielTalk3/TorielTalk3.yy",},},
     {"id":{"name":"ActButtonSprite","path":"sprites/ActButtonSprite/ActButtonSprite.yy",},},
+    {"id":{"name":"BattleButtonTest","path":"sprites/BattleButtonTest/BattleButtonTest.yy",},},
     {"id":{"name":"CameraTest","path":"sprites/CameraTest/CameraTest.yy",},},
     {"id":{"name":"DummySprite","path":"sprites/DummySprite/DummySprite.yy",},},
     {"id":{"name":"FightButtonSprite","path":"sprites/FightButtonSprite/FightButtonSprite.yy",},},

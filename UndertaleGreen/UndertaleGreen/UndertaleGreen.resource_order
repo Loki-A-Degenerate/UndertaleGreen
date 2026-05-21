@@ -119,6 +119,7 @@
     {"name":"TorielTalk2","order":4,"path":"sounds/TorielTalk2/TorielTalk2.yy",},
     {"name":"TorielTalk3","order":5,"path":"sounds/TorielTalk3/TorielTalk3.yy",},
     {"name":"ActButtonSprite","order":3,"path":"sprites/ActButtonSprite/ActButtonSprite.yy",},
+    {"name":"BattleButtonTest","order":4,"path":"sprites/BattleButtonTest/BattleButtonTest.yy",},
     {"name":"CameraTest","order":13,"path":"sprites/CameraTest/CameraTest.yy",},
     {"name":"DummySprite","order":2,"path":"sprites/DummySprite/DummySprite.yy",},
     {"name":"FloorSign","order":3,"path":"sprites/FloorSign/FloorSign.yy",},
