@@ -93,17 +93,23 @@ else
 }
 
 //show_debug_message(fps);
-
+neededSteps = GameControllerObject.RoomData.stepCountRequirement;
 if xSpeed != 0 || ySpeed != 0 
 {
 	stepCounter += 1/game_get_speed(gamespeed_fps);
 }
-if stepCounter >= 10 && GameControllerObject.RoomData.monsterEncounters
+if GameControllerObject.RoomData.monsterEncounters
 {
-	show_debug_message("A monster has been encountered");
+	if stepCounter >= neededSteps
+	{
+		neededSteps *= 2;
+		GameControllerObject.RoomData.stepCountRequirement = min(neededSteps, 10);
+		stepCounter = 0;
+	}
 }
 if instance_exists(TransitionObject)
 {
 	stepCounter = 0;
 }
-show_debug_message(stepCounter);
+show_debug_message(GameControllerObject.RoomData.stepCountRequirement);
+show_debug_message(neededSteps);

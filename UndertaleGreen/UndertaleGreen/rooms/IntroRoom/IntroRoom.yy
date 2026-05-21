@@ -7,12 +7,12 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_36FD135F","path":"rooms/IntroRoom/IntroRoom.yy",},
-    {"name":"inst_36C1DD85","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_6DEB0992","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_7FF5DF0E","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_3C1E3BA0","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_77A2C0D8","path":"rooms/IntroRoom/IntroRoom.yy",},
     {"name":"inst_2E6617BE","path":"rooms/IntroRoom/IntroRoom.yy",},
+    {"name":"inst_36C1DD85","path":"rooms/IntroRoom/IntroRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
