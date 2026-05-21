@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"KindSoul",
-    "path":"sprites/KindSoul/KindSoul.yy",
+    "name":"SoulMenuSprite",
+    "path":"sprites/SoulMenuSprite/SoulMenuSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

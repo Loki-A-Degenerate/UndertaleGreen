@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FloweySaveTestScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FloweySaveTestScript",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -14,15 +14,18 @@ if global.deselectButtonPressed
 	}
 }
 
+// Text typing
 if textIndex < textLength[page]
 {
 	textIndex += textSpeed;
 	textIndex = clamp(textIndex, 0, textLength[page]);
 }
 
+// If text reaches the end
 if textIndex >= textLength[page]
 {
 	audio_stop_sound(textSound);
+	// Next page
 	if global.selectButtonPressed
 	{
 		if page < pageNumber - 1
@@ -32,6 +35,7 @@ if textIndex >= textLength[page]
 		}
 		else
 		{
+			endOfText = true;
 			instance_destroy();
 		}
 	}

@@ -27,3 +27,12 @@ region = "Ruins";
 location = "Flower Bed";
 
 ini_close();
+
+function closeSaveMenu()
+{
+	instance_destroy(FloweyWorldStillObject);
+	instance_activate_object(SaveObject);
+	SaveObject.visible = false;
+	instance_create_layer(SaveObject.x + 10, SaveObject.y + 5, "Instances", FloweyHide);
+	instance_destroy();
+}

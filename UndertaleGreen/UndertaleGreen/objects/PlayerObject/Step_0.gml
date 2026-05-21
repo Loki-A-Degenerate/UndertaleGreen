@@ -92,12 +92,4 @@ else
 		}
 }
 
-//if global.deselectButtonPressed
-//{
-//	show_debug_message("Another very specific message.");
-//}
-
-//if global.menuButtonPressed
-//{
-//	show_debug_message("wait why?");
-//}
+//show_debug_message(fps);

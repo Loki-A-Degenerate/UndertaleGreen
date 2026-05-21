@@ -11,19 +11,24 @@ else
 	}
 
 if puzzleSolution 
+{
+	with ButtonObject 
 	{
-		with ButtonObject 
+		if buttonPressed
+		{
+			if puzzleSolution 
 			{
-				if puzzleSolution
-					{
-						solutionCount++;
-						if buttonPressed 
-							{
-								correctPressed++;
-							}
-					}
+				correctPressed++;
+				solutionCount++;
 			}
+			else
+			{
+				correctPressed--;
+			}
+		}
+		
 	}
+}
 
 
 if correctPressed == solutionCount && switchTouched 

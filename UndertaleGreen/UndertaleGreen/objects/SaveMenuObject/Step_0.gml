@@ -19,3 +19,25 @@ if selected == 0
 		selected = -1;
 	}
 }
+else
+{
+	if global.selectButtonPressed
+	{
+		closeSaveMenu();
+	}
+}
+
+if saving
+{
+	if global.selectButtonReleased
+	{
+		state = 1;
+	}
+	if state && global.selectButtonPressed
+	{
+		saving = false;
+		state = 0;
+		draw_set_colour(c_white);
+		closeSaveMenu();
+	}
+}

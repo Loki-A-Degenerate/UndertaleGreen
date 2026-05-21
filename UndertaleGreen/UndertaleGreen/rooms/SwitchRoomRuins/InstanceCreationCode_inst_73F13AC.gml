@@ -1,2 +1,4 @@
 customSound = ButtonPress;
-puzzleID = 1;
+puzzleID = 2;
+
+puzzleSolution = true;

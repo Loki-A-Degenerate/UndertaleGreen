@@ -33,6 +33,7 @@
     {"name":"inst_7102BD9B","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},
     {"name":"inst_5DA1D2A","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},
     {"name":"inst_32ACCC39","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},
+    {"name":"inst_3090347B","path":"rooms/ShadowoftheRuins/ShadowoftheRuins.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,6 +67,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_254495D6","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_254495D6","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.28125,"scaleY":0.65625,"x":139.5,"y":466.0,},
         {"$GMRInstance":"v4","%Name":"inst_5923827D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5923827D","objectId":{"name":"WarpObject","path":"objects/WarpObject/WarpObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.28125,"scaleY":1.0,"x":139.5,"y":79.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3090347B","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3090347B","objectId":{"name":"SaveObject","path":"objects/SaveObject/SaveObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":149.0,"y":204.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"RuinsTiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"RuinsTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":59,"SerialiseWidth":40,"TileCompressedData":[
           -42,74,36,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,

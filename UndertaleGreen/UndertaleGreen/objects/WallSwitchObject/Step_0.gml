@@ -1,36 +1,47 @@
-var correctFlipped = 0;
-
 if switchFlipped 
-	{
-		image_index = 1;
-	}
+{
+	image_index = 1;
+}
 else 
-	{
-		image_index = 0;
-	}
+{
+	image_index = 0;
+}
 	
 if puzzleSolution 
+{
+	if switchTouched
 	{
-		if switchTouched
+		if global.selectButtonPressed
+		{
+			self.switchFlipped = true;
+			global.puzzleSolved[puzzleID] = true;
+		}
+	}
+}
+else
+{
+	if switchTouched
+	{
+		var state = 1;
+		if global.selectButtonReleased
+		{
+			state = 0;
+		}
+		if global.selectButtonPressed && state == 0
+		{
+			with instance_create_layer(0, 0, "Instances", BasicTextBox)
 			{
-				if keyboard_check(vk_enter) || keyboard_check(ord("Z"))
-					{
-						self.switchFlipped = true;
-						correctFlipped++;
-					}
+				TextScript("This switch doesn't even work...");
 			}
+			state = 1;
+		}
 	}
-
-if correctFlipped == 2
-	{
-		show_debug_message("we are here");
-		global.puzzleSolved[puzzleID] = true;
-	}
+}
 
 	
 if switchFlipped && !prevSwitched
-	{
-		audio_play_sound(customSound, 0, false);
-	}
+{
+	audio_play_sound(customSound, 0, false);
+}
 
 prevSwitched = switchFlipped;

@@ -10,12 +10,12 @@
   "name":"FloweyTextBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"FloweyTextBox",
-    "path":"folders/Objects/FloweyObjects/FloweyTextBox.yy",
+    "name":"FloweyDialog",
+    "path":"folders/DialogSystem/FloweyDialog.yy",
   },
   "parentObjectId":{
-    "name":"BasicTextBox",
-    "path":"objects/BasicTextBox/BasicTextBox.yy",
+    "name":"DialogBoxObject",
+    "path":"objects/DialogBoxObject/DialogBoxObject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

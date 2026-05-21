@@ -1,4 +1,4 @@
 image_speed = 0;
 
 puzzleSolved = false;
-puzzleID = 1;
+puzzleID = 2;

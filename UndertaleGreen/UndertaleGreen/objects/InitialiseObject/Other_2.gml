@@ -4,101 +4,101 @@ global.deselectKey = ord("X");
 global.menuKey = ord("C");
 
 global.item = 
+{
+	food : 
 	{
-		food : 
-			{
-				perfectButterscotchPie : 
-					{
-						name : "Perfect Butterscotch Pie",
-						nameShort : "Perfect Butt Pie",
-						nameSerious : "Perfect Pie",
-						check : "Baked using perfect ingredients and at a perfect temperature!",
+		perfectButterscotchPie : 
+		{
+			name : "Perfect Butterscotch Pie",
+			nameShort : "Perfect Butt Pie",
+			nameSerious : "Perfect Pie",
+			check : "Baked using perfect ingredients and at a perfect temperature!",
 						
-						heals : 100,
+			heals : 100,
 						
-						canUse : true,
-						canDrop : true,
-					},
-				OKButterscotchPie : 
-					{
-						name : "Ok Butterscotch Pie",
-						nameShort : "Ok Butt Pie",
-						nameSerious : "Ok Pie",
-						check : "Baked using ok ingredients and at a ok temperature.",
+			canUse : true,
+			canDrop : true,
+		},
+		OKButterscotchPie : 
+		{
+			name : "Ok Butterscotch Pie",
+			nameShort : "Ok Butt Pie",
+			nameSerious : "Ok Pie",
+			check : "Baked using ok ingredients and at a ok temperature.",
 						
-						heals : 60,
+			heals : 60,
 						
-						canUse : true,
-						canDrop : true,
-					}
-			},
-		weapon : 
-			{
-				fryingPan : 
-					{
-						name : "Frying Pan",
-						nameShort : "Perfect Butt Pie",
-						nameSerious : "Perfect Pie",
-						check : "Good old reliable",
+			canUse : true,
+			canDrop : true,
+		}
+	},
+	weapon : 
+	{
+		fryingPan : 
+		{
+			name : "Frying Pan",
+			nameShort : "Perfect Butt Pie",
+			nameSerious : "Perfect Pie",
+			check : "Good old reliable",
 						
-						at : 5,
+			at : 5,
 						
-						canUse : true,
-						canDrop : true,
-					},
-				charedFryingPan :
-					{
-						name : "Chared Frying Pan",
-						nameShort : "Perfect Butt Pie",
-						nameSerious : "Perfect Pie",
-						check : "Even more hotter and reliabler",
+			canUse : true,
+			canDrop : true,
+		},
+		charedFryingPan :
+		{
+			name : "Chared Frying Pan",
+			nameShort : "Perfect Butt Pie",
+			nameSerious : "Perfect Pie",
+			check : "Even more hotter and reliabler",
 						
-						at : 10,
+			at : 10,
 						
-						canUse : true,
-						canDrop : true,
-					}
-			},
-		armour : 
-			{
-				simpleApron :
-					{
-						name : "Old Apron",
-						nameShort : "Perfect Butt Pie",
-						nameSerious : "Perfect Pie",
-						check : "It's got a heart sewn by yours truly.",
+			canUse : true,
+			canDrop : true,
+		}
+	},
+	armour : 
+	{
+		simpleApron :
+		{
+			name : "Old Apron",
+			nameShort : "Perfect Butt Pie",
+			nameSerious : "Perfect Pie",
+			check : "It's got a heart sewn by yours truly.",
 						
-						df : -1,
+			df : -1,
 						
-						canUse : true,
-						canDrop : true,
-					},
-			},
-		key : 
-			{
-				brokenToy :
-					{
-						name : "Broken Toy",
-						check : "It belongs to someone important.",
+			canUse : true,
+			canDrop : true,
+		},
+	},
+	key : 
+	{
+		brokenToy :
+		{
+			name : "Broken Toy",
+			check : "It belongs to someone important.",
 						
-						canUse : true,
-						canDrop : false,
-					}
-			},
-	}
+			canUse : true,
+			canDrop : false,
+		}
+	},
+}
 
 global.mail = 
+{
+	introMail :
 	{
-		introMail :
-			{
-				name : "Introduction Letter",
-				readLetter : "This is your first letter!",
+		name : "Introduction Letter",
+		readLetter : "This is your first letter!",
 				
-				canUse : true,
-				canDrop : false,
-			}
-		
+		canUse : true,
+		canDrop : false,
 	}
+		
+}
 	
 global.inventory = [global.item.key.brokenToy, global.item.weapon.fryingPan, global.item.armour.simpleApron];
 global.mailList = [global.mail.introMail];

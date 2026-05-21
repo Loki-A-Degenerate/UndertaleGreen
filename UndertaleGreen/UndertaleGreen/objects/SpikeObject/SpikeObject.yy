@@ -12,7 +12,10 @@
     "name":"DetailObjects",
     "path":"folders/Objects/DetailObjects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"SolidObject",
+    "path":"objects/SolidObject/SolidObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,6 +1,6 @@
 depth = -bbox_bottom;
 
-image_speed = 0.2;
+image_speed = talkSpeed;
 mask_index = sprite[FORWARD];
 if x + 12 < PlayerObject.x {face = RIGHT;}
 if x - 12 > PlayerObject.x {face = LEFT;}
@@ -10,9 +10,8 @@ sprite_index = sprite[face];
 
 if !instance_exists(FloweyTextBox)
 {
-	instance_create_layer(0, 0, "Instances", FloweyTextBox);
-}
-else
-{
-	// foisjoesjfoierjfoesifjoesi
+	with instance_create_layer(0, 0, "Instances", FloweyTextBox)
+	{
+		FloweySaveTestScript(FloweyWorldTalk.floweyID);
+	}
 }
