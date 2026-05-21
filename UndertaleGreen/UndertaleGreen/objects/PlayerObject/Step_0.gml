@@ -3,20 +3,20 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
-var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu);
+var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom);
 var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject);
 
 moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
 visible  = !inBlockedRoom; // Visible only when not in a specific room
 
 if moveable	
-	{
-		moveSpeed = 2;
-	}
+{
+	moveSpeed = 2;
+}
 else
-	{
-		moveSpeed = 0;
-	}
+{
+	moveSpeed = 0;
+}
 
 xSpeed = (rightKey - leftKey) * moveSpeed;
 ySpeed = (downKey - upKey) * moveSpeed;
@@ -33,13 +33,13 @@ sprite_index = sprite[face];
 
 //Collisions
 if place_meeting(x + xSpeed, y, SolidObject) == true 
-	{
-		xSpeed = 0;
-	}
+{
+	xSpeed = 0;
+}
 if place_meeting(x, y + ySpeed, SolidObject) == true 
-	{
-		ySpeed = 0;
-	}
+{
+	ySpeed = 0;
+}
 	
 //Move player
 x += xSpeed;
@@ -47,9 +47,9 @@ y += ySpeed;
 
 //Animate
 if xSpeed == 0 && ySpeed == 0 
-	{
-		image_index = 0;
-	}
+{
+	image_index = 0;
+}
 	
 //Depth
 depth = 1 - bbox_bottom;
@@ -87,9 +87,9 @@ if keyboard_check(vk_escape)
 else 
 {
 	with (QuittingObject) 
-		{
-			instance_destroy();
-		}
+	{
+		instance_destroy();
+	}
 }
 
 //show_debug_message(fps);

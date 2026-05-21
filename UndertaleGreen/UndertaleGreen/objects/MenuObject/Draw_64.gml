@@ -9,12 +9,12 @@ draw_text(boxLeftX + 26, boxBotY + 46, "MAIL");
 
 // Move the menu soul
 if submenu == "select"
-	{
-		soulXLeft = boxLeftX + 16;
-		soulYLeft = boxBotY + 18 + (selected * 18);
+{
+	soulXLeft = boxLeftX + 16;
+	soulYLeft = boxBotY + 18 + (selected * 18);
 		
-		soulX = soulXLeft;
-		soulY = soulYLeft;
+	soulX = soulXLeft;
+	soulY = soulYLeft;
 		
-		draw_sprite(soul, frame, soulX, soulY);	
-	}
+	draw_sprite(soul, frame, soulX, soulY);	
+}
