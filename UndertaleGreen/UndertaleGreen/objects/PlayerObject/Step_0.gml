@@ -105,7 +105,7 @@ if GameControllerObject.RoomData.monsterEncounters
 	{
 		neededSteps *= 2;
 		GameControllerObject.RoomData.stepCountRequirement = min(neededSteps, 10);
-		stepCounter = 0;
+		//instance_create_layer(PlayerObject.x, PlayerObject.y - 30, "Instances", BattleEncounterObject);
 	}
 }
 if instance_exists(TransitionObject)
