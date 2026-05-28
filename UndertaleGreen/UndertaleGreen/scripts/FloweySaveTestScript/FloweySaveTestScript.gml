@@ -1,4 +1,5 @@
-function FloweySaveTestScript(_textID){
+function FloweySaveTestScript(_textID)
+{
 	switch _textID
 	{
 		case "test":

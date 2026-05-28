@@ -10,6 +10,8 @@ boxHeight = 76;
 textWidth = 235;
 textMargin = 32;
 
+textSpaceY = 10;
+
 font = UndertaleFontMenu;
 
 asterickSpace = 17;

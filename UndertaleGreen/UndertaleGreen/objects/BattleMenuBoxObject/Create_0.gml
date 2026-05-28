@@ -1,18 +1,31 @@
+depth = -y;
+
 box = MenuSprite;
 frame = -1;
 
-boxLeftX = 16;
-boxTopY = 125;
+boxLeftX = 32;
+boxTopY = 250;
 
-boxWidth = 289;
-boxHeight = 70;
+boxWidth = 578;
+boxHeight = 140;
 
 textWidth = 235;
 textMargin = 32;
 
+textFirstX = 110;
+textLastX = 350;
+textFirstY = 271;
+textLastY = 303;
+
 text[0] = "";
+text[1] = "";
+text[2] = "";
+text[3] = "";
 
 soul = KindSoul_1;
 
 soulX = 0;
 soulY = 0;
+
+itemBox = false;
+subMenu = "";

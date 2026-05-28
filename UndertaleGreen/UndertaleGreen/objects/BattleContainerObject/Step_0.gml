@@ -50,9 +50,10 @@ switch selected
 	case 3:
 		if global.selectButtonPressed
 		{
+			audio_play_sound(MenuSelect, 0, false);
 			with MercyButtonObject
 			{
-				
+				createMercyMenu();
 			}
 		}
 		break;

@@ -1,2 +1,8 @@
-draw_text(boxLeftX + textMargin - 17, boxTopY + 10, "*");
-draw_text_ext(boxLeftX + textMargin, boxTopY + 10, text, 18, textWidth);
+draw_sprite_stretched(box, frame, boxLeftX, boxTopY, boxWidth, boxHeight);
+
+draw_text(textFirstX, textFirstY, text[0]);
+draw_text(textLastX, textFirstY, text[1]);
+draw_text(textFirstX, textLastY, text[2]);
+draw_text(textLastX, textLastY, text[3]);
+
+draw_sprite(soul, 0, textFirstX, textFirstY);
