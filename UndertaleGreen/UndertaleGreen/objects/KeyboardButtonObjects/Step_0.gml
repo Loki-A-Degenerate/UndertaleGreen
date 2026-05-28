@@ -7,3 +7,9 @@ global.deselectButtonPressed = keyboard_check_pressed(global.deselectKey) || key
 
 //open menu
 global.menuButtonPressed = keyboard_check_pressed(global.menuKey) || keyboard_check_pressed(vk_control);
+
+if keyboard_check_pressed(vk_f4) 
+{
+	
+	window_set_fullscreen(!window_get_fullscreen());
+}

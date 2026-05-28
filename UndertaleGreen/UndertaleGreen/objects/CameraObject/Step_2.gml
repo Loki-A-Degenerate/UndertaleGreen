@@ -13,14 +13,10 @@ var sx = 0;
 var sy = 0;
 
 if instance_exists(MenuShake)
-	{
-		sx = MenuShake.shakeX;
-		sy = MenuShake.shakeY;
-	}
+{
+	sx = MenuShake.shakeX;
+	sy = MenuShake.shakeY;
+}
 	
 
 camera_set_view_pos(view_camera[0], camTargetX + sx, camTargetY + sy);
-//show_debug_message(camTargetX);
-
-
-

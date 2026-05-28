@@ -25,5 +25,5 @@ if !instance_exists(FloweyHide)
 {
 	visible = true;
 }
-//show_debug_message(y);
-//show_debug_message(PlayerObject.y);
+
+//show_debug_message(depth);

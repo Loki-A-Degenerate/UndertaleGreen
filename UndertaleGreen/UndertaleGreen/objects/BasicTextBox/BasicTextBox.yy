@@ -10,8 +10,8 @@
   "name":"BasicTextBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"MenuObjects",
-    "path":"folders/MenuSystem/MenuObjects.yy",
+    "name":"DialogSystem",
+    "path":"folders/DialogSystem.yy",
   },
   "parentObjectId":null,
   "persistent":false,

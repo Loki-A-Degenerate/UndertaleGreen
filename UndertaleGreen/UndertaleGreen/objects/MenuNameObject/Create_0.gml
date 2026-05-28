@@ -18,8 +18,8 @@ boxLeftW = 71
 boxStatMiniH = 55;
 
 // Player stat things
-name = "Sunny";
-lv = 1;
-hp = 20;
+name = global.playerName;
+lv = global.lv;
+hp = global.hp;
 hp_max = 20;
-money = 0;
+money = global.gold;

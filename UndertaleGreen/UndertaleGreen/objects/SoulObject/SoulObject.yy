@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SoulMenuSprite",
-    "path":"sprites/SoulMenuSprite/SoulMenuSprite.yy",
+    "name":"KindSoul_1",
+    "path":"sprites/KindSoul_1/KindSoul_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

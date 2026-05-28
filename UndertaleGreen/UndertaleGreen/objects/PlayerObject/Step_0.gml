@@ -4,7 +4,7 @@ downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
 var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom);
-var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject);
+var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject) || instance_exists(BattleEncounterObject);
 
 moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
 visible  = !inBlockedRoom; // Visible only when not in a specific room
@@ -66,6 +66,10 @@ if !instance_exists(BasicTextBox)
 	            instance_destroy();
 	        }
 			instance_destroy(MenuNameObject);
+			if instance_exists(SubMenuObject) 
+			{
+				instance_destroy(SubMenuObject);
+			}
 	    }
 	    else if (moveable)
 	    {
@@ -105,10 +109,12 @@ if GameControllerObject.RoomData.monsterEncounters
 	{
 		neededSteps *= 2;
 		GameControllerObject.RoomData.stepCountRequirement = min(neededSteps, 10);
-		//instance_create_layer(PlayerObject.x, PlayerObject.y - 30, "Instances", BattleEncounterObject);
+		instance_create_layer(PlayerObject.x, PlayerObject.y - 30, "Instances", BattleEncounterObject);
 	}
 }
 if instance_exists(TransitionObject)
 {
 	stepCounter = 0;
 }
+
+//show_debug_message(fps);

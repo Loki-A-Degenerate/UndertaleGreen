@@ -1,10 +1,10 @@
 // Redo this shit oh my god
 
-if image_index = 2 
+if image_index < 3 
 {
 	if global.selectButtonPressed
 	{
-		image_index = 3;
+		image_index++;
 	}
 }
 else if image_index = 3

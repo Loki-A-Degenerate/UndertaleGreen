@@ -10,6 +10,10 @@ boxHeight = 76;
 textWidth = 235;
 textMargin = 32;
 
+font = UndertaleFontMenu;
+
+asterickSpace = 17;
+
 page = 0;
 pageNumber = 0;
 text[0] = "If you're seeing this then I did something wrong.";

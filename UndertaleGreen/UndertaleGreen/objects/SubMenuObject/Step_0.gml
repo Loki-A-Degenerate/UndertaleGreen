@@ -39,7 +39,7 @@ else if menuType == "mail" && !optionState
 		selected++;
 		audio_play_sound(MenuMove, 0, false);
 	}
-	else if  keyboard_check_pressed(vk_up) && selected > 0
+	else if keyboard_check_pressed(vk_up) && selected > 0
 	{
 		selected--;
 		audio_play_sound(MenuMove, 0, false);
@@ -146,7 +146,3 @@ if optionState
 		audio_play_sound(MenuMove, 0, false);
 	}
 }
-
-
-sometheigjreoij++;
-//show_debug_message("I exist still " + string(sometheigjreoij));

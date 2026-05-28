@@ -23,5 +23,3 @@ soul = SoulMenuSprite;
 
 menuType = MenuObject.submenu;
 optionState = false;
-
-sometheigjreoij = 0;

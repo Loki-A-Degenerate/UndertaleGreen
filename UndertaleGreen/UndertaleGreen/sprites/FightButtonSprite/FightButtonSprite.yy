@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"FightButtonSprite",
   "bboxMode":0,
-  "bbox_bottom":20,
+  "bbox_bottom":41,
   "bbox_left":0,
-  "bbox_right":54,
+  "bbox_right":109,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"bbcf91f7-1fd4-43ac-afc9-deebcd62e0fe","name":"bbcf91f7-1fd4-43ac-afc9-deebcd62e0fe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"59854f38-6ab5-4c53-85cd-5144268eaf91","name":"59854f38-6ab5-4c53-85cd-5144268eaf91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6cb55795-0fb3-403e-ab2c-29246161d3ac","name":"6cb55795-0fb3-403e-ab2c-29246161d3ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2eea5026-51f1-4956-8ad4-bc276fdbf4f1","name":"2eea5026-51f1-4956-8ad4-bc276fdbf4f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":21,
+  "height":42,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"02a6cbd3-5f50-4368-8164-130d3bedc223","blendMode":0,"displayName":"default","isLocked":false,"name":"02a6cbd3-5f50-4368-8164-130d3bedc223","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"637a7eb4-86bd-4d72-98ca-859f04bc2fe2","blendMode":0,"displayName":"default","isLocked":false,"name":"637a7eb4-86bd-4d72-98ca-859f04bc2fe2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"FightButtonSprite",
   "nineSlice":null,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bbcf91f7-1fd4-43ac-afc9-deebcd62e0fe","path":"sprites/FightButtonSprite/FightButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8106b15a-8eab-4c77-a91c-a0daed741469","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6cb55795-0fb3-403e-ab2c-29246161d3ac","path":"sprites/FightButtonSprite/FightButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6dedc176-dff6-45aa-b83f-ebd9fab47652","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"59854f38-6ab5-4c53-85cd-5144268eaf91","path":"sprites/FightButtonSprite/FightButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7d6862bc-2c3a-45f7-abea-5c6714f05085","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2eea5026-51f1-4956-8ad4-bc276fdbf4f1","path":"sprites/FightButtonSprite/FightButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3d450f34-6ea3-454d-941d-23fab6ec114f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":55,
+  "width":110,
 }

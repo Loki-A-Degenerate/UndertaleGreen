@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"ItemButtonSprite",
   "bboxMode":0,
-  "bbox_bottom":20,
+  "bbox_bottom":41,
   "bbox_left":0,
-  "bbox_right":54,
+  "bbox_right":109,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"420708c6-c780-4fc7-acf1-f6aaf8a4c6fd","name":"420708c6-c780-4fc7-acf1-f6aaf8a4c6fd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"211e69b9-5b75-4c27-9970-91c4d6a32a2e","name":"211e69b9-5b75-4c27-9970-91c4d6a32a2e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f5ebbef7-48e2-419c-a298-8d301df6de47","name":"f5ebbef7-48e2-419c-a298-8d301df6de47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6014ad21-17aa-4012-9758-d33bbb8c7cf9","name":"6014ad21-17aa-4012-9758-d33bbb8c7cf9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":21,
+  "height":42,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"69ebe344-8d8a-45ce-a1c2-87dd67e3d1ba","blendMode":0,"displayName":"default","isLocked":false,"name":"69ebe344-8d8a-45ce-a1c2-87dd67e3d1ba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"080d0260-974f-46cf-a70b-bd86928b37b5","blendMode":0,"displayName":"default","isLocked":false,"name":"080d0260-974f-46cf-a70b-bd86928b37b5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"ItemButtonSprite",
   "nineSlice":null,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"420708c6-c780-4fc7-acf1-f6aaf8a4c6fd","path":"sprites/ItemButtonSprite/ItemButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2c488cd7-9a96-47af-9a0e-d0ea7962e96b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f5ebbef7-48e2-419c-a298-8d301df6de47","path":"sprites/ItemButtonSprite/ItemButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"965b7c95-1db3-448c-a097-74783342e4d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"211e69b9-5b75-4c27-9970-91c4d6a32a2e","path":"sprites/ItemButtonSprite/ItemButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6b5bf530-4c52-4c73-8d46-5605a9f296dc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6014ad21-17aa-4012-9758-d33bbb8c7cf9","path":"sprites/ItemButtonSprite/ItemButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e4649981-9d1a-47e2-8886-a08b33aff6a8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":55,
+  "width":110,
 }

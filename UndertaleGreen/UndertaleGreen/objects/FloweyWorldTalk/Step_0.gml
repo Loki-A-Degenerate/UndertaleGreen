@@ -1,4 +1,4 @@
-depth = -bbox_bottom;
+
 
 image_speed = talkSpeed;
 mask_index = sprite[FORWARD];

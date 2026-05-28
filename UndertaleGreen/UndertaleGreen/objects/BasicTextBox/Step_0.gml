@@ -26,7 +26,7 @@ if textIndex >= textLength[page]
 {
 	audio_stop_sound(textSound);
 	// Next page
-	if global.selectButtonPressed
+	if global.selectButtonPressed && !instance_exists(BattleBoxIntroObject)
 	{
 		if page < pageNumber - 1
 		{

@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"MercyButtonSprite",
   "bboxMode":0,
-  "bbox_bottom":20,
+  "bbox_bottom":41,
   "bbox_left":0,
-  "bbox_right":54,
+  "bbox_right":109,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,15 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1e39a4f9-f1eb-4f04-b276-c5ff5353d0a2","name":"1e39a4f9-f1eb-4f04-b276-c5ff5353d0a2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"0ac724e3-0066-40e1-a6bd-cb4ab848ab25","name":"0ac724e3-0066-40e1-a6bd-cb4ab848ab25","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"91eb4054-ede6-44cc-91f3-12a02066cccb","name":"91eb4054-ede6-44cc-91f3-12a02066cccb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d971484c-1019-4dbc-9bb3-08d12c9c4c1f","name":"d971484c-1019-4dbc-9bb3-08d12c9c4c1f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":21,
+  "height":42,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"336f1dea-531f-4cbe-ac0f-0bf3728ce0bb","blendMode":0,"displayName":"default","isLocked":false,"name":"336f1dea-531f-4cbe-ac0f-0bf3728ce0bb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"af64c781-2021-4f96-afd2-133244d7c5a9","blendMode":0,"displayName":"default","isLocked":false,"name":"af64c781-2021-4f96-afd2-133244d7c5a9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"MercyButtonSprite",
   "nineSlice":null,
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e39a4f9-f1eb-4f04-b276-c5ff5353d0a2","path":"sprites/MercyButtonSprite/MercyButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fbfcca4d-6b79-41f8-af77-ed622b7d0ae3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91eb4054-ede6-44cc-91f3-12a02066cccb","path":"sprites/MercyButtonSprite/MercyButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b7aa1d39-6f39-404a-a685-577cd72555b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0ac724e3-0066-40e1-a6bd-cb4ab848ab25","path":"sprites/MercyButtonSprite/MercyButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ce6b372e-acd1-41a9-b18b-e00f2fbe474e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d971484c-1019-4dbc-9bb3-08d12c9c4c1f","path":"sprites/MercyButtonSprite/MercyButtonSprite.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c0283e60-6105-49b2-b010-b0aac10a9c69","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":55,
+  "width":110,
 }
