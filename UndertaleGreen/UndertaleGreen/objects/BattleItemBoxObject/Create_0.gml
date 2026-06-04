@@ -13,21 +13,20 @@ textWidth = 235;
 textMargin = 32;
 
 textFirstX = 110;
+textLastX = 350;
 textFirstY = 271;
 textLastY = 303;
+
+pages[1] = 1;
+curPage = 1;
 
 text[0] = "* Spare";
 text[1] = "* Flee";
 
 soul = KindSoul;
 
-selected = 0;
+selectedX = 0;
+selectedY = 0;
 
 soulX = 72;
 soulY = 0;
-
-spareable = true;
-fleeing = false;
-
-fleeMessages = "";
-fleeMessageChance = irandom(2);

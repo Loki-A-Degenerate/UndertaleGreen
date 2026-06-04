@@ -20,10 +20,28 @@ if !instance_exists(BattleMercyBoxObject) {
 	
 	switch selected {
 		case 0:
+			if global.selectButtonPressed {
+				audio_play_sound(MenuSelect, 0, false);
+				with FightButtonObject {
+					createFightMenu();
+				}
+			}
 			break;
 		case 1:
+			if global.selectButtonPressed {
+				audio_play_sound(MenuSelect, 0, false);
+				with ActButtonObject {
+					createActMenu();
+				}
+			}
 			break;
 		case 2:
+			if global.selectButtonPressed {
+				audio_play_sound(MenuSelect, 0, false);
+				with ItemButtonObject {
+					createItemMenu();
+				}
+			}
 			break;
 		case 3:
 			if global.selectButtonPressed {

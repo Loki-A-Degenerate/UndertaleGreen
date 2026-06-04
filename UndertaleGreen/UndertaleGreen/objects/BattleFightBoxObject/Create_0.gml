@@ -13,6 +13,7 @@ textWidth = 235;
 textMargin = 32;
 
 textFirstX = 110;
+textLastX = 350;
 textFirstY = 271;
 textLastY = 303;
 
@@ -21,7 +22,8 @@ text[1] = "* Flee";
 
 soul = KindSoul;
 
-selected = 0;
+selectedX = 0;
+selectedY = 0;
 
 soulX = 72;
 soulY = 0;

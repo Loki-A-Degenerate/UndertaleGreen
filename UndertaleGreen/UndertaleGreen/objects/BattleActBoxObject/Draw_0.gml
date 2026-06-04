@@ -1,13 +1,6 @@
 draw_sprite_stretched(box, frame, boxLeftX, boxTopY, boxWidth, boxHeight);
 draw_set_font(UndertaleFontMenuLarge);
 
-if !fleeing {
-	draw_sprite(soul, 0, soulX, soulY);
-} else {
-	spareable = false;
-	text[0] = fleeMessages;
-	text[1] = "";
-}
 
 if spareable {
 	draw_set_colour(c_yellow);

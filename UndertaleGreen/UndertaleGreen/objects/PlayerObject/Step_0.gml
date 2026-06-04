@@ -97,5 +97,4 @@ if instance_exists(TransitionInObject) {
 }
 
 //show_debug_message(fps);
-//show_debug_message(display_get_width());
-//show_debug_message(window_get_width());
+//show_debug_message(ceil(1 / 4));

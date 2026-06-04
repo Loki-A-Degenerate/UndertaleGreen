@@ -13,6 +13,7 @@ textWidth = 235;
 textMargin = 32;
 
 textFirstX = 110;
+textLastX = 350;
 textFirstY = 271;
 textLastY = 303;
 
