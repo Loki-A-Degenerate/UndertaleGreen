@@ -1,6 +1,6 @@
-if place_meeting(x, y, PlayerObject) && !instance_exists(TransitionObject)
+if place_meeting(x, y, PlayerObject) && !instance_exists(TransitionInObject)
 	{
-		var inst = instance_create_depth(1, 1, -9999, TransitionObject);
+		var inst = instance_create_depth(1, 1, -9999, TransitionInObject);
 		inst.targetRoom = targetRoom;
 		inst.targetX = targetX;
 		inst.targetY = targetY;

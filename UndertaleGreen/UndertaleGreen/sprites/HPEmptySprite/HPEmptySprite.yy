@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"HPEmptySprite",
   "bboxMode":0,
-  "bbox_bottom":9,
+  "bbox_bottom":20,
   "bbox_left":0,
-  "bbox_right":11,
+  "bbox_right":24,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":10,
+  "height":21,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"266b8279-e481-4241-95b0-d9d4ce9db3d1","blendMode":0,"displayName":"default","isLocked":false,"name":"266b8279-e481-4241-95b0-d9d4ce9db3d1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"BattleSystem",
-    "path":"folders/BattleSystem.yy",
+    "name":"HPSprites",
+    "path":"folders/BattleSystem/HPSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":12,
+  "width":25,
 }

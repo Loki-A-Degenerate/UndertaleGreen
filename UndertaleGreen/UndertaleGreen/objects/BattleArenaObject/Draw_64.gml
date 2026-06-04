@@ -1,0 +1,1 @@
+draw_sprite_stretched(box, frame, boxLeftX, boxTopY, boxWidth, boxHeight);

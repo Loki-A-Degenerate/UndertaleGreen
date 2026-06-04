@@ -1,5 +1,4 @@
-if (!soulMove) // I can definitely replace this with something
-{
+if (!soulMove) { // I can definitely replace this with something
     flashCount = 3;
     flashTimer = 0;
     flashing = true;
@@ -7,12 +6,10 @@ if (!soulMove) // I can definitely replace this with something
     soulMove = true;
 }
 
-if flashing
-{
+if flashing {
     flashTimer--;
 
-    if flashTimer <= 0
-    {
+    if flashTimer <= 0 {
         audio_play_sound(ButtonPress, 0, false); // It's the same sound
         flashVisible = !flashVisible;
 
@@ -20,26 +17,22 @@ if flashing
 
         flashTimer = flashInterval;
 
-        if (flashCount <= 0)
-        {
+        if (flashCount <= 0) {
             flashing = false;
         }
     }
-}
-else 
-{
-	if !soundMove
-	{
+} else {
+	if !soundMove {
 		audio_play_sound(BattleStartSound, 0, false);
 		soundMove = true;
 	}
-	if !instance_exists(SoulBattleTransObject)
-	{
-		with instance_create_layer(soulX, soulY, "Instances", SoulBattleTransObject)
-		{
+	if !instance_exists(SoulBattleTransObject) {
+		with instance_create_layer(soulX, soulY, "Instances", SoulBattleTransObject) {
 			savedX = PlayerObject.x;
 			savedY = PlayerObject.y;
 		}
-		instance_destroy(PlayerObject);
+		with PlayerObject {
+			visible = false;
+		}
 	}
 }

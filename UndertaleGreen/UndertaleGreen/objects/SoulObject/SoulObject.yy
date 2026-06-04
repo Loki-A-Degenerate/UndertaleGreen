@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"KindSoul_1",
-    "path":"sprites/KindSoul_1/KindSoul_1.yy",
+    "name":"KindSoul",
+    "path":"sprites/KindSoul/KindSoul.yy",
   },
   "spriteMaskId":null,
   "visible":true,

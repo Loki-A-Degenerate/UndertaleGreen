@@ -12,12 +12,6 @@ boxWidth *= 2;
 boxTopY = 250;
 boxHeight = 140;
 
-boxLargeWidth = boxWidth;
-
-boxSmallWidth = 190;
-battleStart = false;
-boxSizeChange = 13;
-
 textSound = GenTextSound2;
 
 font = UndertaleFontMenuLarge;

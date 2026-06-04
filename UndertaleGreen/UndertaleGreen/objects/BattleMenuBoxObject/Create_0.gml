@@ -22,10 +22,19 @@ text[1] = "";
 text[2] = "";
 text[3] = "";
 
-soul = KindSoul_1;
+soul = KindSoul;
+
+selectedX = 0;
+selectedY = 0;
 
 soulX = 0;
 soulY = 0;
 
 itemBox = false;
 subMenu = "";
+
+sparable = false;
+fleeing = false;
+
+fleeMessages = "";
+fleeMessageChance = irandom(2);

@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"CameraTest",
-    "path":"sprites/CameraTest/CameraTest.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

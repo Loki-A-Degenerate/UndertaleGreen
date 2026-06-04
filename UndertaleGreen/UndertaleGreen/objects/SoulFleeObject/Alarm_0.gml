@@ -1,0 +1,1 @@
+BattleExitScript(BattleContainerObject.savedRoom, BattleContainerObject.savedX, BattleContainerObject.savedY);

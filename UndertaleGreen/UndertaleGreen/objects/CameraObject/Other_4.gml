@@ -1,10 +1,12 @@
 view_enabled = true;
 view_visible[0] = true;
 
-if battleMode
-{
+if battleMode {
 	camWidth = 640;
 	camHeight = 480;
+} else {
+	camWidth = 320;
+	camHeight = 240;
 }
 
 camera_set_view_size(view_camera[0], camWidth, camHeight);

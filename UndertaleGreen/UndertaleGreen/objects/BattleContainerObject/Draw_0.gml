@@ -1,5 +1,6 @@
-if !BattleBoxIntroObject.battleStart
-{
+draw_set_colour(c_white);
+
+if !instance_exists(BattleMenuBoxObject) {
 	soulXLeft = elementsLeftX + 16 + (selected * buttonSpacing);
 	soulYLeft = 455;
 

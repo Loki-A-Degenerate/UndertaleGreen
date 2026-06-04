@@ -1,0 +1,1 @@
+window_center(); // Why do I need to delay this?

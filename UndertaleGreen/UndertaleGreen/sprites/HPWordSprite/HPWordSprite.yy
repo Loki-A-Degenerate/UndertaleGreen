@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"BattleSystem",
-    "path":"folders/BattleSystem.yy",
+    "name":"HPSprites",
+    "path":"folders/BattleSystem/HPSprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
