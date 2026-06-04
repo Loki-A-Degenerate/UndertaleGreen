@@ -1,6 +1,6 @@
 draw_set_colour(c_white);
 
-if !instance_exists(BattleMercyBoxObject) {
+if !instance_exists(BattleSubMenuObject) {
 	soulXLeft = elementsLeftX + 16 + (selected * buttonSpacing);
 	soulYLeft = 455;
 

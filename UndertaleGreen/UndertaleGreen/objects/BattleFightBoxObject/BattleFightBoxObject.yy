@@ -13,7 +13,10 @@
     "name":"BattleMenuObjects",
     "path":"folders/BattleSystem/BattleBoxObjects/BattleMenuObjects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"BattleSubMenuObject",
+    "path":"objects/BattleSubMenuObject/BattleSubMenuObject.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

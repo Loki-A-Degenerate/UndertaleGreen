@@ -52,5 +52,6 @@ if global.selectButtonPressed {
 }
 
 if global.deselectButtonPressed {
+	show_debug_message("say what");
 	instance_destroy();
 }

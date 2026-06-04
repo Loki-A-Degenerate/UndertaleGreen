@@ -4,9 +4,15 @@ upKey = keyboard_check_pressed(vk_up);
 
 if upKey {
 	selectedY--;
+	if selectedY < 0 {
+		selectedY = array_length(BattleContainerObject.enemies) - 1;
+	}
 	audio_play_sound(MenuMove, 0, false);
 } else if downKey {
 	selectedY++;
+	if selectedY > array_length(BattleContainerObject.enemies) - 1 {
+		selectedY = 0;
+	}
 	audio_play_sound(MenuMove, 0, false);
 }
 

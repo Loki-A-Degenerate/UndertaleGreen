@@ -76,6 +76,7 @@
     {"id":{"name":"BattleFightBoxObject","path":"objects/BattleFightBoxObject/BattleFightBoxObject.yy",},},
     {"id":{"name":"BattleItemBoxObject","path":"objects/BattleItemBoxObject/BattleItemBoxObject.yy",},},
     {"id":{"name":"BattleMercyBoxObject","path":"objects/BattleMercyBoxObject/BattleMercyBoxObject.yy",},},
+    {"id":{"name":"BattleSubMenuObject","path":"objects/BattleSubMenuObject/BattleSubMenuObject.yy",},},
     {"id":{"name":"BattleTransitionObject","path":"objects/BattleTransitionObject/BattleTransitionObject.yy",},},
     {"id":{"name":"ButtonObject","path":"objects/ButtonObject/ButtonObject.yy",},},
     {"id":{"name":"CameraObject","path":"objects/CameraObject/CameraObject.yy",},},

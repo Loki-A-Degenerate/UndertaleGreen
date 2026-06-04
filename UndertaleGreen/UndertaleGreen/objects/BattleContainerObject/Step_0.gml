@@ -1,15 +1,17 @@
 with BattleTransitionObject {
 	instance_destroy();
 }
-// Big text box for the combat.
-if !instance_exists(BattleBoxIntroObject) && !instance_exists(BattleMercyBoxObject) {
-	with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
-		TextScript("Oh wow, it's a battle!");
-	}
-}
 
-// Move soul
-if !instance_exists(BattleMercyBoxObject) {
+if !instance_exists(BattleSubMenuObject) {
+	
+	// Big text box for the combat.
+	if !instance_exists(BattleBoxIntroObject) {
+		with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
+			TextScript("Oh wow, it's a battle!");
+		}
+	}
+	
+	// Move Soul
 	if keyboard_check_pressed(vk_left) {
 		selected--;
 		audio_play_sound(MenuMove, 0, false);
@@ -18,8 +20,9 @@ if !instance_exists(BattleMercyBoxObject) {
 		audio_play_sound(MenuMove, 0, false);
 	}
 	
+	// Pressing enter on the battle buttons
 	switch selected {
-		case 0:
+		case 0: // Fight button
 			if global.selectButtonPressed {
 				audio_play_sound(MenuSelect, 0, false);
 				with FightButtonObject {
@@ -27,7 +30,7 @@ if !instance_exists(BattleMercyBoxObject) {
 				}
 			}
 			break;
-		case 1:
+		case 1: // Act button
 			if global.selectButtonPressed {
 				audio_play_sound(MenuSelect, 0, false);
 				with ActButtonObject {
@@ -35,7 +38,7 @@ if !instance_exists(BattleMercyBoxObject) {
 				}
 			}
 			break;
-		case 2:
+		case 2: // Item button
 			if global.selectButtonPressed {
 				audio_play_sound(MenuSelect, 0, false);
 				with ItemButtonObject {
@@ -43,7 +46,7 @@ if !instance_exists(BattleMercyBoxObject) {
 				}
 			}
 			break;
-		case 3:
+		case 3: // Mercy button
 			if global.selectButtonPressed {
 				audio_play_sound(MenuSelect, 0, false);
 				with MercyButtonObject {

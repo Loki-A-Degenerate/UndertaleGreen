@@ -1,5 +1,4 @@
-draw_sprite_stretched(box, frame, boxLeftX, boxTopY, boxWidth, boxHeight);
-draw_set_font(UndertaleFontMenuLarge);
+event_inherited();
 
 if !fleeing {
 	draw_sprite(soul, 0, soulX, soulY);

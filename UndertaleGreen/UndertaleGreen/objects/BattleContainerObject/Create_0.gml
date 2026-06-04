@@ -3,8 +3,7 @@ battleButtons = [FightButtonObject, ActButtonObject, ItemButtonObject, MercyButt
 battleButtonY = 432;
 
 // The list of enemies
-enemies = [];
-subMenu = "";
+enemies = [BattleEncounterObject, BattleTransitionObject];
 
 elementsLeftX = 32;
 bottomTextX = 30;
