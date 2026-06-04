@@ -10,8 +10,8 @@
   "name":"BattleBoxIntroObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"BattleObjects",
-    "path":"folders/BattleSystem/BattleObjects.yy",
+    "name":"BattleBoxObjects",
+    "path":"folders/BattleSystem/BattleBoxObjects.yy",
   },
   "parentObjectId":{
     "name":"BasicTextBox",

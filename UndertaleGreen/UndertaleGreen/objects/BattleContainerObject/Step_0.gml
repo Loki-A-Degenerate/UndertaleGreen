@@ -2,14 +2,14 @@ with BattleTransitionObject {
 	instance_destroy();
 }
 // Big text box for the combat.
-if !instance_exists(BattleBoxIntroObject) && !instance_exists(BattleMenuBoxObject) {
+if !instance_exists(BattleBoxIntroObject) && !instance_exists(BattleMercyBoxObject) {
 	with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
 		TextScript("Oh wow, it's a battle!");
 	}
 }
 
 // Move soul
-if !instance_exists(BattleMenuBoxObject) {
+if !instance_exists(BattleMercyBoxObject) {
 	if keyboard_check_pressed(vk_left) {
 		selected--;
 		audio_play_sound(MenuMove, 0, false);

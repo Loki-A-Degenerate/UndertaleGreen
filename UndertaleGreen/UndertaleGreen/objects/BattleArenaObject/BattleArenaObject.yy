@@ -10,8 +10,8 @@
   "name":"BattleArenaObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"BattleObjects",
-    "path":"folders/BattleSystem/BattleObjects.yy",
+    "name":"BattleBoxObjects",
+    "path":"folders/BattleSystem/BattleBoxObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
