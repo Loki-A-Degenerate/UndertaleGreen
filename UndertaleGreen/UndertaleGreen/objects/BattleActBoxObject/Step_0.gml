@@ -1,6 +1,4 @@
-downKey = keyboard_check_pressed(vk_down);
-upKey = keyboard_check_pressed(vk_up);
-
+event_inherited();
 
 if upKey {
 	selectedY--;
@@ -27,9 +25,4 @@ if global.selectButtonPressed {
 	} else {
 		
 	}
-}
-
-
-if global.deselectButtonPressed {
-	instance_destroy();
 }

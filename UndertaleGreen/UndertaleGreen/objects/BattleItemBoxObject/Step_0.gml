@@ -1,16 +1,28 @@
-var pagesNeeded = ceil(array_length(global.inventory) / 4);
+event_inherited();
 
-for (var i = 1; i <= pagesNeeded; i++) {
-	pages[i] = i;
-	
+var count = 0;
+// Count the number of defined items
+for (var i = 0; i < array_length(global.inventory); i++) {
+    var item = global.inventory[i];
+    if (item != undefined) count++;
 }
+var pagesNeeded = ceil(count / 4);
 
+for (var i = 0; i < array_length(global.inventory); i++) {
+    var item = global.inventory[i];
 
+    if (item == undefined) continue; // skip empty slots
 
-leftKey = keyboard_check_pressed(vk_left);
-rightKey = keyboard_check_pressed(vk_right);
-downKey = keyboard_check_pressed(vk_down);
-upKey = keyboard_check_pressed(vk_up);
+    var page = i div 4;
+    var slot = i mod 4;
+
+    // create page if it doesn't exist yet
+    if (page >= array_length(pages)) {
+        pages[page] = array_create(4, undefined);
+    }
+
+    pages[page][slot] = item;
+}
 
 if upKey {
 	selectedY--;
@@ -28,8 +40,13 @@ if upKey {
 	selectedX++;
 	if selectedX > 1 {
 		if selectedY == 0 {
+			// Increase curPage number
 			curPage++;
-			show_debug_message("we go here");
+			if curPage >= array_length(pages) {
+				curPage = 1;
+			} else if curPage <= 0 {
+				curPage = array_length(pages) - 1;
+			}
 			selectedX = 0;
 		}
 		selectedX = 0;
@@ -48,10 +65,4 @@ soulY = 286 + (selectedY * 32);
 
 if global.selectButtonPressed {
 	audio_play_sound(MenuSelect, 0, false);
-
-}
-
-if global.deselectButtonPressed {
-	show_debug_message("say what");
-	instance_destroy();
 }

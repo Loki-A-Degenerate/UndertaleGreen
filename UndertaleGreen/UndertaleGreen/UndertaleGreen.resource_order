@@ -52,6 +52,7 @@
     {"name":"BattleContainerObject","order":7,"path":"objects/BattleContainerObject/BattleContainerObject.yy",},
     {"name":"BattleEncounterObject","order":6,"path":"objects/BattleEncounterObject/BattleEncounterObject.yy",},
     {"name":"BattleFightBoxObject","order":1,"path":"objects/BattleFightBoxObject/BattleFightBoxObject.yy",},
+    {"name":"BattleInitialiserObject","order":9,"path":"objects/BattleInitialiserObject/BattleInitialiserObject.yy",},
     {"name":"BattleItemBoxObject","order":3,"path":"objects/BattleItemBoxObject/BattleItemBoxObject.yy",},
     {"name":"BattleSubMenuObject","order":4,"path":"objects/BattleSubMenuObject/BattleSubMenuObject.yy",},
     {"name":"BattleTransitionObject","order":8,"path":"objects/BattleTransitionObject/BattleTransitionObject.yy",},

@@ -16,3 +16,11 @@ textFirstX = 110;
 textLastX = 350;
 textFirstY = 271;
 textLastY = 303;
+
+soul = KindSoul;
+
+selectedX = 0;
+selectedY = 0;
+
+soulX = 72;
+soulY = 0;

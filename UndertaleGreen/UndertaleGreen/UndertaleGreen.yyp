@@ -74,6 +74,7 @@
     {"id":{"name":"BattleContainerObject","path":"objects/BattleContainerObject/BattleContainerObject.yy",},},
     {"id":{"name":"BattleEncounterObject","path":"objects/BattleEncounterObject/BattleEncounterObject.yy",},},
     {"id":{"name":"BattleFightBoxObject","path":"objects/BattleFightBoxObject/BattleFightBoxObject.yy",},},
+    {"id":{"name":"BattleInitialiserObject","path":"objects/BattleInitialiserObject/BattleInitialiserObject.yy",},},
     {"id":{"name":"BattleItemBoxObject","path":"objects/BattleItemBoxObject/BattleItemBoxObject.yy",},},
     {"id":{"name":"BattleMercyBoxObject","path":"objects/BattleMercyBoxObject/BattleMercyBoxObject.yy",},},
     {"id":{"name":"BattleSubMenuObject","path":"objects/BattleSubMenuObject/BattleSubMenuObject.yy",},},

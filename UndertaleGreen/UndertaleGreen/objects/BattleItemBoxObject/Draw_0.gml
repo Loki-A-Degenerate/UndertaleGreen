@@ -2,10 +2,14 @@ event_inherited();
 draw_sprite(soul, 0, soulX, soulY);
 
 for (var i = 0; i < 4; i++) {
-	if (global.inventory[i] == noone) {
+	if (global.inventory[i] == undefined) {
 		text[i] = "";
 	} else {
-		text[i] = global.inventory[i].name;
+		if BattleInitialiserObject.serious {
+			text[i] = "* " + global.inventory[i].nameSerious;
+		} else {
+			text[i] = "* " + global.inventory[i].nameShort;
+		}
 	}
 }
 

@@ -22,8 +22,8 @@ global.item =
 		perfectButterscotchPie : 
 		{
 			name : "Perfect Butterscotch Pie",
-			nameShort : "Perfect Butt Pie",
-			nameSerious : "Perfect Pie",
+			nameShort : "ButtsPie",
+			nameSerious : "Best Pie",
 			check : "Baked using perfect ingredients and at a perfect temperature!",
 						
 			heals : 100,
@@ -34,8 +34,8 @@ global.item =
 		OKButterscotchPie : 
 		{
 			name : "Ok Butterscotch Pie",
-			nameShort : "Ok Butt Pie",
-			nameSerious : "Ok Pie",
+			nameShort : "OkButtPie",
+			nameSerious : "OkPie",
 			check : "Baked using ok ingredients and at a ok temperature.",
 						
 			heals : 60,
@@ -49,8 +49,8 @@ global.item =
 		fryingPan : 
 		{
 			name : "Frying Pan",
-			nameShort : "Perfect Butt Pie",
-			nameSerious : "Perfect Pie",
+			nameShort : "FryingPan",
+			nameSerious : "FryingPan",
 			check : "Good old reliable",
 						
 			at : 5,
@@ -76,8 +76,8 @@ global.item =
 		simpleApron :
 		{
 			name : "Old Apron",
-			nameShort : "Perfect Butt Pie",
-			nameSerious : "Perfect Pie",
+			nameShort : "Old Apron",
+			nameSerious : "Old Apron",
 			check : "It's got a heart sewn by yours truly.",
 						
 			df : -1,
@@ -91,6 +91,8 @@ global.item =
 		brokenToy :
 		{
 			name : "Broken Toy",
+			nameShort : "BrokenToy",
+			nameSerious : "BrokenToy",
 			check : "It belongs to someone important.",
 						
 			canUse : true,
@@ -111,6 +113,8 @@ global.mail =
 	}
 		
 }
-	
-global.inventory = [global.item.key.brokenToy, global.item.weapon.fryingPan, global.item.armour.simpleApron];
+global.inventory = array_create(16, undefined);
+global.inventory[0] = global.item.key.brokenToy;
+global.inventory[1] = global.item.weapon.fryingPan;
+global.inventory[2] = global.item.armour.simpleApron;
 global.mailList = [global.mail.introMail];
