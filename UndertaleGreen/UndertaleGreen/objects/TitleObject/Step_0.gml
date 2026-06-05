@@ -6,9 +6,9 @@ if image_index < 3 {
 	}
 } else if image_index = 3 {
 	if global.selectButtonPressed {
-		var inst = instance_create_depth(1, 1, -9999, WhiteTransitionObject);
-		inst.duration = audio_sound_length(PreIntroCymbal);
-		//var inst = instance_create_depth(1, 1, -9999, TransitionInObject);
+		//var inst = instance_create_depth(1, 1, -9999, WhiteTransitionObject);
+		//inst.duration = audio_sound_length(PreIntroCymbal);
+		var inst = instance_create_depth(1, 1, -9999, TransitionInObject);
 		inst.targetX = 136;
 		inst.targetY = 123.5;
 		inst.targetFace = FORWARD;

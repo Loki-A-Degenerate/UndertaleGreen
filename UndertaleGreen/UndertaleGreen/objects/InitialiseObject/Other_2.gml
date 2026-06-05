@@ -117,4 +117,12 @@ global.inventory = array_create(16, undefined);
 global.inventory[0] = global.item.key.brokenToy;
 global.inventory[1] = global.item.weapon.fryingPan;
 global.inventory[2] = global.item.armour.simpleApron;
+global.inventory[3] = global.item.armour.simpleApron;
+global.inventory[4] = global.item.armour.simpleApron;
+global.inventory[5] = global.item.armour.simpleApron;
+global.inventory[6] = global.item.armour.simpleApron;
+global.inventory[7] = global.item.armour.simpleApron;
+for (var i = 0; i < array_length(global.inventory); i++) {
+	//show_debug_message(global.inventory[i]);
+}
 global.mailList = [global.mail.introMail];

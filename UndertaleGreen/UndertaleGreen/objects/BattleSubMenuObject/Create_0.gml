@@ -24,3 +24,8 @@ selectedY = 0;
 
 soulX = 72;
 soulY = 0;
+
+text[0] = "";
+text[1] = "";
+text[2] = "";
+text[3] = "";

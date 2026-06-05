@@ -1,66 +1,100 @@
 event_inherited();
 
-var count = 0;
-// Count the number of defined items
-for (var i = 0; i < array_length(global.inventory); i++) {
-    var item = global.inventory[i];
-    if (item != undefined) count++;
-}
-var pagesNeeded = ceil(count / 4);
+////pages = [];
+//var index = 0;
+//// Constructing each page of the item iventory
+//for (var i = 0; i < array_length(global.inventory); i++) {
+//    var item = global.inventory[i];
 
-for (var i = 0; i < array_length(global.inventory); i++) {
-    var item = global.inventory[i];
+//    if (item == undefined) continue; // skip empty slots
 
-    if (item == undefined) continue; // skip empty slots
+//    var page = index div 4;
+//    var slot = index mod 4;
 
-    var page = i div 4;
-    var slot = i mod 4;
+//    // create page if it doesn't exist yet
+//    if (page >= array_length(pages)) {
+//        pages[page] = array_create(4, undefined);
+//    }
 
-    // create page if it doesn't exist yet
-    if (page >= array_length(pages)) {
-        pages[page] = array_create(4, undefined);
-    }
+//    pages[page][slot] = item;
+//	index++;
+//}
 
-    pages[page][slot] = item;
-}
-
+// Move the soul in relative positions in the menu box
 if upKey {
-	selectedY--;
-	if selectedY < 0 {
-		selectedY = 1;
+	var newIndex = itemSelected - 2;
+	if newIndex < 0 {
+		newIndex += 4;
 	}
-	audio_play_sound(MenuMove, 0, false);
+	
+	if itemExists(curPage, newIndex) {
+		itemSelected = newIndex;
+		audio_play_sound(MenuMove, 0, false);
+	}
 } else if downKey {
-	selectedY++;
-	if selectedY > 1 {
-		selectedY = 0;
+	var newIndex = itemSelected + 2;
+
+	if newIndex > 3 {
+		newIndex -= 4;
 	}
-	audio_play_sound(MenuMove, 0, false);
+	
+	if itemExists(curPage, newIndex) {
+		itemSelected = newIndex;
+		audio_play_sound(MenuMove, 0, false);
+	}
 } else if rightKey {
-	selectedX++;
-	if selectedX > 1 {
-		if selectedY == 0 {
-			// Increase curPage number
-			curPage++;
-			if curPage >= array_length(pages) {
-				curPage = 1;
-			} else if curPage <= 0 {
-				curPage = array_length(pages) - 1;
-			}
-			selectedX = 0;
+	if itemSelected == 1 { // If it's on the top right specifically, Undertale weird.
+		var newPage = curPage + 1;
+		
+		if newPage >= array_length(pages) {
+			newPage = 0;
 		}
-		selectedX = 0;
+		
+		var newIndex = itemSelected - 1;
+		
+		if itemExists(newPage, newIndex) {
+			curPage = newPage;
+			itemSelected = newIndex;
+			audio_play_sound(MenuMove, 0, false);
+		}
+	} else {
+		var newIndex = itemSelected + 1;
+		
+		if itemExists(curPage, newIndex) {
+			itemSelected = newIndex;
+			audio_play_sound(MenuMove, 0, false);
+		}
 	}
-	audio_play_sound(MenuMove, 0, false);
 } else if leftKey {
-	selectedX--;
-	if selectedX < 0 {
-		selectedX = 1;
+	if itemSelected == 0 { // If item selected is on the top left.
+		var newPage = curPage - 1;
+		
+		if newPage <= 0 {
+			newPage = array_length(pages) - 1;
+		}
+		
+		var newIndex = itemSelected + 1;
+		
+		if itemExists(newPage, newIndex) {
+			curPage = newPage;
+			itemSelected = newIndex;
+			audio_play_sound(MenuMove, 0, false);
+		}
+	} else {
+		var newIndex = itemSelected - 1;
+	
+		if itemExists(curPage, newIndex) {
+			itemSelected = newIndex;
+			audio_play_sound(MenuMove, 0, false);
+		}
 	}
-	audio_play_sound(MenuMove, 0, false);
 }
 
-soulX = 72 + (selectedX * 240);
+// Correlate the value of itemSelected to the coordinates of selectedX and selectedY
+selectedX = itemSelected mod 2;
+selectedY = itemSelected div 2;
+// Convert those coordinates into world space.
+soulX = 77 + (selectedX * 245);
 soulY = 286 + (selectedY * 32);
 
 if global.selectButtonPressed {

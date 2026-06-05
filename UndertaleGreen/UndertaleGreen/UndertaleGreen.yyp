@@ -11,10 +11,10 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"BattleSystem","folderPath":"folders/BattleSystem.yy","name":"BattleSystem","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"BattleButtonObjects","folderPath":"folders/BattleSystem/BattleButtonObjects.yy","name":"BattleButtonObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"BattleButtonSprites","folderPath":"folders/BattleSystem/BattleButtonSprites.yy","name":"BattleButtonSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BattleBoxObjects","folderPath":"folders/BattleSystem/BattleBoxObjects.yy","name":"BattleBoxObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BattleMenuObjects","folderPath":"folders/BattleSystem/BattleBoxObjects/BattleMenuObjects.yy","name":"BattleMenuObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"BattleButtonObjects","folderPath":"folders/BattleSystem/BattleButtonObjects.yy","name":"BattleButtonObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"BattleButtonSprites","folderPath":"folders/BattleSystem/BattleButtonSprites.yy","name":"BattleButtonSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"HPSprites","folderPath":"folders/BattleSystem/HPSprites.yy","name":"HPSprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"DialogSystem","folderPath":"folders/DialogSystem.yy","name":"DialogSystem","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"FloweyDialog","folderPath":"folders/DialogSystem/FloweyDialog.yy","name":"FloweyDialog","resourceType":"GMFolder","resourceVersion":"2.0",},
