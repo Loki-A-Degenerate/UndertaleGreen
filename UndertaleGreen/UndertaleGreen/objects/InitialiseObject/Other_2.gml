@@ -25,6 +25,7 @@ global.item =
 			nameShort : "ButtsPie",
 			nameSerious : "Best Pie",
 			check : "Baked using perfect ingredients and at a perfect temperature!",
+			category : "food",
 						
 			heals : 100,
 						
@@ -37,6 +38,7 @@ global.item =
 			nameShort : "OkButtPie",
 			nameSerious : "OkPie",
 			check : "Baked using ok ingredients and at a ok temperature.",
+			category : "food",
 						
 			heals : 60,
 						
@@ -52,6 +54,7 @@ global.item =
 			nameShort : "FryingPan",
 			nameSerious : "FryingPan",
 			check : "Good old reliable",
+			category : "weapon",
 						
 			at : 5,
 						
@@ -64,6 +67,7 @@ global.item =
 			nameShort : "Perfect Butt Pie",
 			nameSerious : "Perfect Pie",
 			check : "Even more hotter and reliabler",
+			category : "weapon",
 						
 			at : 10,
 						
@@ -79,6 +83,7 @@ global.item =
 			nameShort : "Old Apron",
 			nameSerious : "Old Apron",
 			check : "It's got a heart sewn by yours truly.",
+			category : "armour",
 						
 			df : -1,
 						
@@ -94,6 +99,7 @@ global.item =
 			nameShort : "BrokenToy",
 			nameSerious : "BrokenToy",
 			check : "It belongs to someone important.",
+			category : "key",
 						
 			canUse : true,
 			canDrop : false,

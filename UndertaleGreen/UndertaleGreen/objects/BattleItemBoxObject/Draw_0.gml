@@ -22,5 +22,3 @@ draw_text(textLastX, textFirstY, text[1]);
 draw_text(textFirstX, textLastY, text[2]);
 draw_text(textLastX, textLastY, text[3]);
 draw_text(textLastX, textLastY + 32, "   PAGE " + string(curPage + 1));
-
-show_debug_message(array_length(pages));

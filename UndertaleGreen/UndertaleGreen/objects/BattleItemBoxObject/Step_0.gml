@@ -1,25 +1,5 @@
 event_inherited();
 
-////pages = [];
-//var index = 0;
-//// Constructing each page of the item iventory
-//for (var i = 0; i < array_length(global.inventory); i++) {
-//    var item = global.inventory[i];
-
-//    if (item == undefined) continue; // skip empty slots
-
-//    var page = index div 4;
-//    var slot = index mod 4;
-
-//    // create page if it doesn't exist yet
-//    if (page >= array_length(pages)) {
-//        pages[page] = array_create(4, undefined);
-//    }
-
-//    pages[page][slot] = item;
-//	index++;
-//}
-
 // Move the soul in relative positions in the menu box
 if upKey {
 	var newIndex = itemSelected - 2;
@@ -43,7 +23,7 @@ if upKey {
 		audio_play_sound(MenuMove, 0, false);
 	}
 } else if rightKey {
-	if itemSelected == 1 { // If it's on the top right specifically, Undertale weird.
+	if itemSelected mod 2 == 1 { // If it's on the top right specifically, Undertale weird.
 		var newPage = curPage + 1;
 		
 		if newPage >= array_length(pages) {
@@ -66,10 +46,10 @@ if upKey {
 		}
 	}
 } else if leftKey {
-	if itemSelected == 0 { // If item selected is on the top left.
+	if itemSelected mod 2 == 0 { // If item selected is on the top left.
 		var newPage = curPage - 1;
 		
-		if newPage <= 0 {
+		if newPage < 0 {
 			newPage = array_length(pages) - 1;
 		}
 		
