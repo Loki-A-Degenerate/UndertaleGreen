@@ -1,7 +1,7 @@
 event_inherited();
 draw_sprite(soul, 0, soulX, soulY);
 
-if array_length(pages) <= 0 {
+if array_length(pages) <= 0 { // Array starts at a size 0, why?
 	exit;
 }
 
