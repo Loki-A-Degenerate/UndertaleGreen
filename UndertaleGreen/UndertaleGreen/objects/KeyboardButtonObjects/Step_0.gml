@@ -10,6 +10,16 @@ global.menuButtonPressed = keyboard_check_pressed(global.menuKey) || keyboard_ch
 
 if keyboard_check_pressed(vk_f4) 
 {
-	
 	window_set_fullscreen(!window_get_fullscreen());
+}
+
+//Exit the game
+if keyboard_check(vk_escape) {
+	if !instance_exists(QuittingObject) {
+		instance_create_layer(0, 0, "Instances", QuittingObject);
+	}
+} else {
+	with (QuittingObject) {
+		instance_destroy();
+	}
 }

@@ -1,6 +1,6 @@
 draw_set_colour(c_white);
 
-if !instance_exists(BattleSubMenuObject) {
+if !instance_exists(BattleSubMenuObject) && !instance_exists(BattleArenaObject){
 	soulXLeft = elementsLeftX + 16 + (selected * buttonSpacing);
 	soulYLeft = 455;
 
@@ -13,5 +13,6 @@ if !instance_exists(BattleSubMenuObject) {
 draw_set_font(UndertaleMarsFont);
 draw_text(bottomTextX, bottomTextY, global.playerName + "   LV " + string(global.lv));
 draw_sprite(HPWordSprite, 0, HPWordX, HPWordY);
-draw_sprite(HPFullSprite, 0, 275, 400);
-draw_text(314, bottomTextY, string(global.hp) + " / " + string(maxHP));
+draw_sprite_stretched(HPEmptySprite, 0, HPBoxX, HPBoxY, maxHP * 1.25, 21);
+draw_sprite_stretched(HPFullSprite, 0, HPBoxX, HPBoxY, global.hp * 1.25, 21);
+draw_text(HPBoxX + maxHP * 1.25 + 15, bottomTextY, string(global.hp) + " / " + string(maxHP));

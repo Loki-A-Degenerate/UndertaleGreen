@@ -5,6 +5,8 @@ curPage = 0;
 
 itemSelected = 0;
 
+selectedItem = 0;
+
 // Checks if the item in the index position exists
 function itemExists(_page, _index) {
 	if (_page >= array_length(pages)) return false;

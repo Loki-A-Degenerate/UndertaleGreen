@@ -2,8 +2,7 @@ with BattleTransitionObject {
 	instance_destroy();
 }
 
-if !instance_exists(BattleSubMenuObject) {
-	
+if !instance_exists(BattleSubMenuObject) && !instance_exists(BattleArenaObject) {
 	// Big text box for the combat.
 	if !instance_exists(BattleBoxIntroObject) {
 		with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
@@ -19,50 +18,43 @@ if !instance_exists(BattleSubMenuObject) {
 		selected++;
 		audio_play_sound(MenuMove, 0, false);
 	}
-	
-	// Pressing enter on the battle buttons
-	switch selected {
-		case 0: // Fight button
-			if global.selectButtonPressed {
-				audio_play_sound(MenuSelect, 0, false);
-				with FightButtonObject {
-					createFightMenu();
-				}
-			}
-			break;
-		case 1: // Act button
-			if global.selectButtonPressed {
-				audio_play_sound(MenuSelect, 0, false);
-				with ActButtonObject {
-					createActMenu();
-				}
-			}
-			break;
-		case 2: // Item button
-			if global.selectButtonPressed {
-				audio_play_sound(MenuSelect, 0, false);
-				with ItemButtonObject {
-					createItemMenu();
-				}
-			}
-			break;
-		case 3: // Mercy button
-			if global.selectButtonPressed {
-				audio_play_sound(MenuSelect, 0, false);
-				with MercyButtonObject {
-					createMercyMenu();
-				}
-			}
-			break;
+	// Select the battle buttons.
+	if (global.selectButtonPressed && !global.inputConsumed) {
+	    global.inputConsumed = true;
+	    switch (selected) {
+	        case 0: // Fight button
+	            audio_play_sound(MenuSelect, 0, false);
+	            with (FightButtonObject) createFightMenu();
+	        break;
+	        case 1: // Act button
+	            audio_play_sound(MenuSelect, 0, false);
+	            with (ActButtonObject) createActMenu();
+	        break;
+	        case 2: // Item button
+	            audio_play_sound(MenuSelect, 0, false);
+	            with (ItemButtonObject) createItemMenu();
+	        break;
+	        case 3: // Mercy button
+	            audio_play_sound(MenuSelect, 0, false);
+	            with (MercyButtonObject) createMercyMenu();
+	        break;
+	    }
 	}
+	global.inputConsumed = false;
+} else {
+	global.inputConsumed = true;
 }
 
 // Loop back around
-if selected > 3 {
-	selected = 0;
-}
-if selected < 0 {
-	selected = 3;
+if !instance_exists(BattleArenaObject) {
+	if selected > 3 {
+		selected = 0;
+	}
+	if selected < 0 {
+		selected = 3;
+	}
+} else {
+	selected = -1;
 }
 
 // Make the buttons yellow when selected

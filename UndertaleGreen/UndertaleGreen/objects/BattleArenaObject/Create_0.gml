@@ -2,13 +2,17 @@ box = MenuSprite;
 frame = -1;
 
 boxLeftX = 32;
-boxTopY = 320;
+boxTopY = 249;
+boxHeight = 142;
+boxCentreX = 320;
 
 boxWidth = 578;
-boxHeight = 152;
 
 boxLargeWidth = boxWidth;
 
 boxSmallWidth = 190;
-battleStart = false;
+battleStart = true;
 boxSizeChange = 13;
+changing = false;
+
+alarm[0] = 120;

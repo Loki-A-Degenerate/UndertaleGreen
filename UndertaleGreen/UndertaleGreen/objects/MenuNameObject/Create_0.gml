@@ -21,5 +21,5 @@ boxStatMiniH = 55;
 name = global.playerName;
 lv = global.lv;
 hp = global.hp;
-hp_max = 20;
+hp_max = global.hp;
 money = global.gold;

@@ -1,4 +1,4 @@
 xSpeed = 0;
 ySpeed = 0;
 
-moveSpeed = 2;
+depth = -y - 2;

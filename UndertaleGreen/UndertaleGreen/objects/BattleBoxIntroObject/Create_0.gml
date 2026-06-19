@@ -1,8 +1,10 @@
 // Inherit the parent event
 event_inherited();
+
 textSpaceY *= 2;
 textMargin *= 2;
 textWidth *= 2;
+textSpacing *= 2;
 boxLeftX *= 2;
 
 asterickSpace *= 2;

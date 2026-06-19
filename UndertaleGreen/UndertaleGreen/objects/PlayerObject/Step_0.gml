@@ -68,18 +68,6 @@ if !instance_exists(BasicTextBox) {
 	}
 }
 
-//Exit the game
-if keyboard_check(vk_escape) {
-	if !instance_exists(QuittingObject) {
-		instance_create_layer(0, 0, "Instances", QuittingObject);
-	}
-} else {
-	with (QuittingObject) {
-		instance_destroy();
-	}
-}
-
-//show_debug_message(fps);
 // Step counter to monster encounter control
 neededSteps = GameControllerObject.RoomData.stepCountRequirement;
 if xSpeed != 0 || ySpeed != 0 {
@@ -95,6 +83,3 @@ if GameControllerObject.RoomData.monsterEncounters {
 if instance_exists(TransitionInObject) {
 	stepCounter = 0;
 }
-
-//show_debug_message(fps);
-//show_debug_message(ceil(1 / 4));

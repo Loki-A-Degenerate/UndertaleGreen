@@ -1,0 +1,1 @@
+battleStart = false;

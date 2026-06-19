@@ -9,12 +9,13 @@ boxHeight = 76;
 
 textWidth = 235;
 textMargin = 32;
+textSpacing = 18;
 
 textSpaceY = 10;
 
 font = UndertaleFontMenu;
 
-asterickSpace = 17;
+asterickSpace = 16;
 
 page = 0;
 pageNumber = 0;

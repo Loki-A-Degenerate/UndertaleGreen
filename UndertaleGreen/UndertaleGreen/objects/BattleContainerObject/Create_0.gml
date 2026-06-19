@@ -10,6 +10,8 @@ bottomTextX = 30;
 bottomTextY = 401;
 buttonSpacing = 154;
 
+HPBoxX = 275;
+HPBoxY = 400;
 HPWordX = 244;
 HPWordY = 405;
 

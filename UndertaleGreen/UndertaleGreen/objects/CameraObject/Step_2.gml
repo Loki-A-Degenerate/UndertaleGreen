@@ -20,3 +20,5 @@ if instance_exists(MenuShake)
 	
 
 camera_set_view_pos(view_camera[0], camTargetX + sx, camTargetY + sy);
+
+//show_debug_message(fps);

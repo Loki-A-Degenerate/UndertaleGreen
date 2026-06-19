@@ -85,11 +85,38 @@ global.item =
 			check : "It's got a heart sewn by yours truly.",
 			category : "armour",
 						
-			df : -1,
+			df : 0,
 						
 			canUse : true,
 			canDrop : true,
 		},
+		newApron :
+		{
+			name : "New Apron",
+			nameShort : "New Apron",
+			nameSerious : "New Apron",
+			check : "It's new, in a way.",
+			category : "armour",
+						
+			df : 0,
+						
+			canUse : true,
+			canDrop : true,
+		},
+	},
+	patch : 
+	{
+		sewnHeart : 
+		{
+			name : "Sewn Heart",
+			nameShort : "SewnHeart",
+			nameSerious : "SewnHeart",
+			check : "It's patchy and kind of itchy, but it's yours",
+			category : "patch",
+			
+			canUse : true,
+			canDrop : false,
+		}
 	},
 	key : 
 	{
@@ -122,13 +149,14 @@ global.mail =
 global.inventory = array_create(16, undefined);
 global.inventory[0] = global.item.key.brokenToy;
 global.inventory[1] = global.item.weapon.fryingPan;
-global.inventory[2] = global.item.armour.simpleApron;
-global.inventory[3] = global.item.armour.simpleApron;
-global.inventory[4] = global.item.armour.simpleApron;
-global.inventory[5] = global.item.armour.simpleApron;
-global.inventory[6] = global.item.armour.simpleApron;
-global.inventory[7] = global.item.armour.simpleApron;
-for (var i = 0; i < array_length(global.inventory); i++) {
-	//show_debug_message(global.inventory[i]);
-}
+global.inventory[2] = global.item.armour.newApron;
+global.inventory[3] = global.item.food.OKButterscotchPie;
+global.inventory[4] = global.item.food.OKButterscotchPie;
+global.inventory[5] = global.item.food.OKButterscotchPie;
+global.inventory[6] = global.item.food.OKButterscotchPie;
+global.inventory[7] = global.item.food.OKButterscotchPie;
+
 global.mailList = [global.mail.introMail];
+
+global.weapon = [global.item.weapon.fryingPan];
+global.armour = [global.item.armour.simpleApron];

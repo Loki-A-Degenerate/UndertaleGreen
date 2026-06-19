@@ -7,3 +7,5 @@ global.selectButtonPressed = false;
 global.selectButtonReleased = false;
 global.deselectButtonPressed = false;
 global.menuButtonPressed = false;
+
+global.inputConsumed = false;

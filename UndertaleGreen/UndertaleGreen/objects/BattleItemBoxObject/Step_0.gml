@@ -78,5 +78,28 @@ soulX = 77 + (selectedX * 245);
 soulY = 286 + (selectedY * 32);
 
 if global.selectButtonPressed {
-	audio_play_sound(MenuSelect, 0, false);
+	selectedItem = pages[curPage][itemSelected];
+	var flavourText = "";
+	if !instance_exists(BattleBoxIntroObject) {
+		audio_play_sound(MenuSelect, 0, false);
+		switch selectedItem.category {
+			case "food" :
+				flavourText = "You ate the " + selectedItem.name + ".";
+				audio_play_sound(Heal, 0, false);
+				global.hp += selectedItem.heals;
+				if global.hp >= BattleContainerObject.maxHP {
+					global.hp = BattleContainerObject.maxHP;
+					flavourText += "\nYour HP was maxed out.";
+				}
+				break;
+			case "ingredient" :
+				flavourText = "You tried stomaching some raw ingredients.";
+				break;
+		}
+		with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
+			textSound = GenTextSound;
+			text[0] = flavourText;
+		}
+		
+	}
 }

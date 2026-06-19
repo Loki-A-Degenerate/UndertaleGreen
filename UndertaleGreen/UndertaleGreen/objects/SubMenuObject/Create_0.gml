@@ -23,3 +23,14 @@ soul = SoulMenuSprite;
 
 menuType = MenuObject.submenu;
 optionState = false;
+
+name = global.playerName;
+lv = global.lv;
+hpMax = global.hp;
+ex = global.exp;
+next = LevelNeededScript();
+at = global.at;
+df = global.df;
+gold = global.gold;
+weapon = global.weapon[0];
+armour = global.armour[0];
