@@ -15,4 +15,4 @@ battleStart = true;
 boxSizeChange = 13;
 changing = false;
 
-alarm[0] = 120;
+alarm[0] = 300;

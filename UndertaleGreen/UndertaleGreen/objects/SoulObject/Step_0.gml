@@ -1,3 +1,7 @@
+if global.hp <=0 { 
+	exit; 
+}
+
 rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
@@ -22,6 +26,3 @@ if place_meeting(x, y + ySpeed, SolidObject) == true {
 //Move player
 x += xSpeed;
 y += ySpeed;
-
-show_debug_message(x + xSpeed);
-show_debug_message(y + ySpeed);

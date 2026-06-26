@@ -63,7 +63,13 @@ for (var i = 0; i < array_length(battleButtons); i++) {
 }
 
 if global.hp <= 0 {
-	//instance_create_layer()
+	global.hp = 0;
+	var inst = instance_create_layer(0, 0, "Heartbreak", BattleDeathObject);
+		inst.soulX = SoulObject.x;
+		inst.soulY = SoulObject.y;
+	layer_destroy_instances("Instances");
 }
 
 instance_destroy(SoulBattleTransObject);
+
+//show_debug_message(instance_exists(SoulObject));

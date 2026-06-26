@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"SoulBreak1",
+  "%Name":"SoulBreakSound2",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.13061224,
+  "duration":0.7111111,
   "exportDir":"",
-  "name":"SoulBreak1",
+  "name":"SoulBreakSound2",
   "parent":{
     "name":"CombatSounds",
     "path":"folders/Sounds/CombatSounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"SoulBreak1.wav",
+  "soundFile":"SoulBreakSound2.wav",
   "volume":1.0,
 }

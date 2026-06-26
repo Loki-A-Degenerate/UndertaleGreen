@@ -1,3 +1,7 @@
+if global.hp <=0 { 
+	exit; 
+}
+
 if battleStart {
 	boxWidth -= boxSizeChange;
 	changing = true;
@@ -14,6 +18,10 @@ if battleStart {
 		changing = false;
 		instance_destroy();
 	}
+}
+
+if !changing {
+	global.hp -= 1;
 }
 
 //show_debug_message(changing);
