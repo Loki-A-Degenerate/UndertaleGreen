@@ -5,7 +5,7 @@ with BattleTransitionObject {
 if !instance_exists(BattleSubMenuObject) && !instance_exists(BattleArenaObject) {
 	// Big text box for the combat.
 	if !instance_exists(BattleBoxIntroObject) {
-		with instance_create_layer(0, 0, "Instances", BattleBoxIntroObject) {
+		with instance_create_layer(0, 0, "BattleInstances", BattleBoxIntroObject) {
 			TextScript("Oh wow, it's a battle!");
 		}
 	}
@@ -67,7 +67,7 @@ if global.hp <= 0 {
 	var inst = instance_create_layer(0, 0, "Heartbreak", BattleDeathObject);
 		inst.soulX = SoulObject.x;
 		inst.soulY = SoulObject.y;
-	layer_destroy_instances("Instances");
+	layer_destroy_instances("BattleInstances");
 }
 
 instance_destroy(SoulBattleTransObject);
