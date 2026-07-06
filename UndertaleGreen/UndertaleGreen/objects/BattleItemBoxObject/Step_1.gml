@@ -8,7 +8,7 @@ for (var i = 0; i < array_length(global.inventory); i++) {
     var slot = i mod 4;
 
     // create page if it doesn't exist yet
-    if (page >= array_length(pages)) {
+    if page >= array_length(pages) {
         pages[page] = array_create(4, undefined);
     }
 
