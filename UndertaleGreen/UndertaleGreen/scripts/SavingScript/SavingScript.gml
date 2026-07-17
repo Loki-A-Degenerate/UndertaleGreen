@@ -11,6 +11,7 @@ function SavingScript()
 	ini_write_real("Player", "LV", global.lv);
 	ini_write_real("Player", "exp", global.exp);
 	ini_write_real("Player", "hp", global.hp);
+	ini_write_real("Player", "maxHp", global.maxHp);
 	ini_write_real("Player", "at", global.at);
 	ini_write_real("Player", "df", global.df);
 	ini_write_real("Player", "gold", global.gold);

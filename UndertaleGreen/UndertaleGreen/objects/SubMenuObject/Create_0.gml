@@ -26,7 +26,7 @@ optionState = false;
 
 name = global.playerName;
 lv = global.lv;
-hpMax = global.hp;
+hpMax = global.maxHp;
 ex = global.exp;
 next = LevelNeededScript();
 at = global.at;

@@ -21,7 +21,7 @@ if battleStart {
 }
 
 if !changing {
-	global.hp -= 1;
+	global.hp -= 0.01;
 }
 
 //show_debug_message(changing);

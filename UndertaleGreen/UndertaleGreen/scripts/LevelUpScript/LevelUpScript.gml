@@ -31,6 +31,7 @@ function LevelUpScript(_EXP) {
 		expNeeded = LevelNeededScript();
 	}
 	global.hp = 16 + (4 * global.lv);
+	global.maxHp = global.hp;
 	global.at = (2 * global.lv) - 2
 	global.df = (global.lv - 1) div 4;
 }

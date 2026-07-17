@@ -75,33 +75,50 @@ if optionState {
 	if state == 1 {
 		//show_debug_message(state);
 		if global.selectButtonPressed {
-			var inst = instance_create_layer(0, 0, "Instances", MenuSelectBoxObject);
-			inst.itemSelected = selectedItem;
-			if menuType == "item" {
-				switch selected {
-					case 0:
-						inst.boxType = "USE";
-						break;
-					case 1:
-						inst.boxType = "INFO";
-						break;
-					case 2:
-						inst.boxType = "DROP";
-						break;
-				}
-			} else {
-				switch selected {
-					case 0:
-						inst.boxType = "READ";
-						break;
-					case 1:
-						inst.boxType = "PIN";
-						break;
-					case 2:
-						inst.boxType = "DROP";
-						break;
+			with instance_create_layer(0, 0, "Instances", MenuSelectBoxObject) {
+				if other.menuType == "item" {
+					switch other.selected {	
+						case 0:
+							ItemHandlerScript(other.selectedItem, "USE");
+							break;
+						case 1:
+							ItemHandlerScript(other.selectedItem, "INFO");
+							break;
+						case 2:
+							ItemHandlerScript(other.selectedItem, "DROP");
+							boxType = "DROP";
+							itemSelected = other.selectedItem;
+							break;
+					}
+				} else {
+					switch other.selected {
+						case 0:
+							ItemHandlerScript(other.selectedItem, "READ");
+							break;
+						case 1:
+							inst.boxType = "PIN";
+							break;
+						case 2:
+							ItemHandlerScript(other.selectedItem, "DROP");
+							boxType = "DROP";
+							itemSelected = other.selectedItem;
+							break;
+					}
 				}
 			}
+			//} else {
+			//	switch selected {
+			//		case 0:
+			//			inst.boxType = "READ";
+			//			break;
+			//		case 1:
+			//			inst.boxType = "PIN";
+			//			break;
+			//		case 2:
+			//			inst.boxType = "DROP";
+			//			break;
+			//	}
+			//}
 			audio_play_sound(MenuSelect, 0, false);
 			
 			// Get rid of the sub menu.

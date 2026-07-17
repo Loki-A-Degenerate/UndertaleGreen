@@ -7,4 +7,4 @@ selected = 0;
 
 soul = SoulMenuSprite;
 
-maxHP = global.hp;
+maxHP = global.maxHp;

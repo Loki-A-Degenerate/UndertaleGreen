@@ -4,6 +4,7 @@ global.playerName = ini_read_string("Player", "name", "Sunny");
 global.lv = ini_read_real("Player", "LV", 1);
 global.exp = ini_read_real("Player", "exp", 0);
 global.hp = ini_read_real("Player", "hp", 20);
+global.maxHp = ini_read_real("Player", "maxHp", 20);
 global.at = ini_read_real("Player", "at", 0);
 global.df = ini_read_real("Player", "df", 0);
 global.gold = ini_read_real("Player", "gold", 0);
@@ -44,7 +45,33 @@ global.item =
 						
 			canUse : true,
 			canDrop : true,
-		}
+		},
+		FlyCandy :
+		{
+			name : "Fly Candy",
+			nameShort : "FlyCandy",
+			nameSerious : "FlyCandy",
+			check : "The buzzing makes you feel your nerves.",
+			category : "food",
+			
+			heals : 5,
+			
+			canUse : true,
+			canDrop : true,
+		},
+		FriedEgg : 
+		{
+			name : "Fried Egg",
+			nameShort : "FriedEgg",
+			nameSerious : "FriedEgg",
+			check : "Share it with your friends!",
+			category : "food",
+			
+			heals : 10,
+			
+			canUse : true,
+			canDrop : true,	
+		},
 	},
 	weapon : 
 	{
@@ -111,12 +138,100 @@ global.item =
 			name : "Sewn Heart",
 			nameShort : "SewnHeart",
 			nameSerious : "SewnHeart",
-			check : "It's patchy and kind of itchy, but it's yours",
+			check : "It's patchy and kind of itchy, but it's yours.",
 			category : "patch",
+			
+			ext_df : 0,
 			
 			canUse : true,
 			canDrop : false,
-		}
+		},
+		
+		chefBadge :
+		{
+			name : "Chef's Badge",	
+			nameShort : "ChefBadge",
+			nameSerious : "ChefBadge",
+			check : "With this on, you are a certified chef!",
+			category : "patch",
+			
+			ext_df : 5,
+			
+			canUse : true,
+			canDrop : true,
+		},
+		
+		flowerPatch : // Genocide exclusive
+		{
+			name : "Flower Patch",
+			nameShort : "FlowPatch",
+			nameSerious : "FlowPatch",
+			check : "A gift from your best friend.",
+			category : "patch",
+			
+			ext_df : 8,
+			
+			canUse : true,
+			canDrop : true,
+		},
+	},
+	ingredient :
+	{
+		butter : 
+		{
+			name : "Butter",
+			nameShort : "Butter",
+			nameSerious : "Butter",
+			check : "Butter stick!",
+			category : "ingredient",
+			
+			canUse : true,
+			canDrop : true,
+		},
+		cinnamon :
+		{
+			name : "Cinnamon",
+			nameShort : "Cinnamon",
+			nameSerious : "Cinnamon",
+			check : "The humble stick of cinnamon.",
+			category : "ingredient",
+			
+			canUse : true,
+			canDrop : true,	
+		},
+		eggs :
+		{
+			name : "Eggs",
+			nameShort : "Eggs",
+			nameSerious : "Eggs",
+			check : "It's eggs! It's preferable to not ask about its origins",
+			category : "ingredient",
+			
+			canUse : true,
+			canDrop : true,	
+		},
+		flour :
+		{
+			name : "Flour",
+			nameShort : "Flour",
+			nameSerious : "Flour",
+			check : "Flour! Not to be confused as your fellow companion",
+			category : "ingredient",
+			
+			canUse : true,
+			canDrop : true,	
+		},
+		flies :
+		{
+			name : "Flies",
+			nameShort : "Flies",
+			nameSerious : "Flies",
+			check : "It's flies... ew.",
+			category : "ingredient",
+			
+			canUse : true,
+			canDrop : true,
+		},
 	},
 	key : 
 	{

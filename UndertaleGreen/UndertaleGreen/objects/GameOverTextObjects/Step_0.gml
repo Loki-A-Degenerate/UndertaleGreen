@@ -49,4 +49,9 @@ if endOfText {
 		selected = 1;
 		audio_play_sound(MenuMove, 0, false);
 	}
+	if global.selectButtonPressed {
+		if selected == 0 {
+			
+		}
+	}
 }

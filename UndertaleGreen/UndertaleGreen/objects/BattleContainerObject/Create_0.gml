@@ -31,4 +31,4 @@ soulYLeft = 225;
 soulX = soulXLeft;
 soulY = soulYLeft;
 
-maxHP = global.hp;
+maxHP = global.maxHp;
