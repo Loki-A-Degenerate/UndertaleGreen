@@ -72,6 +72,19 @@ global.item =
 			canUse : true,
 			canDrop : true,	
 		},
+		cheese : 
+		{
+			name : "Cheese",	
+			nameShort : "Cheese",
+			nameSerious : "Cheese",
+			check : "It's cheese",
+			category : "food",
+			
+			heals : 10,
+			
+			canUse : true,
+			canDrop : true,
+		},
 	},
 	weapon : 
 	{
@@ -140,11 +153,25 @@ global.item =
 			nameSerious : "SewnHeart",
 			check : "It's patchy and kind of itchy, but it's yours.",
 			category : "patch",
-			
+			use : "You lack the tools needed to sew this patch back on.",
 			ext_df : 0,
 			
 			canUse : true,
 			canDrop : false,
+		},
+		
+		snowFlake :
+		{
+			name : "Snowflake",	
+			nameShort : "Snowflake",
+			nameSerious : "Snowflake",
+			check : "A patch of snow.",
+			category : "patch",
+			use : "",
+			ext_df : 5,
+			
+			canUse : true,
+			canDrop : true,
 		},
 		
 		chefBadge :
@@ -154,13 +181,26 @@ global.item =
 			nameSerious : "ChefBadge",
 			check : "With this on, you are a certified chef!",
 			category : "patch",
-			
+			use : "You are certified chef. You can now enter the kitchen.",
 			ext_df : 5,
 			
 			canUse : true,
 			canDrop : true,
 		},
 		
+		deltaRune : 
+		{
+			name : "The Delta Rune",
+			nameShort : "Deltarune",
+			nameSerious : "Deltarune",
+			check : "The insignia of the monster kingdom",
+			category : "patch",
+			use : "You feel the ",
+			ext_df : 10,
+			
+			canUse : true,
+			canDrop : true,
+		},
 		flowerPatch : // Genocide exclusive
 		{
 			name : "Flower Patch",
@@ -168,8 +208,8 @@ global.item =
 			nameSerious : "FlowPatch",
 			check : "A gift from your best friend.",
 			category : "patch",
-			
-			ext_df : 8,
+			use : "You are now closer to your best friend... well what's left of him.",
+			ext_df : 12,
 			
 			canUse : true,
 			canDrop : true,
@@ -245,7 +285,7 @@ global.item =
 						
 			canUse : true,
 			canDrop : false,
-		}
+		},
 	},
 }
 

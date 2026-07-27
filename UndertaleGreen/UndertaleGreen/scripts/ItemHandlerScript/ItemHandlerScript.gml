@@ -45,6 +45,7 @@ function UseItemScript(_item) {
 		case "patch" :
 			if _item.name == ""
 			TextScript("You sewed on the " + _item.name + ".");
+			TextScript(_item.use);
 			break;
 	}
 	array_delete(global.inventory, index, 1);
