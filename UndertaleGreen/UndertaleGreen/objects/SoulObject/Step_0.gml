@@ -9,8 +9,12 @@ upKey = keyboard_check(vk_up);
 
 var base_speed = 4;
 
-if (BattleArenaObject.changing) base_speed = 0;
+if (BattleArenaObject.changing || BattleArenaObject.shieldMode) base_speed = 0;
 if (keyboard_check(vk_shift)) base_speed = 2;
+
+if BattleArenaObject.shieldMode {
+	
+}
 
 var xSpeed = (rightKey - leftKey) * base_speed;
 var ySpeed = (downKey - upKey) * base_speed;

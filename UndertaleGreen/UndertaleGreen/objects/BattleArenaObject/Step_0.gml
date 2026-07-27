@@ -5,9 +5,16 @@ if global.hp <=0 {
 if battleStart {
 	boxWidth -= boxSizeChange;
 	changing = true;
-	if boxWidth <= boxSmallWidth {
-		boxWidth = boxSmallWidth;
-		changing = false;
+	if shieldMode {
+		if boxWidth <= shieldBoxLength {
+			boxWidth = shieldBoxLength;
+			changing = false;
+		}
+	} else {
+		if boxWidth <= boxSmallWidth {
+			boxWidth = boxSmallWidth;
+			changing = false;
+		}
 	}
 } else {
 	instance_destroy(SoulObject);

@@ -11,8 +11,8 @@
   "name":"BattleContainerObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"BattleSystem",
-    "path":"folders/BattleSystem.yy",
+    "name":"BattleHandlerObjects",
+    "path":"folders/BattleSystem/BattleHandlerObjects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

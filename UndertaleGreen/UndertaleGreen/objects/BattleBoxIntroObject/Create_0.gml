@@ -17,3 +17,5 @@ boxHeight = 140;
 textSound = GenTextSound2;
 
 font = UndertaleFontMenuLarge;
+
+shieldMode = true;
