@@ -3,7 +3,7 @@ ini_open("UndertaleGreenSave.ini");
 localRoom =  ini_read_real("Save1", "room", 0);
 playerX = ini_read_real("Save1", "x", 0);
 playerY = ini_read_real("Save1", "y", 0);
-time = ini_read_real("Save1", "timer", 0);
+time = ini_read_string("Save1", "timer", "00:00");
 face = ini_read_real("Save1", "facing", 29);
 
 name = ini_read_string("Player", "name", "Sunny");
@@ -18,6 +18,6 @@ if state {
 		inst.targetRoom = localRoom;
 		inst.targetX = playerX;
 		inst.targetY = playerY;
-		inst.targetFace = face;
+		inst.targetFace = FORWARD;
 	}
 }

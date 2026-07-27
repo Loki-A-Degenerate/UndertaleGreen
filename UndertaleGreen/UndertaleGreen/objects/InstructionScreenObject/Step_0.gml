@@ -30,4 +30,8 @@ if state {
 			audio_play_sound(PreIntroCymbal, 0, false);
 		}
 	}
+	if selected == 1 && global.selectButtonPressed {
+		audio_play_sound(MenuSelect, 0, false);
+		room_goto(ConfigMenu);
+	}
 }
