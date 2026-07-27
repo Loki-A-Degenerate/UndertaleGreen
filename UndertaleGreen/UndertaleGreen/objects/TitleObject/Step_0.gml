@@ -2,10 +2,16 @@
 
 if image_index < 3 {
 	if global.selectButtonPressed {
-		image_index++;
+		if file_exists("UndertaleGreenSave.ini") {
+			room_goto(SaveRoom);
+		} else {
+			room_goto(InstructionsRoom);
+		}
+		//image_index = 3;
+		alarm[0] = -1;
 	}
 } else if image_index = 3 {
-	if global.selectButtonPressed {
+	if global.selectButtonPressed && selected == 0 {
 		//var inst = instance_create_depth(1, 1, -9999, WhiteTransitionObject);
 		//inst.duration = audio_sound_length(PreIntroCymbal);
 		var inst = instance_create_depth(1, 1, -9999, TransitionInObject);
@@ -18,13 +24,22 @@ if image_index < 3 {
 		if !audio_is_playing(PreIntroCymbal) {
 			audio_play_sound(PreIntroCymbal, 0, false);
 		}
-	} else if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down) {
-		image_index = 4;
+	} else if keyboard_check_pressed(vk_up) {
+		audio_play_sound(MenuMove, 0, false);
+		selected--; 
+		if selected < 0 {
+			selected = 1;
+		}
+	} else if keyboard_check_pressed(vk_down) {
+		audio_play_sound(MenuMove, 0, false);
+		selected++;
+		if selected > 1 {
+			selected = 0;
+		}
 	}
-} else if image_index = 4 {
-	if global.selectButtonPressed {
-		room_goto(ConfigMenu);
-	} else if keyboard_check_pressed(vk_up) || keyboard_check_pressed(vk_down) {
-		image_index = 3;
-	}
+} 
+
+if selected == 1 && global.selectButtonPressed {
+	audio_play_sound(MenuSelect, 0, false);
+	room_goto(ConfigMenu);
 }

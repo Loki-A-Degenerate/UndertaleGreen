@@ -9,6 +9,7 @@ boxCentreX = 320;
 boxWidth = 578;
 
 boxLargeWidth = boxWidth;
+boxLargeHeight = boxHeight;
 
 boxSmallWidth = 190;
 battleStart = true;
@@ -16,6 +17,6 @@ boxSizeChange = 13;
 changing = false;
 
 shieldMode = true;
-shieldBoxLength = 60;
+shieldBoxLength = 100;
 
 alarm[0] = 300;

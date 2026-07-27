@@ -3,7 +3,7 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
-var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom);
+var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom || room == InstructionsRoom);
 var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject) || instance_exists(BattleEncounterObject);
 
 moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room

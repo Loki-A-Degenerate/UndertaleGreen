@@ -43,12 +43,14 @@ function UseItemScript(_item) {
 			}
 			break;
 		case "patch" :
-			if _item.name == ""
+			//if _item.name == ""
 			TextScript("You sewed on the " + _item.name + ".");
 			TextScript(_item.use);
 			break;
 	}
-	array_delete(global.inventory, index, 1);
+	if _item.canDrop {
+		array_delete(global.inventory, index, 1);
+	}
 }
 
 function InfoItemScript(_item) {
