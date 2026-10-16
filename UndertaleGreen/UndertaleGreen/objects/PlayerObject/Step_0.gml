@@ -3,11 +3,11 @@ leftKey = keyboard_check(vk_left);
 downKey = keyboard_check(vk_down);
 upKey = keyboard_check(vk_up);
 
-var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom || room == InstructionsRoom || room == SaveRoom);
+//var inBlockedRoom = (room == IntroRoom || room == StoryRoom || room == ConfigMenu || room == BattleRoom || room == InstructionsRoom || room == SaveRoom);
 var menuOpen = instance_exists(MenuObject) || instance_exists(BasicTextBox) || instance_exists(SaveMenuObject) || instance_exists(BattleEncounterObject);
 
-moveable = !(inBlockedRoom || menuOpen); // Can't move when in a specific room
-visible  = !inBlockedRoom; // Visible only when not in a specific room
+moveable = !(array_contains(global.menuRoom, room) || menuOpen); // Can't move when in a specific room
+visible  = !array_contains(global.menuRoom, room); // Visible only when not in a specific room
 
 if moveable	{
 	moveSpeed = 2;

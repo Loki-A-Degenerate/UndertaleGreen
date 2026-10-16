@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RuinsEntrance",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RuinsEntrance/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

@@ -1,6 +1,6 @@
 function GameOverText(_battleType){
 	switch _battleType {
-		default:
+		default: // Basic monsters
 			var rando = irandom(3);
 			switch rando {
 				case 0:

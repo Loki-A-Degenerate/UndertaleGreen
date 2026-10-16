@@ -20,11 +20,11 @@ lv = 0;
 seconds = CameraObject.seconds;
 minutes = CameraObject.minutes;
 
-clock = ini_read_string("Save1", "timer", "0:0");
-prevClock = 0;
+clock = CameraObject.fullClock;
+prevClock = ini_read_real("Save1", "timer", 0);
 
-region = "Ruins";
-location = "Flower Bed";
+region = GameControllerObject.RoomData.locale;
+location = room_get_name(room);
 
 ini_close();
 
