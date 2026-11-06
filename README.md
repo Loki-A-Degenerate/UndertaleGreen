@@ -14,3 +14,5 @@ Then I would like to thank Vennis Delapaz for making this possible, their sprite
 As of 21st of May 2026, this is not the full credits, I am practically inept at everything including programming, so artists, composers and the like will be further credited. 
 
 To everyone who wants to play this game, thank you for giving me a chance. 
+
+Link to a short conceptual video: https://youtu.be/kIT_L-80Bmc (this is inclined to change as improvements are made)
