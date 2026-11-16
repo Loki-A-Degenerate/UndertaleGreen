@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GameText",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Texts",
+    "path":"folders/Scripts/Texts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
