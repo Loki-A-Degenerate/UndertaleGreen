@@ -16,7 +16,7 @@ battleStart = true;
 boxSizeChange = 13;
 changing = false;
 
-shieldMode = true;
+shieldMode = false;
 shieldBoxLength = 100;
 
 alarm[0] = 300;

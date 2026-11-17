@@ -11,4 +11,4 @@ spareable = false;
 fleeing = false;
 
 fleeMessages = "";
-fleeMessageChance = irandom(2);
+fleeMessageChance = irandom(3);

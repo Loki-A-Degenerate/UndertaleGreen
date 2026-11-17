@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RuinsButtons",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RuinsButtons/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

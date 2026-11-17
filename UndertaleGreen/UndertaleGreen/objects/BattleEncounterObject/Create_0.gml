@@ -1,5 +1,6 @@
 xPos = 0;
 yPos = 0;
+locale = "";
 
 sound = audio_play_sound(BattleEncounterSound, 0, false);
 

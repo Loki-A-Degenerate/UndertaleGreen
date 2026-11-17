@@ -2,7 +2,7 @@ with GameControllerObject
 {
 	RoomData =
 	{
-		locale : "Somewhere",
+		locale : "Ruins",
 		monsterEncounters : true,
 		stepCountRequirement : 2,
 		music : noone,
