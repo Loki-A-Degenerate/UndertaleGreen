@@ -1,4 +1,4 @@
 targetX = 158;
 targetY = 460;
-targetRoom = ShadowoftheRuins;
+targetRoom = ShadowOfTheRuins;
 targetFace = BACK;

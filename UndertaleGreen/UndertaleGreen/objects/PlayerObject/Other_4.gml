@@ -1,0 +1,1 @@
+locale = GameControllerObject.RoomData.locale;

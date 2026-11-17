@@ -5,19 +5,35 @@ if global.hp <=0 {
 if battleStart {
 	boxWidth -= boxSizeChange;
 	changing = true;
-	if boxWidth <= boxSmallWidth {
-		boxWidth = boxSmallWidth;
-		changing = false;
+	if shieldMode {
+		if boxWidth <= shieldBoxLength {
+			boxWidth = shieldBoxLength;
+			boxHeight -= boxSizeChange;
+			if boxHeight <= shieldBoxLength {
+				boxHeight = shieldBoxLength;
+				changing = false;
+			}
+		} 
+	} else {
+		if boxWidth <= boxSmallWidth {
+			boxWidth = boxSmallWidth;
+			changing = false;
+		}
 	}
 } else {
 	instance_destroy(SoulObject);
+	instance_destroy(FryingPanObject);
 	changing = true;
-	boxWidth += boxSizeChange;
-	if boxWidth >= boxLargeWidth {
-		boxWidth = boxLargeWidth;
-		changing = false;
-		instance_destroy();
-	}
+	boxHeight += boxSizeChange;
+	if boxHeight >= boxLargeHeight {
+		boxHeight = boxLargeHeight;
+		boxWidth += boxSizeChange;
+		if boxWidth >= boxLargeWidth {
+			boxWidth = boxLargeWidth;
+			changing = false;
+			instance_destroy();
+		}
+	} 
 }
 
 if !changing {

@@ -23,12 +23,25 @@ global.item =
 		perfectButterscotchPie : 
 		{
 			name : "Perfect Butterscotch Pie",
-			nameShort : "ButtsPie",
+			nameShort : "PerfPie",
 			nameSerious : "Best Pie",
 			check : "Baked using perfect ingredients and at a perfect temperature!",
 			category : "food",
 						
-			heals : 100,
+			heals : 50,
+						
+			canUse : true,
+			canDrop : true,
+		},
+		perfectButterScotchSlice : 
+		{
+			name : "Perfect Butterscotch Slice",
+			nameShort : "PerfSlice",
+			nameSerious : "Pie Slice",
+			check : "A slice of pie",
+			category : "food",
+						
+			heals : 50,
 						
 			canUse : true,
 			canDrop : true,
@@ -46,7 +59,7 @@ global.item =
 			canUse : true,
 			canDrop : true,
 		},
-		FlyCandy :
+		flyCandy :
 		{
 			name : "Fly Candy",
 			nameShort : "FlyCandy",
@@ -59,7 +72,7 @@ global.item =
 			canUse : true,
 			canDrop : true,
 		},
-		FriedEgg : 
+		friedEgg : 
 		{
 			name : "Fried Egg",
 			nameShort : "FriedEgg",
@@ -72,14 +85,27 @@ global.item =
 			canUse : true,
 			canDrop : true,	
 		},
+		cheese : 
+		{
+			name : "Cheese",	
+			nameShort : "Cheese",
+			nameSerious : "Cheese",
+			check : "It's cheese",
+			category : "food",
+			
+			heals : 10,
+			
+			canUse : true,
+			canDrop : true,
+		},
 	},
 	weapon : 
 	{
 		fryingPan : 
 		{
-			name : "Frying Pan",
-			nameShort : "FryingPan",
-			nameSerious : "FryingPan",
+			name : "Rusted Pan",
+			nameShort : "RustedPan",
+			nameSerious : "RustedPan",
 			check : "Good old reliable",
 			category : "weapon",
 						
@@ -91,7 +117,7 @@ global.item =
 		charedFryingPan :
 		{
 			name : "Chared Frying Pan",
-			nameShort : "Perfect Butt Pie",
+			nameShort : "CharedPan",
 			nameSerious : "Perfect Pie",
 			check : "Even more hotter and reliabler",
 			category : "weapon",
@@ -140,11 +166,24 @@ global.item =
 			nameSerious : "SewnHeart",
 			check : "It's patchy and kind of itchy, but it's yours.",
 			category : "patch",
-			
+			use : "You lack the tools needed to sew this patch back on.",
 			ext_df : 0,
 			
 			canUse : true,
 			canDrop : false,
+		},
+		snowFlake :
+		{
+			name : "Snowflake",	
+			nameShort : "Snowflake",
+			nameSerious : "Snowflake",
+			check : "A patch of snow.",
+			category : "patch",
+			use : "",
+			ext_df : 5,
+			
+			canUse : true,
+			canDrop : true,
 		},
 		
 		chefBadge :
@@ -154,13 +193,25 @@ global.item =
 			nameSerious : "ChefBadge",
 			check : "With this on, you are a certified chef!",
 			category : "patch",
-			
+			use : "You are certified chef. You can now enter the kitchen.",
 			ext_df : 5,
 			
 			canUse : true,
 			canDrop : true,
 		},
-		
+		deltaRune : 
+		{
+			name : "The Delta Rune",
+			nameShort : "Deltarune",
+			nameSerious : "Deltarune",
+			check : "The insignia of the monster kingdom",
+			category : "patch",
+			use : "You feel the ",
+			ext_df : 10,
+			
+			canUse : true,
+			canDrop : true,
+		},
 		flowerPatch : // Genocide exclusive
 		{
 			name : "Flower Patch",
@@ -168,8 +219,8 @@ global.item =
 			nameSerious : "FlowPatch",
 			check : "A gift from your best friend.",
 			category : "patch",
-			
-			ext_df : 8,
+			use : "You are now closer to your best friend... well what's left of him.",
+			ext_df : 12,
 			
 			canUse : true,
 			canDrop : true,
@@ -245,7 +296,54 @@ global.item =
 						
 			canUse : true,
 			canDrop : false,
-		}
+		},
+	},
+	tool : 
+	{
+		pot : 
+		{
+			name : "Pot",
+			nameShort : "Pot",
+			nameSerious : "Pot",
+			check : "A deep pot for deep needs",
+			category : "tool",
+			
+			canUse : true,
+			canDrop : false,
+		},	
+		mortorNPestle :
+		{
+			name : "Mortor and Pestle",
+			nameShort : "MotorPest",
+			nameSerious : "MortPest",
+			check : "It belongs to someone important.",
+			category : "tool",
+						
+			canUse : true,
+			canDrop : false,
+		},
+		kitchenKnife :
+		{
+			name : "Kitchen Knife",
+			nameShort : "KitnKnife",
+			nameSerious : "",
+			check : "",
+			category : "tool",
+			
+			canUse : true,
+			canDrop : false,
+		},
+		cuttingBoard :
+		{
+			name : "Cutting Board",
+			nameShort : "CutiBoard",
+			nameSerious : "Cut Board",
+			check : "",
+			category : "tool",
+			
+			canUse : true,
+			canDrop : false,
+		},
 	},
 }
 
@@ -261,6 +359,19 @@ global.mail =
 	}
 		
 }
+
+global.menuRoom = [
+	InitialRoom,
+	ScreenRooms,
+	InstructionsRoom,
+	IntroRoom,
+	StoryRoom,
+	SaveRoom,
+	MenuRoom,
+	ConfigMenu,
+	BattleRoom,
+];
+
 global.inventory = array_create(16, undefined);
 global.inventory[0] = global.item.key.brokenToy;
 global.inventory[1] = global.item.weapon.fryingPan;
@@ -275,3 +386,4 @@ global.mailList = [global.mail.introMail];
 
 global.weapon = [global.item.weapon.fryingPan];
 global.armour = [global.item.armour.simpleApron];
+global.patch = [global.item.patch.sewnHeart];

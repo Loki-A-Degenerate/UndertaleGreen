@@ -1,3 +1,5 @@
+ini_open("UndertaleGreenSave.ini");
+
 camWidth = 320;
 camHeight = 240;
 
@@ -6,7 +8,6 @@ viewHeight = 480;
 
 battleMode = false;
 
-timer = 0;
-seconds = 0;
-minutes = 0;
+timer = ini_read_real("Save1", "timer", 0);
 fullClock = 0;
+

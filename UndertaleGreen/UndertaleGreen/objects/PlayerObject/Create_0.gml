@@ -5,6 +5,7 @@ neededSteps = 0;
 
 moveSpeed = 2;
 moveable = false;
+locale = 0;
 
 sprite[RIGHT] = PlayerSpriteRight;
 sprite[BACK] = PlayerSpriteBack;

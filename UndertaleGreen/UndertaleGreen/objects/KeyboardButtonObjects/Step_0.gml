@@ -23,3 +23,10 @@ if keyboard_check(vk_escape) {
 		instance_destroy();
 	}
 }
+
+
+// Check for a key press (e.g., the "S" key)
+if (keyboard_check_pressed(ord("E"))) {
+    // Saves a full-screen screenshot to the local sandbox directory
+    screen_save(working_directory + "Screens\Screen_" + string(num++) + ".png")
+}

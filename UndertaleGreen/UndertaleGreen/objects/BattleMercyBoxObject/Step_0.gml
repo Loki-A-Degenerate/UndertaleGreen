@@ -1,17 +1,19 @@
 event_inherited();
 
-if upKey {
-	selectedY--;
-	if selectedY < 0 {
-		selectedY = 1;
-	}
+if !fleeing {
+	if upKey {
+		selectedY--;
+		if selectedY < 0 {
+			selectedY = 1;
+		}
 	audio_play_sound(MenuMove, 0, false);
-} else if downKey {
-	selectedY++;
-	if selectedY > 1 {
-		selectedY = 0;
+	} else if downKey {
+		selectedY++;
+		if selectedY > 1 {
+			selectedY = 0;
+		}
+		audio_play_sound(MenuMove, 0, false);
 	}
-	audio_play_sound(MenuMove, 0, false);
 }
 
 
