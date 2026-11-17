@@ -29,6 +29,8 @@ if state {
 		if !audio_is_playing(PreIntroCymbal) {
 			audio_play_sound(PreIntroCymbal, 0, false);
 		}
+		
+		CreatePlayerStats();
 	}
 	if selected == 1 && global.selectButtonPressed {
 		audio_play_sound(MenuSelect, 0, false);

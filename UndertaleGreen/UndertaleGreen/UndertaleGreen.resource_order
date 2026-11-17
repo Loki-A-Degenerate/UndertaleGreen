@@ -123,6 +123,7 @@
     {"name":"SwitchRoomRuins","order":4,"path":"rooms/SwitchRoomRuins/SwitchRoomRuins.yy",},
     {"name":"Test","order":3,"path":"rooms/Test/Test.yy",},
     {"name":"BattleExitScript","order":5,"path":"scripts/BattleExitScript/BattleExitScript.yy",},
+    {"name":"CreatePlayerStats","order":14,"path":"scripts/CreatePlayerStats/CreatePlayerStats.yy",},
     {"name":"GameOverText","order":1,"path":"scripts/GameOverText/GameOverText.yy",},
     {"name":"GameText","order":2,"path":"scripts/GameText/GameText.yy",},
     {"name":"ItemHandlerScript","order":9,"path":"scripts/ItemHandlerScript/ItemHandlerScript.yy",},

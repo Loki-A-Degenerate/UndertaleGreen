@@ -159,6 +159,7 @@
     {"id":{"name":"SwitchRoomRuins","path":"rooms/SwitchRoomRuins/SwitchRoomRuins.yy",},},
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"id":{"name":"BattleExitScript","path":"scripts/BattleExitScript/BattleExitScript.yy",},},
+    {"id":{"name":"CreatePlayerStats","path":"scripts/CreatePlayerStats/CreatePlayerStats.yy",},},
     {"id":{"name":"EnemyConstructor","path":"scripts/EnemyConstructor/EnemyConstructor.yy",},},
     {"id":{"name":"FloweySaveTestScript","path":"scripts/FloweySaveTestScript/FloweySaveTestScript.yy",},},
     {"id":{"name":"GameOverText","path":"scripts/GameOverText/GameOverText.yy",},},
