@@ -39,6 +39,9 @@ switch fleeMessageChance {
 	case 2:
 		fleeMessages = "* I'm outta here.";
 		break;
+	case 3:
+		fleeMessages = "* I got better things to do.";
+		break;
 }
 
 if fleeing {

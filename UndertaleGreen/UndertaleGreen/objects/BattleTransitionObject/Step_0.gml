@@ -36,3 +36,5 @@ if flashing {
 		}
 	}
 }
+
+show_debug_message(locale);

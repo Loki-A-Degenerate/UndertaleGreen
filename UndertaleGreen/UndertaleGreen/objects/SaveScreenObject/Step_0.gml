@@ -59,6 +59,9 @@ if state {
 			inst.targetY = playerY;
 			inst.targetFace = FORWARD;
 		} else if selected == 1 {
+			if file_exists("UndertaleGreenSave.ini") {
+				file_delete("UndertaleGreenSave.ini");
+			}
 			
 		} else if selected == 2 {
 			room_goto(ConfigMenu);

@@ -14,3 +14,5 @@ flashInterval = 8; // frames between flashes
 flashing = false;
 
 flashVisible = true; // controls drawing
+
+locale = PlayerObject.locale;
