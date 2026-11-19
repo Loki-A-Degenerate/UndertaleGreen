@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"BattleSystem","order":9,"path":"folders/BattleSystem.yy",},
+    {"name":"Attacks","order":13,"path":"folders/BattleSystem/Attacks.yy",},
     {"name":"BattleBoxObjects","order":4,"path":"folders/BattleSystem/BattleBoxObjects.yy",},
     {"name":"BattleMenuObjects","order":6,"path":"folders/BattleSystem/BattleBoxObjects/BattleMenuObjects.yy",},
     {"name":"BattleButtonObjects","order":1,"path":"folders/BattleSystem/BattleButtonObjects.yy",},
@@ -8,7 +9,6 @@
     {"name":"BattleHandlerObjects","order":10,"path":"folders/BattleSystem/BattleHandlerObjects.yy",},
     {"name":"HPSprites","order":5,"path":"folders/BattleSystem/HPSprites.yy",},
     {"name":"RuinsMonsters","order":12,"path":"folders/BattleSystem/RuinsMonsters.yy",},
-    {"name":"Attacks","order":13,"path":"folders/BattleSystem/Attacks.yy",},
     {"name":"DialogSystem","order":8,"path":"folders/DialogSystem.yy",},
     {"name":"FloweyFaceSprites","order":1,"path":"folders/DialogSystem/FloweyDialog/FloweyFaceSprites.yy",},
     {"name":"MenuSystem","order":5,"path":"folders/MenuSystem.yy",},

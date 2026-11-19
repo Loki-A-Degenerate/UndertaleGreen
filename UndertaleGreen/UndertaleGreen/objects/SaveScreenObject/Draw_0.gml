@@ -17,10 +17,10 @@ for (var i = 1; i <= string_length(roomName); i++) {
 }
 // Top text
 draw_set_halign(fa_left);
-draw_text(leftTextHAlign, topTextVAlign, name);
+draw_text(leftTextHAlign, topTextVAlign, global.playerName);
 draw_text(leftTextHAlign, topTextVAlign + 20, locale + " - " + localRoomName);
 draw_set_halign(fa_center);
-draw_text(centX, topTextVAlign, "LV"+string(lv));
+draw_text(centX, topTextVAlign, "LV"+string(global.lv));
 draw_set_halign(fa_right);
 draw_text(room_width-leftTextHAlign, topTextVAlign, TimeStringScript(time));
 

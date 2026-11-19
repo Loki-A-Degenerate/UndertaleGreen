@@ -4,7 +4,8 @@ if distance_to_object(PlayerObject) < 4 && !instance_exists(SaveMenuObject)
 	{
 		//SavingScript();
 		//instance_create_layer(0, 0, "Instances", SaveMenuObject);
-		
+		audio_play_sound(Heal, 0, false);
+		global.hp = global.maxHp;
 		// This makes me very unhappy
 		if y > PlayerObject.y
 		{
