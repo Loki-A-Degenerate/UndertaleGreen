@@ -285,6 +285,17 @@ global.item =
 			canUse : true,
 			canDrop : false,
 		},
+		specialRecord :
+		{
+			name : "Special Record",
+			nameShort : "Spec Rec",
+			nameSerious : "Spec Rec",
+			check : "...",
+			category : "key",
+			
+			canUse : true,
+			canDrop : false,
+		},
 	},
 	tool : 
 	{
