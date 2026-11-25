@@ -37,6 +37,7 @@
     {"name":"inst_2577AB4C","path":"rooms/FlowerBed/FlowerBed.yy",},
     {"name":"inst_79AE165C","path":"rooms/FlowerBed/FlowerBed.yy",},
     {"name":"inst_51BEFEE8","path":"rooms/FlowerBed/FlowerBed.yy",},
+    {"name":"inst_7484C4C","path":"rooms/FlowerBed/FlowerBed.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -74,6 +75,7 @@
         {"$GMRInstance":"v4","%Name":"inst_2577AB4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2577AB4C","objectId":{"name":"DebugObject","path":"objects/DebugObject/DebugObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":403.0,"y":20.0,},
         {"$GMRInstance":"v4","%Name":"inst_79AE165C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_79AE165C","objectId":{"name":"MusicManager","path":"objects/MusicManager/MusicManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_51BEFEE8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51BEFEE8","objectId":{"name":"JukeboxObject","path":"objects/JukeboxObject/JukeboxObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":32.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7484C4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7484C4C","objectId":{"name":"JukeboxNeonObject","path":"objects/JukeboxNeonObject/JukeboxNeonObject.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"RuinsTiles","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"RuinsTiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":30,"SerialiseWidth":83,"TileCompressedData":[
           52,3803,3804,3805,3806,3807,3808,3809,3810,3811,3812,3813,3814,3795,3796,3797,3798,3799,3800,3801,3802,
